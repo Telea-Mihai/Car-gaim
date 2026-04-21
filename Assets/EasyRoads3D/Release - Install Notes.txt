@@ -1,0 +1,21 @@
+v3.2.4f3 release date: 11-10-2024
+
+IMPORTANT:
+
+Install Notes:
+
+To install this update in an existing EasyRoads3D project it is recommended to follow the next steps:
+
+1. Open a new scene if there is an EasyRoads3D Road Network object present in the currently open scene
+2. Import the package updates over the existing install without first removing the previous package
+3. Open your scene
+
+
+Please check the manual or the website for release notes: 
+http://easyroads3d.com/v3/html/release_notes.html
+http://easyroads3d.com/releaseNotes.php
+
+Forum:	Part 1 - https://discussions.unity.com/t/easyroads3d-v3-the-upcoming-new-road-system-part-1/529373
+		Part 2 - https://discussions.unity.com/t/easyroads3d-v3-the-upcoming-new-road-system-part-2/1487279
+Website: http://www.easyroads3d.com
+Support: info@easyroads3d.com
