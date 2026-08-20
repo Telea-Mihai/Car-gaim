@@ -64,8 +64,12 @@ public class SoftMeshLight : MonoBehaviour
         var cp = c.GetContact(0);
         Vector3 impactPointWS = cp.point;
         Vector3 impactNormalWS = -cp.normal;
-        if (impactVFX != null) Instantiate(impactVFX, impactPointWS, Quaternion.identity);
-
+        if (impactVFX != null)
+        {
+            GameObject effect = Instantiate(impactVFX, impactPointWS, Quaternion.Euler(impactNormalWS));
+            effect.GetComponent<SelfDelete>().magnitude = c.impulse.magnitude;
+        }
+        
         DeformMeshAsync(impactPointWS, impactNormalWS);
     }
     

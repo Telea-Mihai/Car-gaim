@@ -28,13 +28,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1095871287244456}
+  serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 427.80496, y: 0.74, z: 737.1742}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4216092546443446}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &114093988959581162
 MonoBehaviour:
@@ -50,12 +51,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   roundAboutRadius: 8
   prevRoundAboutRadius: 8
+  totalNodes: 0
   roundAboutResolution: 1
   prevRoundAboutResolution: 1
   rDist: 49.227802
   raStartPos: {x: 8, y: 0, z: 0}
   roundaboutWidth: 5
   prevRoundaboutWidth: 5
+  uvTiling: 1
+  flipUVy: 0
   roadTypeInt: 1
   prevRoadTypeInt: 1
   roadWidth: 6
@@ -937,7 +941,7 @@ MonoBehaviour:
   - {x: 10.170126, y: 0, z: 2.6112332}
   - {x: 10.417207, y: 0, z: 1.3159827}
   - {x: 10.5, y: 0, z: 0}
-  ODQQOCQODO: []
+  OCQQQQOCQO: []
   mainRightPointsUVs:
   - {x: 1, y: 0}
   - {x: 1, y: 0.072}
@@ -1094,7 +1098,7 @@ MonoBehaviour:
   - {x: 0, y: 3.4560006}
   - {x: 0, y: 3.5280008}
   - {x: 0, y: 3.6000009}
-  ODQQOCQODOUVs: []
+  OCQQQQOCQOUVs: []
   innerRoundaboutSidewalkV3: []
   innerRoundaboutSidewalUV: []
   innerRoundaboutSidewalTris: 
@@ -1216,6 +1220,174 @@ MonoBehaviour:
     - {x: 6.692705, y: 0, z: -10.469179}
     - {x: 7.192357, y: 0, z: -10.869476}
     - {x: 7.9213257, y: 0, z: -11.554024}
+    leftSidewalkIndex: 0
+    rightSidewalkIndex: 0
+    leftSidewalkid: 0
+    rightSidewalkid: 0
+    leftSidewalkGO: {fileID: 0}
+    rightSidewalkGO: {fileID: 0}
+    leftSidewalk:
+      name: 
+      id: 0
+      timestamp: 0
+      layer: 0
+      sidewalkWidth: 1.5
+      curbHeight: 0.25
+      curbDepth: 0.25
+      beveledCurb: 0
+      beveledHeight: 0
+      beveledDepth: 0
+      outerCurb: 0
+      roadSideCurbUVControl: 0
+      outerSideCurbUVControl: 0
+      material: {fileID: 0}
+      pavementMaterial: {fileID: 0}
+      hardEdges: 0
+      hardEdgePadding: 0
+      shape: []
+      shapePercentages: []
+      shapeCurbPercentages: []
+      sidewalkUVs: []
+      curbUVs: []
+      doConnectionTri: 
+      tileRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      tileSize: 1
+      tiling: 1
+      uvRatio: 1
+      minEnd: 1
+      maxEnd: 1
+      lockUVs: 0
+      planarUVs: 0
+      planarTileSize: 1
+      planarTiling: {x: 1, y: 1}
+      planarUVRatioX: 1
+      planarUVRatioY: 1
+      cornerRadius: 1
+      defaultCornerRadius: 1
+      cornerSegments: 5
+      defaultCornerSegments: 5
+      innerSegmentDistance: 0.5
+      pavementIndex: 2
+      pavementSize: 0
+      curbVecCount: 0
+      subdivision: 0
+      crosswalkPavement: 0
+      crosswalkPavementCurb: 0
+      includeOuterStrip: 0
+      useCrosswalkUVs: 0
+      crosswalkLevelDistance: 0.5
+      crosswalkdepth: 1
+      crosswalkUVs: []
+      crosswalkLevelYLeft: 0.9
+      crosswalkLevelYRight: 0.1
+      crosswalkStripYLeft: 0.95
+      crosswalkStripYRight: 0.05
+      crosswalkSize: 5
+      crosswalkWidth: 1
+      crosswalkMinHeight: 0.02
+      crosswalkMaxHeight: 0.05
+      bottomInnerDistance: 0
+      topInnerDistance: 0
+      bottomStripDistance: 0
+      topStripDistance: 0
+      yPositions: []
+      realPavementIndex: 0
+      realColCount: 0
+      crosswalkOuterUVX: 0
+      crosswalkOuterOffset: 0
+      crosswalkOuterStripOffset: 0
+      crosswalkStripUVX: 0
+      texSizeRatio: 1
+      castShadow: 1
+      isStatic: 1
+    rightSidewalk:
+      name: 
+      id: 0
+      timestamp: 0
+      layer: 0
+      sidewalkWidth: 1.5
+      curbHeight: 0.25
+      curbDepth: 0.25
+      beveledCurb: 0
+      beveledHeight: 0
+      beveledDepth: 0
+      outerCurb: 0
+      roadSideCurbUVControl: 0
+      outerSideCurbUVControl: 0
+      material: {fileID: 0}
+      pavementMaterial: {fileID: 0}
+      hardEdges: 0
+      hardEdgePadding: 0
+      shape: []
+      shapePercentages: []
+      shapeCurbPercentages: []
+      sidewalkUVs: []
+      curbUVs: []
+      doConnectionTri: 
+      tileRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      tileSize: 1
+      tiling: 1
+      uvRatio: 1
+      minEnd: 1
+      maxEnd: 1
+      lockUVs: 0
+      planarUVs: 0
+      planarTileSize: 1
+      planarTiling: {x: 1, y: 1}
+      planarUVRatioX: 1
+      planarUVRatioY: 1
+      cornerRadius: 1
+      defaultCornerRadius: 1
+      cornerSegments: 5
+      defaultCornerSegments: 5
+      innerSegmentDistance: 0.5
+      pavementIndex: 2
+      pavementSize: 0
+      curbVecCount: 0
+      subdivision: 0
+      crosswalkPavement: 0
+      crosswalkPavementCurb: 0
+      includeOuterStrip: 0
+      useCrosswalkUVs: 0
+      crosswalkLevelDistance: 0.5
+      crosswalkdepth: 1
+      crosswalkUVs: []
+      crosswalkLevelYLeft: 0.9
+      crosswalkLevelYRight: 0.1
+      crosswalkStripYLeft: 0.95
+      crosswalkStripYRight: 0.05
+      crosswalkSize: 5
+      crosswalkWidth: 1
+      crosswalkMinHeight: 0.02
+      crosswalkMaxHeight: 0.05
+      bottomInnerDistance: 0
+      topInnerDistance: 0
+      bottomStripDistance: 0
+      topStripDistance: 0
+      yPositions: []
+      realPavementIndex: 0
+      realColCount: 0
+      crosswalkOuterUVX: 0
+      crosswalkOuterOffset: 0
+      crosswalkOuterStripOffset: 0
+      crosswalkStripUVX: 0
+      texSizeRatio: 1
+      castShadow: 1
+      isStatic: 1
+    leftSidewalkActive: 0
+    leftCrosswalkActive: 0
+    rightSidewalkActive: 0
+    rightCrosswalkActive: 0
     outerCenterPoint: {x: 7.6541705, y: 0, z: -7.187745}
     innerRoundaboutPoints:
     - {x: 10.170123, y: 0, z: -2.6112437}
@@ -1241,8 +1413,7 @@ MonoBehaviour:
     rightFlag: 1
     blendFlag: 0
     roadMaterial: {fileID: 2100000, guid: f182e2714eb8a714a99ed091081ce16c, type: 2}
-    connectionMaterial: {fileID: 2100000, guid: ce8bb957aa39a384eb46fd561e66303f,
-      type: 2}
+    connectionMaterial: {fileID: 2100000, guid: ce8bb957aa39a384eb46fd561e66303f, type: 2}
     prefabElement: 0
     connectionVecInts: a9000000a8000000
     fullConnectionVecInts: a9000000a8000000a9000000a8000000a9000000a8000000a9000000a8000000a9000000a8000000a9000000a8000000a9000000a8000000a9000000a8000000a9000000a8000000a9000000a8000000
@@ -1285,6 +1456,206 @@ MonoBehaviour:
     prevRoadType: 1
     roadTypeTimestamp: 1541537165.16953
     prevTimestamp: 0
+    rt:
+      roadTypeName: 
+      id: 0
+      timestamp: 0
+      roadWidth: 0
+      advancedWidthSettings: 0
+      faceDistance: 0
+      angleTreshold: 0
+      uvTiling: 0
+      uv4Type: 0
+      type: 0
+      detailDistance: 0
+      planarUVs: 0
+      outerIndent: 0
+      roadShapeDataActive: 0
+      roadShapeData:
+        nodes: []
+        hardEdge: 
+        priorityNodeIndexLeft: 0
+        priorityNodeIndexRight: 0
+        nodesV3: []
+        lanes: []
+        leftLanes: 0
+        rightLanes: 0
+        symmetrical: 0
+        leftSidewalkOffset: 0
+        rightSidewalkOffset: 0
+        outerLaneMarkingLeftIndex: 0
+        includeOuterlaneLeftInShape: 0
+        includeOuterlaneRightInShape: 0
+        outerLaneMarkingRightIndex: 0
+        outerOuterLaneMarkingLeftIndex: 0
+        outerOuterLaneMarkingRightIndex: 0
+        selectedNode: 0
+        selectedLaneNode: 0
+        isSymmetrical: 0
+        isset: 0
+      excludeFromTrafficAI: 0
+      minSpeed: 0
+      maxSpeed: 0
+      speedLimit: 0
+      speedLimitConnections: 0
+      roadShape: []
+      roadShapeExt: []
+      roadShapeExt2: []
+      doConnectionTri: 
+      doConnectionTriExt: 
+      roadShapeUVs: []
+      roadShapeExtUVs: []
+      roadShapeExtUVs2: []
+      roadShapeUVs2: []
+      preserveUVs: 0
+      hardEdge: 
+      roadShapeVecsString: 
+      defaultSidewalk: 0
+      sidewalks: 0
+      sidewalkHeight: 0
+      sidewalkWidth: 0
+      crosswalks: 0
+      crosswalkIntervals: 0
+      crosswalksIntersections: 0
+      crosswalkPrefab: {fileID: 0}
+      crosswalkHeightOffset: 0
+      crosswalkType: 0
+      crosswalkDecal: {fileID: 0}
+      roadMaterial: {fileID: 0}
+      roadMaterials: []
+      roadPhysicsMaterial: {fileID: 0}
+      roadPhysicsMaterials: []
+      connectionMaterial: {fileID: 0}
+      isSideObject: 0
+      isCustomRoad: 0
+      subSegments: 0
+      soData: []
+      soDataExt: []
+      soDataLog: []
+      layer: 0
+      isStatic: 0
+      tag: 
+      renderingLayerMask: 0
+      splatMapActive: 0
+      splatIndex: 0
+      expandLevel: 0
+      smoothLevel: 0
+      splatOpacity: 0
+      followTerrainContours: 0
+      terrainContoursOffset: 0
+      terrainDeformation: 0
+      defaultIndent: 0
+      defaultSurrounding: 0
+      maxRoadheight: 0
+      maxTerrainHeightOffset: 0
+      minTerrainHeightDistance: 0
+      maxTerrainHeightDistance: 0
+      castShadow: 0
+      randomnessFlag: 0
+      randomYPosition: 0
+      randomMinYPosition: 0
+      randomMaxYPosition: 0
+      minRandomYPositionDistance: 0
+      maxRandomYPositionDistance: 0
+      randomMinRotation: 0
+      randomMaxRotation: 0
+      minRandomRotationDistance: 0
+      maxRandomRotationDistance: 0
+      vegetationStudioMaskLineActive: 0
+      vegetationStudioGrassPerimeter: 0
+      vegetationStudioPlantPerimeter: 0
+      vegetationStudioTreePerimeter: 0
+      vegetationStudioObjectPerimeter: 0
+      vegetationStudioLargeObjectPerimeter: 0
+      vegetationStudioBiomeMaskActive: 0
+      vegetationStudioBiomeMaskDistance: 0
+      vegetationStudioBiomeMaskBlendDistance: 0
+      vegetationStudioBiomeMaskNoiseScale: 0
+      decalPresets: []
+      decalClassPresets: []
+      defaultRamp: 0
+      extrusionType: 0
+      extrusionDistance: 0
+      fixedDistance: 0
+      connectionAngle: 0
+      connectionRadius: 0
+      oneWay: 0
+      cornerRadiusMainRoad: 0
+      cornerSementsMainRoad: 0
+      cornerRadiusSecondaryRoad: 0
+      cornerRadiusSecondaryCurvature: 0
+      cornerSementsSecondaryRoad: 0
+      mainRoadsOnly: 0
+      isRoadShape: 0
+      controlType: 0
+      vertexColor: {r: 0, g: 0, b: 0, a: 0}
+      trafficPosts: []
+      activeTrafficPostIndex: 0
+      showTrafficPosts: 0
+      materialCreator: 0
+      synchRoadWidth: 0
+      totalLanes: 0
+      laneWidth: 0
+      shoulderWidthLeft: 0
+      shoulderWidthRight: 0
+      leftLineMarkingWidth: 0
+      rightLineMarkingWidth: 0
+      leftLineMarkingColor: {r: 0, g: 0, b: 0, a: 0}
+      rightLineMarkingColor: {r: 0, g: 0, b: 0, a: 0}
+      leftLineMarkingStyle: 0
+      rightLineMarkingStyle: 0
+      leftLineMarkingSize: 0
+      rightLineMarkingSize: 0
+      leftLineMarkingInterval: 0
+      rightLineMarkingInterval: 0
+      laneMarkingStyle: 0
+      LaneMarkingColor: {r: 0, g: 0, b: 0, a: 0}
+      laneMarkingWidth: 0
+      laneMarkingSize: 0
+      laneMarkingInterval: 0
+      medianIsland: 0
+      medianWidth: 0
+      medianLineMarkingStyle: 0
+      medianLineMarkingWidth: 0
+      medianLineMarkingSize: 0
+      medianLineMarkingInterval: 0
+      medianLineMarkingSpace: 0
+      medianLeftLineMarkingColor: {r: 0, g: 0, b: 0, a: 0}
+      medianRightLineMarkingColor: {r: 0, g: 0, b: 0, a: 0}
+      materialType: 0
+      baseTexture: {fileID: 0}
+      baseTextureMask: {fileID: 0}
+      baseTextureSize: 0
+      baseTexture2: {fileID: 0}
+      normalMap: {fileID: 0}
+      pbrTexture: {fileID: 0}
+      pbrLaneStrength: 0
+      pbrCurveStrength: 0
+      noiseTexture: {fileID: 0}
+      noiseTexture2: {fileID: 0}
+      linesTexture: {fileID: 0}
+      linesTextureSize: 0
+      linesNormalMapBlend: 0
+      normalMapScale: 0
+      metallicScale: 0
+      smoothnessScale: 0
+      aoScale: 0
+      lineMaskQuality: 0
+      dynMapsUpdated: 0
+      roadEdgeMapping: 0
+      baseUVs: []
+      leftEdgeUVs: []
+      leftEdgeWidth: 0
+      rightEdgeUVs: []
+      rightEdgeWidth: 0
+      laneNoiseControl: 0
+      mirrorLaneNoiseOnShoulder: 0
+      noiseMaps: []
+      noiseMap: {fileID: 0}
+      noiseBaseMapTiling: 0
+      noiseMapTiling: 0
+      bakeLinePBR: 0
+      shoulderOffset: 0
   - roadWidth: 6
     prevRoadWidth: 6
     roundingSegments: 10
@@ -1385,6 +1756,174 @@ MonoBehaviour:
     - {x: -10.868756, y: 0, z: -6.022138}
     - {x: -11.299636, y: 0, z: -6.4956694}
     - {x: -12.0286045, y: 0, z: -7.180217}
+    leftSidewalkIndex: 0
+    rightSidewalkIndex: 0
+    leftSidewalkid: 0
+    rightSidewalkid: 0
+    leftSidewalkGO: {fileID: 0}
+    rightSidewalkGO: {fileID: 0}
+    leftSidewalk:
+      name: 
+      id: 0
+      timestamp: 0
+      layer: 0
+      sidewalkWidth: 1.5
+      curbHeight: 0.25
+      curbDepth: 0.25
+      beveledCurb: 0
+      beveledHeight: 0
+      beveledDepth: 0
+      outerCurb: 0
+      roadSideCurbUVControl: 0
+      outerSideCurbUVControl: 0
+      material: {fileID: 0}
+      pavementMaterial: {fileID: 0}
+      hardEdges: 0
+      hardEdgePadding: 0
+      shape: []
+      shapePercentages: []
+      shapeCurbPercentages: []
+      sidewalkUVs: []
+      curbUVs: []
+      doConnectionTri: 
+      tileRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      tileSize: 1
+      tiling: 1
+      uvRatio: 1
+      minEnd: 1
+      maxEnd: 1
+      lockUVs: 0
+      planarUVs: 0
+      planarTileSize: 1
+      planarTiling: {x: 1, y: 1}
+      planarUVRatioX: 1
+      planarUVRatioY: 1
+      cornerRadius: 1
+      defaultCornerRadius: 1
+      cornerSegments: 5
+      defaultCornerSegments: 5
+      innerSegmentDistance: 0.5
+      pavementIndex: 2
+      pavementSize: 0
+      curbVecCount: 0
+      subdivision: 0
+      crosswalkPavement: 0
+      crosswalkPavementCurb: 0
+      includeOuterStrip: 0
+      useCrosswalkUVs: 0
+      crosswalkLevelDistance: 0.5
+      crosswalkdepth: 1
+      crosswalkUVs: []
+      crosswalkLevelYLeft: 0.9
+      crosswalkLevelYRight: 0.1
+      crosswalkStripYLeft: 0.95
+      crosswalkStripYRight: 0.05
+      crosswalkSize: 5
+      crosswalkWidth: 1
+      crosswalkMinHeight: 0.02
+      crosswalkMaxHeight: 0.05
+      bottomInnerDistance: 0
+      topInnerDistance: 0
+      bottomStripDistance: 0
+      topStripDistance: 0
+      yPositions: []
+      realPavementIndex: 0
+      realColCount: 0
+      crosswalkOuterUVX: 0
+      crosswalkOuterOffset: 0
+      crosswalkOuterStripOffset: 0
+      crosswalkStripUVX: 0
+      texSizeRatio: 1
+      castShadow: 1
+      isStatic: 1
+    rightSidewalk:
+      name: 
+      id: 0
+      timestamp: 0
+      layer: 0
+      sidewalkWidth: 1.5
+      curbHeight: 0.25
+      curbDepth: 0.25
+      beveledCurb: 0
+      beveledHeight: 0
+      beveledDepth: 0
+      outerCurb: 0
+      roadSideCurbUVControl: 0
+      outerSideCurbUVControl: 0
+      material: {fileID: 0}
+      pavementMaterial: {fileID: 0}
+      hardEdges: 0
+      hardEdgePadding: 0
+      shape: []
+      shapePercentages: []
+      shapeCurbPercentages: []
+      sidewalkUVs: []
+      curbUVs: []
+      doConnectionTri: 
+      tileRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      tileSize: 1
+      tiling: 1
+      uvRatio: 1
+      minEnd: 1
+      maxEnd: 1
+      lockUVs: 0
+      planarUVs: 0
+      planarTileSize: 1
+      planarTiling: {x: 1, y: 1}
+      planarUVRatioX: 1
+      planarUVRatioY: 1
+      cornerRadius: 1
+      defaultCornerRadius: 1
+      cornerSegments: 5
+      defaultCornerSegments: 5
+      innerSegmentDistance: 0.5
+      pavementIndex: 2
+      pavementSize: 0
+      curbVecCount: 0
+      subdivision: 0
+      crosswalkPavement: 0
+      crosswalkPavementCurb: 0
+      includeOuterStrip: 0
+      useCrosswalkUVs: 0
+      crosswalkLevelDistance: 0.5
+      crosswalkdepth: 1
+      crosswalkUVs: []
+      crosswalkLevelYLeft: 0.9
+      crosswalkLevelYRight: 0.1
+      crosswalkStripYLeft: 0.95
+      crosswalkStripYRight: 0.05
+      crosswalkSize: 5
+      crosswalkWidth: 1
+      crosswalkMinHeight: 0.02
+      crosswalkMaxHeight: 0.05
+      bottomInnerDistance: 0
+      topInnerDistance: 0
+      bottomStripDistance: 0
+      topStripDistance: 0
+      yPositions: []
+      realPavementIndex: 0
+      realColCount: 0
+      crosswalkOuterUVX: 0
+      crosswalkOuterOffset: 0
+      crosswalkOuterStripOffset: 0
+      crosswalkStripUVX: 0
+      texSizeRatio: 1
+      castShadow: 1
+      isStatic: 1
+    leftSidewalkActive: 0
+    leftCrosswalkActive: 0
+    rightSidewalkActive: 0
+    rightCrosswalkActive: 0
     outerCenterPoint: {x: -7.654167, y: 0, z: -7.187748}
     innerRoundaboutPoints:
     - {x: -3.2446754, y: 0, z: -9.986094}
@@ -1410,8 +1949,7 @@ MonoBehaviour:
     rightFlag: 1
     blendFlag: 0
     roadMaterial: {fileID: 2100000, guid: f182e2714eb8a714a99ed091081ce16c, type: 2}
-    connectionMaterial: {fileID: 2100000, guid: ce8bb957aa39a384eb46fd561e66303f,
-      type: 2}
+    connectionMaterial: {fileID: 2100000, guid: ce8bb957aa39a384eb46fd561e66303f, type: 2}
     prefabElement: 1
     connectionVecInts: c2000000c1000000
     fullConnectionVecInts: c2000000c1000000c2000000c1000000c2000000c1000000c2000000c1000000c2000000c1000000c2000000c1000000c2000000c1000000c2000000c1000000c2000000c1000000c2000000c1000000
@@ -1456,6 +1994,206 @@ MonoBehaviour:
     prevRoadType: 1
     roadTypeTimestamp: 1541537165.16953
     prevTimestamp: 0
+    rt:
+      roadTypeName: 
+      id: 0
+      timestamp: 0
+      roadWidth: 0
+      advancedWidthSettings: 0
+      faceDistance: 0
+      angleTreshold: 0
+      uvTiling: 0
+      uv4Type: 0
+      type: 0
+      detailDistance: 0
+      planarUVs: 0
+      outerIndent: 0
+      roadShapeDataActive: 0
+      roadShapeData:
+        nodes: []
+        hardEdge: 
+        priorityNodeIndexLeft: 0
+        priorityNodeIndexRight: 0
+        nodesV3: []
+        lanes: []
+        leftLanes: 0
+        rightLanes: 0
+        symmetrical: 0
+        leftSidewalkOffset: 0
+        rightSidewalkOffset: 0
+        outerLaneMarkingLeftIndex: 0
+        includeOuterlaneLeftInShape: 0
+        includeOuterlaneRightInShape: 0
+        outerLaneMarkingRightIndex: 0
+        outerOuterLaneMarkingLeftIndex: 0
+        outerOuterLaneMarkingRightIndex: 0
+        selectedNode: 0
+        selectedLaneNode: 0
+        isSymmetrical: 0
+        isset: 0
+      excludeFromTrafficAI: 0
+      minSpeed: 0
+      maxSpeed: 0
+      speedLimit: 0
+      speedLimitConnections: 0
+      roadShape: []
+      roadShapeExt: []
+      roadShapeExt2: []
+      doConnectionTri: 
+      doConnectionTriExt: 
+      roadShapeUVs: []
+      roadShapeExtUVs: []
+      roadShapeExtUVs2: []
+      roadShapeUVs2: []
+      preserveUVs: 0
+      hardEdge: 
+      roadShapeVecsString: 
+      defaultSidewalk: 0
+      sidewalks: 0
+      sidewalkHeight: 0
+      sidewalkWidth: 0
+      crosswalks: 0
+      crosswalkIntervals: 0
+      crosswalksIntersections: 0
+      crosswalkPrefab: {fileID: 0}
+      crosswalkHeightOffset: 0
+      crosswalkType: 0
+      crosswalkDecal: {fileID: 0}
+      roadMaterial: {fileID: 0}
+      roadMaterials: []
+      roadPhysicsMaterial: {fileID: 0}
+      roadPhysicsMaterials: []
+      connectionMaterial: {fileID: 0}
+      isSideObject: 0
+      isCustomRoad: 0
+      subSegments: 0
+      soData: []
+      soDataExt: []
+      soDataLog: []
+      layer: 0
+      isStatic: 0
+      tag: 
+      renderingLayerMask: 0
+      splatMapActive: 0
+      splatIndex: 0
+      expandLevel: 0
+      smoothLevel: 0
+      splatOpacity: 0
+      followTerrainContours: 0
+      terrainContoursOffset: 0
+      terrainDeformation: 0
+      defaultIndent: 0
+      defaultSurrounding: 0
+      maxRoadheight: 0
+      maxTerrainHeightOffset: 0
+      minTerrainHeightDistance: 0
+      maxTerrainHeightDistance: 0
+      castShadow: 0
+      randomnessFlag: 0
+      randomYPosition: 0
+      randomMinYPosition: 0
+      randomMaxYPosition: 0
+      minRandomYPositionDistance: 0
+      maxRandomYPositionDistance: 0
+      randomMinRotation: 0
+      randomMaxRotation: 0
+      minRandomRotationDistance: 0
+      maxRandomRotationDistance: 0
+      vegetationStudioMaskLineActive: 0
+      vegetationStudioGrassPerimeter: 0
+      vegetationStudioPlantPerimeter: 0
+      vegetationStudioTreePerimeter: 0
+      vegetationStudioObjectPerimeter: 0
+      vegetationStudioLargeObjectPerimeter: 0
+      vegetationStudioBiomeMaskActive: 0
+      vegetationStudioBiomeMaskDistance: 0
+      vegetationStudioBiomeMaskBlendDistance: 0
+      vegetationStudioBiomeMaskNoiseScale: 0
+      decalPresets: []
+      decalClassPresets: []
+      defaultRamp: 0
+      extrusionType: 0
+      extrusionDistance: 0
+      fixedDistance: 0
+      connectionAngle: 0
+      connectionRadius: 0
+      oneWay: 0
+      cornerRadiusMainRoad: 0
+      cornerSementsMainRoad: 0
+      cornerRadiusSecondaryRoad: 0
+      cornerRadiusSecondaryCurvature: 0
+      cornerSementsSecondaryRoad: 0
+      mainRoadsOnly: 0
+      isRoadShape: 0
+      controlType: 0
+      vertexColor: {r: 0, g: 0, b: 0, a: 0}
+      trafficPosts: []
+      activeTrafficPostIndex: 0
+      showTrafficPosts: 0
+      materialCreator: 0
+      synchRoadWidth: 0
+      totalLanes: 0
+      laneWidth: 0
+      shoulderWidthLeft: 0
+      shoulderWidthRight: 0
+      leftLineMarkingWidth: 0
+      rightLineMarkingWidth: 0
+      leftLineMarkingColor: {r: 0, g: 0, b: 0, a: 0}
+      rightLineMarkingColor: {r: 0, g: 0, b: 0, a: 0}
+      leftLineMarkingStyle: 0
+      rightLineMarkingStyle: 0
+      leftLineMarkingSize: 0
+      rightLineMarkingSize: 0
+      leftLineMarkingInterval: 0
+      rightLineMarkingInterval: 0
+      laneMarkingStyle: 0
+      LaneMarkingColor: {r: 0, g: 0, b: 0, a: 0}
+      laneMarkingWidth: 0
+      laneMarkingSize: 0
+      laneMarkingInterval: 0
+      medianIsland: 0
+      medianWidth: 0
+      medianLineMarkingStyle: 0
+      medianLineMarkingWidth: 0
+      medianLineMarkingSize: 0
+      medianLineMarkingInterval: 0
+      medianLineMarkingSpace: 0
+      medianLeftLineMarkingColor: {r: 0, g: 0, b: 0, a: 0}
+      medianRightLineMarkingColor: {r: 0, g: 0, b: 0, a: 0}
+      materialType: 0
+      baseTexture: {fileID: 0}
+      baseTextureMask: {fileID: 0}
+      baseTextureSize: 0
+      baseTexture2: {fileID: 0}
+      normalMap: {fileID: 0}
+      pbrTexture: {fileID: 0}
+      pbrLaneStrength: 0
+      pbrCurveStrength: 0
+      noiseTexture: {fileID: 0}
+      noiseTexture2: {fileID: 0}
+      linesTexture: {fileID: 0}
+      linesTextureSize: 0
+      linesNormalMapBlend: 0
+      normalMapScale: 0
+      metallicScale: 0
+      smoothnessScale: 0
+      aoScale: 0
+      lineMaskQuality: 0
+      dynMapsUpdated: 0
+      roadEdgeMapping: 0
+      baseUVs: []
+      leftEdgeUVs: []
+      leftEdgeWidth: 0
+      rightEdgeUVs: []
+      rightEdgeWidth: 0
+      laneNoiseControl: 0
+      mirrorLaneNoiseOnShoulder: 0
+      noiseMaps: []
+      noiseMap: {fileID: 0}
+      noiseBaseMapTiling: 0
+      noiseMapTiling: 0
+      bakeLinePBR: 0
+      shoulderOffset: 0
   - roadWidth: 6
     prevRoadWidth: 6
     roundingSegments: 10
@@ -1555,6 +2293,174 @@ MonoBehaviour:
     - {x: -6.692717, y: 0, z: 10.469171}
     - {x: -7.1923695, y: 0, z: 10.869467}
     - {x: -7.921339, y: 0, z: 11.554013}
+    leftSidewalkIndex: 0
+    rightSidewalkIndex: 0
+    leftSidewalkid: 0
+    rightSidewalkid: 0
+    leftSidewalkGO: {fileID: 0}
+    rightSidewalkGO: {fileID: 0}
+    leftSidewalk:
+      name: 
+      id: 0
+      timestamp: 0
+      layer: 0
+      sidewalkWidth: 1.5
+      curbHeight: 0.25
+      curbDepth: 0.25
+      beveledCurb: 0
+      beveledHeight: 0
+      beveledDepth: 0
+      outerCurb: 0
+      roadSideCurbUVControl: 0
+      outerSideCurbUVControl: 0
+      material: {fileID: 0}
+      pavementMaterial: {fileID: 0}
+      hardEdges: 0
+      hardEdgePadding: 0
+      shape: []
+      shapePercentages: []
+      shapeCurbPercentages: []
+      sidewalkUVs: []
+      curbUVs: []
+      doConnectionTri: 
+      tileRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      tileSize: 1
+      tiling: 1
+      uvRatio: 1
+      minEnd: 1
+      maxEnd: 1
+      lockUVs: 0
+      planarUVs: 0
+      planarTileSize: 1
+      planarTiling: {x: 1, y: 1}
+      planarUVRatioX: 1
+      planarUVRatioY: 1
+      cornerRadius: 1
+      defaultCornerRadius: 1
+      cornerSegments: 5
+      defaultCornerSegments: 5
+      innerSegmentDistance: 0.5
+      pavementIndex: 2
+      pavementSize: 0
+      curbVecCount: 0
+      subdivision: 0
+      crosswalkPavement: 0
+      crosswalkPavementCurb: 0
+      includeOuterStrip: 0
+      useCrosswalkUVs: 0
+      crosswalkLevelDistance: 0.5
+      crosswalkdepth: 1
+      crosswalkUVs: []
+      crosswalkLevelYLeft: 0.9
+      crosswalkLevelYRight: 0.1
+      crosswalkStripYLeft: 0.95
+      crosswalkStripYRight: 0.05
+      crosswalkSize: 5
+      crosswalkWidth: 1
+      crosswalkMinHeight: 0.02
+      crosswalkMaxHeight: 0.05
+      bottomInnerDistance: 0
+      topInnerDistance: 0
+      bottomStripDistance: 0
+      topStripDistance: 0
+      yPositions: []
+      realPavementIndex: 0
+      realColCount: 0
+      crosswalkOuterUVX: 0
+      crosswalkOuterOffset: 0
+      crosswalkOuterStripOffset: 0
+      crosswalkStripUVX: 0
+      texSizeRatio: 1
+      castShadow: 1
+      isStatic: 1
+    rightSidewalk:
+      name: 
+      id: 0
+      timestamp: 0
+      layer: 0
+      sidewalkWidth: 1.5
+      curbHeight: 0.25
+      curbDepth: 0.25
+      beveledCurb: 0
+      beveledHeight: 0
+      beveledDepth: 0
+      outerCurb: 0
+      roadSideCurbUVControl: 0
+      outerSideCurbUVControl: 0
+      material: {fileID: 0}
+      pavementMaterial: {fileID: 0}
+      hardEdges: 0
+      hardEdgePadding: 0
+      shape: []
+      shapePercentages: []
+      shapeCurbPercentages: []
+      sidewalkUVs: []
+      curbUVs: []
+      doConnectionTri: 
+      tileRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      tileSize: 1
+      tiling: 1
+      uvRatio: 1
+      minEnd: 1
+      maxEnd: 1
+      lockUVs: 0
+      planarUVs: 0
+      planarTileSize: 1
+      planarTiling: {x: 1, y: 1}
+      planarUVRatioX: 1
+      planarUVRatioY: 1
+      cornerRadius: 1
+      defaultCornerRadius: 1
+      cornerSegments: 5
+      defaultCornerSegments: 5
+      innerSegmentDistance: 0.5
+      pavementIndex: 2
+      pavementSize: 0
+      curbVecCount: 0
+      subdivision: 0
+      crosswalkPavement: 0
+      crosswalkPavementCurb: 0
+      includeOuterStrip: 0
+      useCrosswalkUVs: 0
+      crosswalkLevelDistance: 0.5
+      crosswalkdepth: 1
+      crosswalkUVs: []
+      crosswalkLevelYLeft: 0.9
+      crosswalkLevelYRight: 0.1
+      crosswalkStripYLeft: 0.95
+      crosswalkStripYRight: 0.05
+      crosswalkSize: 5
+      crosswalkWidth: 1
+      crosswalkMinHeight: 0.02
+      crosswalkMaxHeight: 0.05
+      bottomInnerDistance: 0
+      topInnerDistance: 0
+      bottomStripDistance: 0
+      topStripDistance: 0
+      yPositions: []
+      realPavementIndex: 0
+      realColCount: 0
+      crosswalkOuterUVX: 0
+      crosswalkOuterOffset: 0
+      crosswalkOuterStripOffset: 0
+      crosswalkStripUVX: 0
+      texSizeRatio: 1
+      castShadow: 1
+      isStatic: 1
+    leftSidewalkActive: 0
+    leftCrosswalkActive: 0
+    rightSidewalkActive: 0
+    rightCrosswalkActive: 0
     outerCenterPoint: {x: -7.654178, y: 0, z: 7.1877365}
     innerRoundaboutPoints:
     - {x: -10.170126, y: 0, z: 2.6112337}
@@ -1580,8 +2486,7 @@ MonoBehaviour:
     rightFlag: 1
     blendFlag: 0
     roadMaterial: {fileID: 2100000, guid: f182e2714eb8a714a99ed091081ce16c, type: 2}
-    connectionMaterial: {fileID: 2100000, guid: ce8bb957aa39a384eb46fd561e66303f,
-      type: 2}
+    connectionMaterial: {fileID: 2100000, guid: ce8bb957aa39a384eb46fd561e66303f, type: 2}
     prefabElement: 2
     connectionVecInts: db000000da000000
     fullConnectionVecInts: db000000da000000db000000da000000db000000da000000db000000da000000db000000da000000db000000da000000db000000da000000db000000da000000db000000da000000db000000da000000
@@ -1624,6 +2529,206 @@ MonoBehaviour:
     prevRoadType: 1
     roadTypeTimestamp: 1541537165.16953
     prevTimestamp: 0
+    rt:
+      roadTypeName: 
+      id: 0
+      timestamp: 0
+      roadWidth: 0
+      advancedWidthSettings: 0
+      faceDistance: 0
+      angleTreshold: 0
+      uvTiling: 0
+      uv4Type: 0
+      type: 0
+      detailDistance: 0
+      planarUVs: 0
+      outerIndent: 0
+      roadShapeDataActive: 0
+      roadShapeData:
+        nodes: []
+        hardEdge: 
+        priorityNodeIndexLeft: 0
+        priorityNodeIndexRight: 0
+        nodesV3: []
+        lanes: []
+        leftLanes: 0
+        rightLanes: 0
+        symmetrical: 0
+        leftSidewalkOffset: 0
+        rightSidewalkOffset: 0
+        outerLaneMarkingLeftIndex: 0
+        includeOuterlaneLeftInShape: 0
+        includeOuterlaneRightInShape: 0
+        outerLaneMarkingRightIndex: 0
+        outerOuterLaneMarkingLeftIndex: 0
+        outerOuterLaneMarkingRightIndex: 0
+        selectedNode: 0
+        selectedLaneNode: 0
+        isSymmetrical: 0
+        isset: 0
+      excludeFromTrafficAI: 0
+      minSpeed: 0
+      maxSpeed: 0
+      speedLimit: 0
+      speedLimitConnections: 0
+      roadShape: []
+      roadShapeExt: []
+      roadShapeExt2: []
+      doConnectionTri: 
+      doConnectionTriExt: 
+      roadShapeUVs: []
+      roadShapeExtUVs: []
+      roadShapeExtUVs2: []
+      roadShapeUVs2: []
+      preserveUVs: 0
+      hardEdge: 
+      roadShapeVecsString: 
+      defaultSidewalk: 0
+      sidewalks: 0
+      sidewalkHeight: 0
+      sidewalkWidth: 0
+      crosswalks: 0
+      crosswalkIntervals: 0
+      crosswalksIntersections: 0
+      crosswalkPrefab: {fileID: 0}
+      crosswalkHeightOffset: 0
+      crosswalkType: 0
+      crosswalkDecal: {fileID: 0}
+      roadMaterial: {fileID: 0}
+      roadMaterials: []
+      roadPhysicsMaterial: {fileID: 0}
+      roadPhysicsMaterials: []
+      connectionMaterial: {fileID: 0}
+      isSideObject: 0
+      isCustomRoad: 0
+      subSegments: 0
+      soData: []
+      soDataExt: []
+      soDataLog: []
+      layer: 0
+      isStatic: 0
+      tag: 
+      renderingLayerMask: 0
+      splatMapActive: 0
+      splatIndex: 0
+      expandLevel: 0
+      smoothLevel: 0
+      splatOpacity: 0
+      followTerrainContours: 0
+      terrainContoursOffset: 0
+      terrainDeformation: 0
+      defaultIndent: 0
+      defaultSurrounding: 0
+      maxRoadheight: 0
+      maxTerrainHeightOffset: 0
+      minTerrainHeightDistance: 0
+      maxTerrainHeightDistance: 0
+      castShadow: 0
+      randomnessFlag: 0
+      randomYPosition: 0
+      randomMinYPosition: 0
+      randomMaxYPosition: 0
+      minRandomYPositionDistance: 0
+      maxRandomYPositionDistance: 0
+      randomMinRotation: 0
+      randomMaxRotation: 0
+      minRandomRotationDistance: 0
+      maxRandomRotationDistance: 0
+      vegetationStudioMaskLineActive: 0
+      vegetationStudioGrassPerimeter: 0
+      vegetationStudioPlantPerimeter: 0
+      vegetationStudioTreePerimeter: 0
+      vegetationStudioObjectPerimeter: 0
+      vegetationStudioLargeObjectPerimeter: 0
+      vegetationStudioBiomeMaskActive: 0
+      vegetationStudioBiomeMaskDistance: 0
+      vegetationStudioBiomeMaskBlendDistance: 0
+      vegetationStudioBiomeMaskNoiseScale: 0
+      decalPresets: []
+      decalClassPresets: []
+      defaultRamp: 0
+      extrusionType: 0
+      extrusionDistance: 0
+      fixedDistance: 0
+      connectionAngle: 0
+      connectionRadius: 0
+      oneWay: 0
+      cornerRadiusMainRoad: 0
+      cornerSementsMainRoad: 0
+      cornerRadiusSecondaryRoad: 0
+      cornerRadiusSecondaryCurvature: 0
+      cornerSementsSecondaryRoad: 0
+      mainRoadsOnly: 0
+      isRoadShape: 0
+      controlType: 0
+      vertexColor: {r: 0, g: 0, b: 0, a: 0}
+      trafficPosts: []
+      activeTrafficPostIndex: 0
+      showTrafficPosts: 0
+      materialCreator: 0
+      synchRoadWidth: 0
+      totalLanes: 0
+      laneWidth: 0
+      shoulderWidthLeft: 0
+      shoulderWidthRight: 0
+      leftLineMarkingWidth: 0
+      rightLineMarkingWidth: 0
+      leftLineMarkingColor: {r: 0, g: 0, b: 0, a: 0}
+      rightLineMarkingColor: {r: 0, g: 0, b: 0, a: 0}
+      leftLineMarkingStyle: 0
+      rightLineMarkingStyle: 0
+      leftLineMarkingSize: 0
+      rightLineMarkingSize: 0
+      leftLineMarkingInterval: 0
+      rightLineMarkingInterval: 0
+      laneMarkingStyle: 0
+      LaneMarkingColor: {r: 0, g: 0, b: 0, a: 0}
+      laneMarkingWidth: 0
+      laneMarkingSize: 0
+      laneMarkingInterval: 0
+      medianIsland: 0
+      medianWidth: 0
+      medianLineMarkingStyle: 0
+      medianLineMarkingWidth: 0
+      medianLineMarkingSize: 0
+      medianLineMarkingInterval: 0
+      medianLineMarkingSpace: 0
+      medianLeftLineMarkingColor: {r: 0, g: 0, b: 0, a: 0}
+      medianRightLineMarkingColor: {r: 0, g: 0, b: 0, a: 0}
+      materialType: 0
+      baseTexture: {fileID: 0}
+      baseTextureMask: {fileID: 0}
+      baseTextureSize: 0
+      baseTexture2: {fileID: 0}
+      normalMap: {fileID: 0}
+      pbrTexture: {fileID: 0}
+      pbrLaneStrength: 0
+      pbrCurveStrength: 0
+      noiseTexture: {fileID: 0}
+      noiseTexture2: {fileID: 0}
+      linesTexture: {fileID: 0}
+      linesTextureSize: 0
+      linesNormalMapBlend: 0
+      normalMapScale: 0
+      metallicScale: 0
+      smoothnessScale: 0
+      aoScale: 0
+      lineMaskQuality: 0
+      dynMapsUpdated: 0
+      roadEdgeMapping: 0
+      baseUVs: []
+      leftEdgeUVs: []
+      leftEdgeWidth: 0
+      rightEdgeUVs: []
+      rightEdgeWidth: 0
+      laneNoiseControl: 0
+      mirrorLaneNoiseOnShoulder: 0
+      noiseMaps: []
+      noiseMap: {fileID: 0}
+      noiseBaseMapTiling: 0
+      noiseMapTiling: 0
+      bakeLinePBR: 0
+      shoulderOffset: 0
   - roadWidth: 6
     prevRoadWidth: 6
     roundingSegments: 10
@@ -1724,6 +2829,174 @@ MonoBehaviour:
     - {x: 10.868762, y: 0, z: 6.0221305}
     - {x: 11.299643, y: 0, z: 6.4956617}
     - {x: 12.028611, y: 0, z: 7.1802087}
+    leftSidewalkIndex: 0
+    rightSidewalkIndex: 0
+    leftSidewalkid: 0
+    rightSidewalkid: 0
+    leftSidewalkGO: {fileID: 0}
+    rightSidewalkGO: {fileID: 0}
+    leftSidewalk:
+      name: 
+      id: 0
+      timestamp: 0
+      layer: 0
+      sidewalkWidth: 1.5
+      curbHeight: 0.25
+      curbDepth: 0.25
+      beveledCurb: 0
+      beveledHeight: 0
+      beveledDepth: 0
+      outerCurb: 0
+      roadSideCurbUVControl: 0
+      outerSideCurbUVControl: 0
+      material: {fileID: 0}
+      pavementMaterial: {fileID: 0}
+      hardEdges: 0
+      hardEdgePadding: 0
+      shape: []
+      shapePercentages: []
+      shapeCurbPercentages: []
+      sidewalkUVs: []
+      curbUVs: []
+      doConnectionTri: 
+      tileRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      tileSize: 1
+      tiling: 1
+      uvRatio: 1
+      minEnd: 1
+      maxEnd: 1
+      lockUVs: 0
+      planarUVs: 0
+      planarTileSize: 1
+      planarTiling: {x: 1, y: 1}
+      planarUVRatioX: 1
+      planarUVRatioY: 1
+      cornerRadius: 1
+      defaultCornerRadius: 1
+      cornerSegments: 5
+      defaultCornerSegments: 5
+      innerSegmentDistance: 0.5
+      pavementIndex: 2
+      pavementSize: 0
+      curbVecCount: 0
+      subdivision: 0
+      crosswalkPavement: 0
+      crosswalkPavementCurb: 0
+      includeOuterStrip: 0
+      useCrosswalkUVs: 0
+      crosswalkLevelDistance: 0.5
+      crosswalkdepth: 1
+      crosswalkUVs: []
+      crosswalkLevelYLeft: 0.9
+      crosswalkLevelYRight: 0.1
+      crosswalkStripYLeft: 0.95
+      crosswalkStripYRight: 0.05
+      crosswalkSize: 5
+      crosswalkWidth: 1
+      crosswalkMinHeight: 0.02
+      crosswalkMaxHeight: 0.05
+      bottomInnerDistance: 0
+      topInnerDistance: 0
+      bottomStripDistance: 0
+      topStripDistance: 0
+      yPositions: []
+      realPavementIndex: 0
+      realColCount: 0
+      crosswalkOuterUVX: 0
+      crosswalkOuterOffset: 0
+      crosswalkOuterStripOffset: 0
+      crosswalkStripUVX: 0
+      texSizeRatio: 1
+      castShadow: 1
+      isStatic: 1
+    rightSidewalk:
+      name: 
+      id: 0
+      timestamp: 0
+      layer: 0
+      sidewalkWidth: 1.5
+      curbHeight: 0.25
+      curbDepth: 0.25
+      beveledCurb: 0
+      beveledHeight: 0
+      beveledDepth: 0
+      outerCurb: 0
+      roadSideCurbUVControl: 0
+      outerSideCurbUVControl: 0
+      material: {fileID: 0}
+      pavementMaterial: {fileID: 0}
+      hardEdges: 0
+      hardEdgePadding: 0
+      shape: []
+      shapePercentages: []
+      shapeCurbPercentages: []
+      sidewalkUVs: []
+      curbUVs: []
+      doConnectionTri: 
+      tileRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      tileSize: 1
+      tiling: 1
+      uvRatio: 1
+      minEnd: 1
+      maxEnd: 1
+      lockUVs: 0
+      planarUVs: 0
+      planarTileSize: 1
+      planarTiling: {x: 1, y: 1}
+      planarUVRatioX: 1
+      planarUVRatioY: 1
+      cornerRadius: 1
+      defaultCornerRadius: 1
+      cornerSegments: 5
+      defaultCornerSegments: 5
+      innerSegmentDistance: 0.5
+      pavementIndex: 2
+      pavementSize: 0
+      curbVecCount: 0
+      subdivision: 0
+      crosswalkPavement: 0
+      crosswalkPavementCurb: 0
+      includeOuterStrip: 0
+      useCrosswalkUVs: 0
+      crosswalkLevelDistance: 0.5
+      crosswalkdepth: 1
+      crosswalkUVs: []
+      crosswalkLevelYLeft: 0.9
+      crosswalkLevelYRight: 0.1
+      crosswalkStripYLeft: 0.95
+      crosswalkStripYRight: 0.05
+      crosswalkSize: 5
+      crosswalkWidth: 1
+      crosswalkMinHeight: 0.02
+      crosswalkMaxHeight: 0.05
+      bottomInnerDistance: 0
+      topInnerDistance: 0
+      bottomStripDistance: 0
+      topStripDistance: 0
+      yPositions: []
+      realPavementIndex: 0
+      realColCount: 0
+      crosswalkOuterUVX: 0
+      crosswalkOuterOffset: 0
+      crosswalkOuterStripOffset: 0
+      crosswalkStripUVX: 0
+      texSizeRatio: 1
+      castShadow: 1
+      isStatic: 1
+    leftSidewalkActive: 0
+    leftCrosswalkActive: 0
+    rightSidewalkActive: 0
+    rightCrosswalkActive: 0
     outerCenterPoint: {x: 7.654173, y: 0, z: 7.1877418}
     innerRoundaboutPoints:
     - {x: 3.2446752, y: 0, z: 9.986094}
@@ -1749,8 +3022,7 @@ MonoBehaviour:
     rightFlag: 1
     blendFlag: 0
     roadMaterial: {fileID: 2100000, guid: f182e2714eb8a714a99ed091081ce16c, type: 2}
-    connectionMaterial: {fileID: 2100000, guid: ce8bb957aa39a384eb46fd561e66303f,
-      type: 2}
+    connectionMaterial: {fileID: 2100000, guid: ce8bb957aa39a384eb46fd561e66303f, type: 2}
     prefabElement: 3
     connectionVecInts: f4000000f3000000
     fullConnectionVecInts: f4000000f3000000f4000000f3000000f4000000f3000000f4000000f3000000f4000000f3000000f4000000f3000000f4000000f3000000f4000000f3000000f4000000f3000000f4000000f3000000
@@ -1795,12 +3067,213 @@ MonoBehaviour:
     prevRoadType: 1
     roadTypeTimestamp: 1541537165.16953
     prevTimestamp: 0
+    rt:
+      roadTypeName: 
+      id: 0
+      timestamp: 0
+      roadWidth: 0
+      advancedWidthSettings: 0
+      faceDistance: 0
+      angleTreshold: 0
+      uvTiling: 0
+      uv4Type: 0
+      type: 0
+      detailDistance: 0
+      planarUVs: 0
+      outerIndent: 0
+      roadShapeDataActive: 0
+      roadShapeData:
+        nodes: []
+        hardEdge: 
+        priorityNodeIndexLeft: 0
+        priorityNodeIndexRight: 0
+        nodesV3: []
+        lanes: []
+        leftLanes: 0
+        rightLanes: 0
+        symmetrical: 0
+        leftSidewalkOffset: 0
+        rightSidewalkOffset: 0
+        outerLaneMarkingLeftIndex: 0
+        includeOuterlaneLeftInShape: 0
+        includeOuterlaneRightInShape: 0
+        outerLaneMarkingRightIndex: 0
+        outerOuterLaneMarkingLeftIndex: 0
+        outerOuterLaneMarkingRightIndex: 0
+        selectedNode: 0
+        selectedLaneNode: 0
+        isSymmetrical: 0
+        isset: 0
+      excludeFromTrafficAI: 0
+      minSpeed: 0
+      maxSpeed: 0
+      speedLimit: 0
+      speedLimitConnections: 0
+      roadShape: []
+      roadShapeExt: []
+      roadShapeExt2: []
+      doConnectionTri: 
+      doConnectionTriExt: 
+      roadShapeUVs: []
+      roadShapeExtUVs: []
+      roadShapeExtUVs2: []
+      roadShapeUVs2: []
+      preserveUVs: 0
+      hardEdge: 
+      roadShapeVecsString: 
+      defaultSidewalk: 0
+      sidewalks: 0
+      sidewalkHeight: 0
+      sidewalkWidth: 0
+      crosswalks: 0
+      crosswalkIntervals: 0
+      crosswalksIntersections: 0
+      crosswalkPrefab: {fileID: 0}
+      crosswalkHeightOffset: 0
+      crosswalkType: 0
+      crosswalkDecal: {fileID: 0}
+      roadMaterial: {fileID: 0}
+      roadMaterials: []
+      roadPhysicsMaterial: {fileID: 0}
+      roadPhysicsMaterials: []
+      connectionMaterial: {fileID: 0}
+      isSideObject: 0
+      isCustomRoad: 0
+      subSegments: 0
+      soData: []
+      soDataExt: []
+      soDataLog: []
+      layer: 0
+      isStatic: 0
+      tag: 
+      renderingLayerMask: 0
+      splatMapActive: 0
+      splatIndex: 0
+      expandLevel: 0
+      smoothLevel: 0
+      splatOpacity: 0
+      followTerrainContours: 0
+      terrainContoursOffset: 0
+      terrainDeformation: 0
+      defaultIndent: 0
+      defaultSurrounding: 0
+      maxRoadheight: 0
+      maxTerrainHeightOffset: 0
+      minTerrainHeightDistance: 0
+      maxTerrainHeightDistance: 0
+      castShadow: 0
+      randomnessFlag: 0
+      randomYPosition: 0
+      randomMinYPosition: 0
+      randomMaxYPosition: 0
+      minRandomYPositionDistance: 0
+      maxRandomYPositionDistance: 0
+      randomMinRotation: 0
+      randomMaxRotation: 0
+      minRandomRotationDistance: 0
+      maxRandomRotationDistance: 0
+      vegetationStudioMaskLineActive: 0
+      vegetationStudioGrassPerimeter: 0
+      vegetationStudioPlantPerimeter: 0
+      vegetationStudioTreePerimeter: 0
+      vegetationStudioObjectPerimeter: 0
+      vegetationStudioLargeObjectPerimeter: 0
+      vegetationStudioBiomeMaskActive: 0
+      vegetationStudioBiomeMaskDistance: 0
+      vegetationStudioBiomeMaskBlendDistance: 0
+      vegetationStudioBiomeMaskNoiseScale: 0
+      decalPresets: []
+      decalClassPresets: []
+      defaultRamp: 0
+      extrusionType: 0
+      extrusionDistance: 0
+      fixedDistance: 0
+      connectionAngle: 0
+      connectionRadius: 0
+      oneWay: 0
+      cornerRadiusMainRoad: 0
+      cornerSementsMainRoad: 0
+      cornerRadiusSecondaryRoad: 0
+      cornerRadiusSecondaryCurvature: 0
+      cornerSementsSecondaryRoad: 0
+      mainRoadsOnly: 0
+      isRoadShape: 0
+      controlType: 0
+      vertexColor: {r: 0, g: 0, b: 0, a: 0}
+      trafficPosts: []
+      activeTrafficPostIndex: 0
+      showTrafficPosts: 0
+      materialCreator: 0
+      synchRoadWidth: 0
+      totalLanes: 0
+      laneWidth: 0
+      shoulderWidthLeft: 0
+      shoulderWidthRight: 0
+      leftLineMarkingWidth: 0
+      rightLineMarkingWidth: 0
+      leftLineMarkingColor: {r: 0, g: 0, b: 0, a: 0}
+      rightLineMarkingColor: {r: 0, g: 0, b: 0, a: 0}
+      leftLineMarkingStyle: 0
+      rightLineMarkingStyle: 0
+      leftLineMarkingSize: 0
+      rightLineMarkingSize: 0
+      leftLineMarkingInterval: 0
+      rightLineMarkingInterval: 0
+      laneMarkingStyle: 0
+      LaneMarkingColor: {r: 0, g: 0, b: 0, a: 0}
+      laneMarkingWidth: 0
+      laneMarkingSize: 0
+      laneMarkingInterval: 0
+      medianIsland: 0
+      medianWidth: 0
+      medianLineMarkingStyle: 0
+      medianLineMarkingWidth: 0
+      medianLineMarkingSize: 0
+      medianLineMarkingInterval: 0
+      medianLineMarkingSpace: 0
+      medianLeftLineMarkingColor: {r: 0, g: 0, b: 0, a: 0}
+      medianRightLineMarkingColor: {r: 0, g: 0, b: 0, a: 0}
+      materialType: 0
+      baseTexture: {fileID: 0}
+      baseTextureMask: {fileID: 0}
+      baseTextureSize: 0
+      baseTexture2: {fileID: 0}
+      normalMap: {fileID: 0}
+      pbrTexture: {fileID: 0}
+      pbrLaneStrength: 0
+      pbrCurveStrength: 0
+      noiseTexture: {fileID: 0}
+      noiseTexture2: {fileID: 0}
+      linesTexture: {fileID: 0}
+      linesTextureSize: 0
+      linesNormalMapBlend: 0
+      normalMapScale: 0
+      metallicScale: 0
+      smoothnessScale: 0
+      aoScale: 0
+      lineMaskQuality: 0
+      dynMapsUpdated: 0
+      roadEdgeMapping: 0
+      baseUVs: []
+      leftEdgeUVs: []
+      leftEdgeWidth: 0
+      rightEdgeUVs: []
+      rightEdgeWidth: 0
+      laneNoiseControl: 0
+      mirrorLaneNoiseOnShoulder: 0
+      noiseMaps: []
+      noiseMap: {fileID: 0}
+      noiseBaseMapTiling: 0
+      noiseMapTiling: 0
+      bakeLinePBR: 0
+      shoulderOffset: 0
   QDOOOQOOQQQQD:
   - Connection 1
   - Connection 2
   - Connection 3
   - Connection 4
   selectedConnection: 3
+  selectedConnection2: 0
   activeConnection: 3
   tmpSelectedConnection: 0
   minStartInt: 35
@@ -1853,8 +3326,7 @@ MonoBehaviour:
   mainRoadMaterial: {fileID: 2100000, guid: 55e19257e99adea4380d1160ee92af9f, type: 2}
   roadMaterial: {fileID: 2100000, guid: f182e2714eb8a714a99ed091081ce16c, type: 2}
   connectionMaterial: {fileID: 2100000, guid: ce8bb957aa39a384eb46fd561e66303f, type: 2}
-  defaultConnectionMaterial: {fileID: 2100000, guid: ce8bb957aa39a384eb46fd561e66303f,
-    type: 2}
+  defaultConnectionMaterial: {fileID: 2100000, guid: ce8bb957aa39a384eb46fd561e66303f, type: 2}
   roadType: 0
   roadTypeTimestamp: 0
   innerRoundaboutPoints: []
@@ -1882,6 +3354,9 @@ MonoBehaviour:
   rightFlag: 1
   prefabScript: {fileID: 114375241053949056}
   connectionElement:
+    connectionHandleObject: {fileID: 0}
+    isHandleActive: 1
+    connectionPosition: 0
     centerPoint: {x: 0, y: 0, z: 0}
     tmpCenterPoint: {x: 0, y: 0, z: 0}
     stageCenterPoint: {x: 0, y: 0, z: 0}
@@ -1889,6 +3364,8 @@ MonoBehaviour:
     blendData: []
     controlPointV3: {x: 0, y: 0, z: 0}
     controlPoint: {x: 0, y: 0}
+    endSplinePoint: {x: 0, y: 0, z: 0}
+    endControlPoint: {x: 0, y: 0, z: 0}
     blendDistance: 0
     extendBounds: 0
     blendCornerPoints: []
@@ -1917,11 +3394,14 @@ MonoBehaviour:
     sidewalkRightConnectionVecInts: 
     doConnectionTri: 
     outerVecInts: 
+    outerVecs: []
     rotationPriority: 0
     centerPointAngle: 1000
     connectedRoad: {fileID: 0}
     connectedMarker: -1
     connectedRoadGO: {fileID: 0}
+    connectedRoadID: 0
+    connectedRoadControlPoint: {x: 0, y: 0, z: 0}
     includeLeftSidewalk: 1
     includeRightSidewalk: 1
     roadMaterial: {fileID: 0}
@@ -1931,12 +3411,22 @@ MonoBehaviour:
     rightIndent: -1
     leftSurrounding: -1
     rightSurrounding: -1
+    leftRoadIndent: 0
+    rightRoadIndent: 0
+    leftRoadSurrounding: 0
+    rightRoadSurrounding: 0
     leftIndentV3: {x: 0, y: 0, z: 0}
     leftSurroundingV3: {x: 0, y: 0, z: 0}
     rightIndentV3: {x: 0, y: 0, z: 0}
     rightSurroundingV3: {x: 0, y: 0, z: 0}
     leftRoadpoint: {x: 0, y: 0, z: 0}
     rightRoadpoint: {x: 0, y: 0, z: 0}
+    leftRoundingPoints: []
+    rightRoundingPoints: []
+    leftRoundingPointsGlobal: []
+    rightRoundingPointsGlobal: []
+    leftInnerIndentPoints: []
+    rightInnerIndentPoints: []
     leftCornerInt: -1
     rightCornerInt: -1
     leftIndentInt: 0
@@ -1949,8 +3439,229 @@ MonoBehaviour:
     additionalIndentDistance: 0
     connectionAngle: 0
     alignmentHandleVecRotationGizmo: {x: 0, y: 0, z: 0}
+    inwards: 0
     roadType: 0
+    rt:
+      roadTypeName: 
+      id: 0
+      timestamp: 0
+      roadWidth: 0
+      advancedWidthSettings: 0
+      faceDistance: 0
+      angleTreshold: 0
+      uvTiling: 0
+      uv4Type: 0
+      type: 0
+      detailDistance: 0
+      planarUVs: 0
+      outerIndent: 0
+      roadShapeDataActive: 0
+      roadShapeData:
+        nodes: []
+        hardEdge: 
+        priorityNodeIndexLeft: 0
+        priorityNodeIndexRight: 0
+        nodesV3: []
+        lanes: []
+        leftLanes: 0
+        rightLanes: 0
+        symmetrical: 0
+        leftSidewalkOffset: 0
+        rightSidewalkOffset: 0
+        outerLaneMarkingLeftIndex: 0
+        includeOuterlaneLeftInShape: 0
+        includeOuterlaneRightInShape: 0
+        outerLaneMarkingRightIndex: 0
+        outerOuterLaneMarkingLeftIndex: 0
+        outerOuterLaneMarkingRightIndex: 0
+        selectedNode: 0
+        selectedLaneNode: 0
+        isSymmetrical: 0
+        isset: 0
+      excludeFromTrafficAI: 0
+      minSpeed: 0
+      maxSpeed: 0
+      speedLimit: 0
+      speedLimitConnections: 0
+      roadShape: []
+      roadShapeExt: []
+      roadShapeExt2: []
+      doConnectionTri: 
+      doConnectionTriExt: 
+      roadShapeUVs: []
+      roadShapeExtUVs: []
+      roadShapeExtUVs2: []
+      roadShapeUVs2: []
+      preserveUVs: 0
+      hardEdge: 
+      roadShapeVecsString: 
+      defaultSidewalk: 0
+      sidewalks: 0
+      sidewalkHeight: 0
+      sidewalkWidth: 0
+      crosswalks: 0
+      crosswalkIntervals: 0
+      crosswalksIntersections: 0
+      crosswalkPrefab: {fileID: 0}
+      crosswalkHeightOffset: 0
+      crosswalkType: 0
+      crosswalkDecal: {fileID: 0}
+      roadMaterial: {fileID: 0}
+      roadMaterials: []
+      roadPhysicsMaterial: {fileID: 0}
+      roadPhysicsMaterials: []
+      connectionMaterial: {fileID: 0}
+      isSideObject: 0
+      isCustomRoad: 0
+      subSegments: 0
+      soData: []
+      soDataExt: []
+      soDataLog: []
+      layer: 0
+      isStatic: 0
+      tag: 
+      renderingLayerMask: 0
+      splatMapActive: 0
+      splatIndex: 0
+      expandLevel: 0
+      smoothLevel: 0
+      splatOpacity: 0
+      followTerrainContours: 0
+      terrainContoursOffset: 0
+      terrainDeformation: 0
+      defaultIndent: 0
+      defaultSurrounding: 0
+      maxRoadheight: 0
+      maxTerrainHeightOffset: 0
+      minTerrainHeightDistance: 0
+      maxTerrainHeightDistance: 0
+      castShadow: 0
+      randomnessFlag: 0
+      randomYPosition: 0
+      randomMinYPosition: 0
+      randomMaxYPosition: 0
+      minRandomYPositionDistance: 0
+      maxRandomYPositionDistance: 0
+      randomMinRotation: 0
+      randomMaxRotation: 0
+      minRandomRotationDistance: 0
+      maxRandomRotationDistance: 0
+      vegetationStudioMaskLineActive: 0
+      vegetationStudioGrassPerimeter: 0
+      vegetationStudioPlantPerimeter: 0
+      vegetationStudioTreePerimeter: 0
+      vegetationStudioObjectPerimeter: 0
+      vegetationStudioLargeObjectPerimeter: 0
+      vegetationStudioBiomeMaskActive: 0
+      vegetationStudioBiomeMaskDistance: 0
+      vegetationStudioBiomeMaskBlendDistance: 0
+      vegetationStudioBiomeMaskNoiseScale: 0
+      decalPresets: []
+      decalClassPresets: []
+      defaultRamp: 0
+      extrusionType: 0
+      extrusionDistance: 0
+      fixedDistance: 0
+      connectionAngle: 0
+      connectionRadius: 0
+      oneWay: 0
+      cornerRadiusMainRoad: 0
+      cornerSementsMainRoad: 0
+      cornerRadiusSecondaryRoad: 0
+      cornerRadiusSecondaryCurvature: 0
+      cornerSementsSecondaryRoad: 0
+      mainRoadsOnly: 0
+      isRoadShape: 0
+      controlType: 0
+      vertexColor: {r: 0, g: 0, b: 0, a: 0}
+      trafficPosts: []
+      activeTrafficPostIndex: 0
+      showTrafficPosts: 0
+      materialCreator: 0
+      synchRoadWidth: 0
+      totalLanes: 0
+      laneWidth: 0
+      shoulderWidthLeft: 0
+      shoulderWidthRight: 0
+      leftLineMarkingWidth: 0
+      rightLineMarkingWidth: 0
+      leftLineMarkingColor: {r: 0, g: 0, b: 0, a: 0}
+      rightLineMarkingColor: {r: 0, g: 0, b: 0, a: 0}
+      leftLineMarkingStyle: 0
+      rightLineMarkingStyle: 0
+      leftLineMarkingSize: 0
+      rightLineMarkingSize: 0
+      leftLineMarkingInterval: 0
+      rightLineMarkingInterval: 0
+      laneMarkingStyle: 0
+      LaneMarkingColor: {r: 0, g: 0, b: 0, a: 0}
+      laneMarkingWidth: 0
+      laneMarkingSize: 0
+      laneMarkingInterval: 0
+      medianIsland: 0
+      medianWidth: 0
+      medianLineMarkingStyle: 0
+      medianLineMarkingWidth: 0
+      medianLineMarkingSize: 0
+      medianLineMarkingInterval: 0
+      medianLineMarkingSpace: 0
+      medianLeftLineMarkingColor: {r: 0, g: 0, b: 0, a: 0}
+      medianRightLineMarkingColor: {r: 0, g: 0, b: 0, a: 0}
+      materialType: 0
+      baseTexture: {fileID: 0}
+      baseTextureMask: {fileID: 0}
+      baseTextureSize: 0
+      baseTexture2: {fileID: 0}
+      normalMap: {fileID: 0}
+      pbrTexture: {fileID: 0}
+      pbrLaneStrength: 0
+      pbrCurveStrength: 0
+      noiseTexture: {fileID: 0}
+      noiseTexture2: {fileID: 0}
+      linesTexture: {fileID: 0}
+      linesTextureSize: 0
+      linesNormalMapBlend: 0
+      normalMapScale: 0
+      metallicScale: 0
+      smoothnessScale: 0
+      aoScale: 0
+      lineMaskQuality: 0
+      dynMapsUpdated: 0
+      roadEdgeMapping: 0
+      baseUVs: []
+      leftEdgeUVs: []
+      leftEdgeWidth: 0
+      rightEdgeUVs: []
+      rightEdgeWidth: 0
+      laneNoiseControl: 0
+      mirrorLaneNoiseOnShoulder: 0
+      noiseMaps: []
+      noiseMap: {fileID: 0}
+      noiseBaseMapTiling: 0
+      noiseMapTiling: 0
+      bakeLinePBR: 0
+      shoulderOffset: 0
     roadTypeTimestamp: 0
+    leftCorner: {x: 0, y: 0, z: 0}
+    rightCorner: {x: 0, y: 0, z: 0}
+    direction: {x: 0, y: 0, z: 0}
+    centerCornerDirectionLeft: {x: 0, y: 0, z: 0}
+    centerCornerDirectionRight: {x: 0, y: 0, z: 0}
+    leftAngle: 0
+    rightAngle: 0
+    triangulateLeft: 1
+    triangulateRight: 1
+    laneData:
+      points: []
+      connectors: []
+      laneType:
+        position: 0
+        direction: 0
+        turnDirection: 0
+        TurnOptions: 0
+        laneIndex: 0
+      laneIndex: 0
+      direction: 0
   baseScript: {fileID: 0}
   isSceneObject: 0
   guiChanged: 1
@@ -1963,6 +3674,7 @@ MonoBehaviour:
     id: 1
     timestamp: 1541537165.16953
     roadWidth: 6
+    advancedWidthSettings: 0
     faceDistance: 2
     angleTreshold: 45
     uvTiling: 1
@@ -1994,9 +3706,11 @@ MonoBehaviour:
       selectedLaneNode: 0
       isSymmetrical: 0
       isset: 0
+    excludeFromTrafficAI: 0
     minSpeed: 0
     maxSpeed: 0
     speedLimit: 0
+    speedLimitConnections: 0
     roadShape:
     - {x: -3, y: 0}
     - {x: 3, y: 0}
@@ -2019,12 +3733,18 @@ MonoBehaviour:
     sidewalks: 0
     sidewalkHeight: 0.2
     sidewalkWidth: 2
+    crosswalks: 0
+    crosswalkIntervals: 0
+    crosswalksIntersections: 0
+    crosswalkPrefab: {fileID: 0}
+    crosswalkHeightOffset: 0
+    crosswalkType: 0
+    crosswalkDecal: {fileID: 0}
     roadMaterial: {fileID: 2100000, guid: f182e2714eb8a714a99ed091081ce16c, type: 2}
     roadMaterials: []
     roadPhysicsMaterial: {fileID: 0}
     roadPhysicsMaterials: []
-    connectionMaterial: {fileID: 2100000, guid: 3c555588afad81d428ad1704d5d015a7,
-      type: 2}
+    connectionMaterial: {fileID: 2100000, guid: 3c555588afad81d428ad1704d5d015a7, type: 2}
     isSideObject: 0
     isCustomRoad: 0
     subSegments: 1
@@ -2034,6 +3754,7 @@ MonoBehaviour:
     layer: 0
     isStatic: 0
     tag: 
+    renderingLayerMask: 0
     splatMapActive: 0
     splatIndex: 0
     expandLevel: 0
@@ -2044,6 +3765,10 @@ MonoBehaviour:
     terrainDeformation: 1
     defaultIndent: 0
     defaultSurrounding: 0
+    maxRoadheight: 0
+    maxTerrainHeightOffset: 0
+    minTerrainHeightDistance: 0
+    maxTerrainHeightDistance: 0
     castShadow: 0
     randomnessFlag: 0
     randomYPosition: 0
@@ -2073,7 +3798,83 @@ MonoBehaviour:
     fixedDistance: 0
     connectionAngle: 0
     connectionRadius: 0
+    oneWay: 0
+    cornerRadiusMainRoad: 0
+    cornerSementsMainRoad: 0
+    cornerRadiusSecondaryRoad: 0
+    cornerRadiusSecondaryCurvature: 0
+    cornerSementsSecondaryRoad: 0
+    mainRoadsOnly: 0
     isRoadShape: 0
+    controlType: 0
+    vertexColor: {r: 0, g: 0, b: 0, a: 0}
+    trafficPosts: []
+    activeTrafficPostIndex: 0
+    showTrafficPosts: 0
+    materialCreator: 0
+    synchRoadWidth: 0
+    totalLanes: 0
+    laneWidth: 0
+    shoulderWidthLeft: 0
+    shoulderWidthRight: 0
+    leftLineMarkingWidth: 0
+    rightLineMarkingWidth: 0
+    leftLineMarkingColor: {r: 0, g: 0, b: 0, a: 0}
+    rightLineMarkingColor: {r: 0, g: 0, b: 0, a: 0}
+    leftLineMarkingStyle: 0
+    rightLineMarkingStyle: 0
+    leftLineMarkingSize: 0
+    rightLineMarkingSize: 0
+    leftLineMarkingInterval: 0
+    rightLineMarkingInterval: 0
+    laneMarkingStyle: 0
+    LaneMarkingColor: {r: 0, g: 0, b: 0, a: 0}
+    laneMarkingWidth: 0
+    laneMarkingSize: 0
+    laneMarkingInterval: 0
+    medianIsland: 0
+    medianWidth: 0
+    medianLineMarkingStyle: 0
+    medianLineMarkingWidth: 0
+    medianLineMarkingSize: 0
+    medianLineMarkingInterval: 0
+    medianLineMarkingSpace: 0
+    medianLeftLineMarkingColor: {r: 0, g: 0, b: 0, a: 0}
+    medianRightLineMarkingColor: {r: 0, g: 0, b: 0, a: 0}
+    materialType: 0
+    baseTexture: {fileID: 0}
+    baseTextureMask: {fileID: 0}
+    baseTextureSize: 0
+    baseTexture2: {fileID: 0}
+    normalMap: {fileID: 0}
+    pbrTexture: {fileID: 0}
+    pbrLaneStrength: 0
+    pbrCurveStrength: 0
+    noiseTexture: {fileID: 0}
+    noiseTexture2: {fileID: 0}
+    linesTexture: {fileID: 0}
+    linesTextureSize: 0
+    linesNormalMapBlend: 0
+    normalMapScale: 0
+    metallicScale: 0
+    smoothnessScale: 0
+    aoScale: 0
+    lineMaskQuality: 0
+    dynMapsUpdated: 0
+    roadEdgeMapping: 0
+    baseUVs: []
+    leftEdgeUVs: []
+    leftEdgeWidth: 0
+    rightEdgeUVs: []
+    rightEdgeWidth: 0
+    laneNoiseControl: 0
+    mirrorLaneNoiseOnShoulder: 0
+    noiseMaps: []
+    noiseMap: {fileID: 0}
+    noiseBaseMapTiling: 0
+    noiseMapTiling: 0
+    bakeLinePBR: 0
+    shoulderOffset: 0
 --- !u!114 &114375241053949056
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2087,13 +3888,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   crossingElements:
-  - centerPoint: {x: 9.974966, y: 0, z: -9.367118}
+  - connectionHandleObject: {fileID: 0}
+    isHandleActive: 1
+    connectionPosition: 0
+    centerPoint: {x: 9.974966, y: 0, z: -9.367118}
     tmpCenterPoint: {x: 9.974966, y: 0, z: -9.367118}
     stageCenterPoint: {x: 0, y: 0, z: 0}
     tmpStageCenterPoint: {x: 0, y: 0, z: 0}
     blendData: []
     controlPointV3: {x: 7.6541705, y: 0, z: -7.187745}
     controlPoint: {x: 0, y: 0}
+    endSplinePoint: {x: 0, y: 0, z: 0}
+    endControlPoint: {x: 0, y: 0, z: 0}
     blendDistance: 0
     extendBounds: 0
     blendCornerPoints: []
@@ -2147,11 +3953,14 @@ MonoBehaviour:
     sidewalkRightConnectionVecInts: 3c01000047010000520100005d01000068010000
     doConnectionTri: 
     outerVecInts: 
+    outerVecs: []
     rotationPriority: 0
     centerPointAngle: 1000
     connectedRoad: {fileID: 0}
     connectedMarker: -1
     connectedRoadGO: {fileID: 0}
+    connectedRoadID: 0
+    connectedRoadControlPoint: {x: 0, y: 0, z: 0}
     includeLeftSidewalk: 1
     includeRightSidewalk: 1
     roadMaterial: {fileID: 2100000, guid: f182e2714eb8a714a99ed091081ce16c, type: 2}
@@ -2163,12 +3972,22 @@ MonoBehaviour:
     rightIndent: 8
     leftSurrounding: 43
     rightSurrounding: 42
+    leftRoadIndent: 0
+    rightRoadIndent: 0
+    leftRoadSurrounding: 0
+    rightRoadSurrounding: 0
     leftIndentV3: {x: 4.8408628, y: 0, z: -14.834382}
     leftSurroundingV3: {x: 1.5291138, y: -0.74, z: -19.925476}
     rightIndentV3: {x: 15.10907, y: 0, z: -3.8998537}
     rightSurroundingV3: {x: 19.982178, y: -0.74, z: -0.27496338}
     leftRoadpoint: {x: 0, y: 0, z: 0}
     rightRoadpoint: {x: 0, y: 0, z: 0}
+    leftRoundingPoints: []
+    rightRoundingPoints: []
+    leftRoundingPointsGlobal: []
+    rightRoundingPointsGlobal: []
+    leftInnerIndentPoints: []
+    rightInnerIndentPoints: []
     leftCornerInt: -1
     rightCornerInt: -1
     leftIndentInt: 0
@@ -2181,15 +4000,241 @@ MonoBehaviour:
     additionalIndentDistance: 0
     connectionAngle: 133.2
     alignmentHandleVecRotationGizmo: {x: 7.6541705, y: 0, z: -7.187745}
+    inwards: 0
     roadType: 1
+    rt:
+      roadTypeName: 
+      id: 0
+      timestamp: 0
+      roadWidth: 0
+      advancedWidthSettings: 0
+      faceDistance: 0
+      angleTreshold: 0
+      uvTiling: 0
+      uv4Type: 0
+      type: 0
+      detailDistance: 0
+      planarUVs: 0
+      outerIndent: 0
+      roadShapeDataActive: 0
+      roadShapeData:
+        nodes: []
+        hardEdge: 
+        priorityNodeIndexLeft: 0
+        priorityNodeIndexRight: 0
+        nodesV3: []
+        lanes: []
+        leftLanes: 0
+        rightLanes: 0
+        symmetrical: 0
+        leftSidewalkOffset: 0
+        rightSidewalkOffset: 0
+        outerLaneMarkingLeftIndex: 0
+        includeOuterlaneLeftInShape: 0
+        includeOuterlaneRightInShape: 0
+        outerLaneMarkingRightIndex: 0
+        outerOuterLaneMarkingLeftIndex: 0
+        outerOuterLaneMarkingRightIndex: 0
+        selectedNode: 0
+        selectedLaneNode: 0
+        isSymmetrical: 0
+        isset: 0
+      excludeFromTrafficAI: 0
+      minSpeed: 0
+      maxSpeed: 0
+      speedLimit: 0
+      speedLimitConnections: 0
+      roadShape: []
+      roadShapeExt: []
+      roadShapeExt2: []
+      doConnectionTri: 
+      doConnectionTriExt: 
+      roadShapeUVs: []
+      roadShapeExtUVs: []
+      roadShapeExtUVs2: []
+      roadShapeUVs2: []
+      preserveUVs: 0
+      hardEdge: 
+      roadShapeVecsString: 
+      defaultSidewalk: 0
+      sidewalks: 0
+      sidewalkHeight: 0
+      sidewalkWidth: 0
+      crosswalks: 0
+      crosswalkIntervals: 0
+      crosswalksIntersections: 0
+      crosswalkPrefab: {fileID: 0}
+      crosswalkHeightOffset: 0
+      crosswalkType: 0
+      crosswalkDecal: {fileID: 0}
+      roadMaterial: {fileID: 0}
+      roadMaterials: []
+      roadPhysicsMaterial: {fileID: 0}
+      roadPhysicsMaterials: []
+      connectionMaterial: {fileID: 0}
+      isSideObject: 0
+      isCustomRoad: 0
+      subSegments: 0
+      soData: []
+      soDataExt: []
+      soDataLog: []
+      layer: 0
+      isStatic: 0
+      tag: 
+      renderingLayerMask: 0
+      splatMapActive: 0
+      splatIndex: 0
+      expandLevel: 0
+      smoothLevel: 0
+      splatOpacity: 0
+      followTerrainContours: 0
+      terrainContoursOffset: 0
+      terrainDeformation: 0
+      defaultIndent: 0
+      defaultSurrounding: 0
+      maxRoadheight: 0
+      maxTerrainHeightOffset: 0
+      minTerrainHeightDistance: 0
+      maxTerrainHeightDistance: 0
+      castShadow: 0
+      randomnessFlag: 0
+      randomYPosition: 0
+      randomMinYPosition: 0
+      randomMaxYPosition: 0
+      minRandomYPositionDistance: 0
+      maxRandomYPositionDistance: 0
+      randomMinRotation: 0
+      randomMaxRotation: 0
+      minRandomRotationDistance: 0
+      maxRandomRotationDistance: 0
+      vegetationStudioMaskLineActive: 0
+      vegetationStudioGrassPerimeter: 0
+      vegetationStudioPlantPerimeter: 0
+      vegetationStudioTreePerimeter: 0
+      vegetationStudioObjectPerimeter: 0
+      vegetationStudioLargeObjectPerimeter: 0
+      vegetationStudioBiomeMaskActive: 0
+      vegetationStudioBiomeMaskDistance: 0
+      vegetationStudioBiomeMaskBlendDistance: 0
+      vegetationStudioBiomeMaskNoiseScale: 0
+      decalPresets: []
+      decalClassPresets: []
+      defaultRamp: 0
+      extrusionType: 0
+      extrusionDistance: 0
+      fixedDistance: 0
+      connectionAngle: 0
+      connectionRadius: 0
+      oneWay: 0
+      cornerRadiusMainRoad: 0
+      cornerSementsMainRoad: 0
+      cornerRadiusSecondaryRoad: 0
+      cornerRadiusSecondaryCurvature: 0
+      cornerSementsSecondaryRoad: 0
+      mainRoadsOnly: 0
+      isRoadShape: 0
+      controlType: 0
+      vertexColor: {r: 0, g: 0, b: 0, a: 0}
+      trafficPosts: []
+      activeTrafficPostIndex: 0
+      showTrafficPosts: 0
+      materialCreator: 0
+      synchRoadWidth: 0
+      totalLanes: 0
+      laneWidth: 0
+      shoulderWidthLeft: 0
+      shoulderWidthRight: 0
+      leftLineMarkingWidth: 0
+      rightLineMarkingWidth: 0
+      leftLineMarkingColor: {r: 0, g: 0, b: 0, a: 0}
+      rightLineMarkingColor: {r: 0, g: 0, b: 0, a: 0}
+      leftLineMarkingStyle: 0
+      rightLineMarkingStyle: 0
+      leftLineMarkingSize: 0
+      rightLineMarkingSize: 0
+      leftLineMarkingInterval: 0
+      rightLineMarkingInterval: 0
+      laneMarkingStyle: 0
+      LaneMarkingColor: {r: 0, g: 0, b: 0, a: 0}
+      laneMarkingWidth: 0
+      laneMarkingSize: 0
+      laneMarkingInterval: 0
+      medianIsland: 0
+      medianWidth: 0
+      medianLineMarkingStyle: 0
+      medianLineMarkingWidth: 0
+      medianLineMarkingSize: 0
+      medianLineMarkingInterval: 0
+      medianLineMarkingSpace: 0
+      medianLeftLineMarkingColor: {r: 0, g: 0, b: 0, a: 0}
+      medianRightLineMarkingColor: {r: 0, g: 0, b: 0, a: 0}
+      materialType: 0
+      baseTexture: {fileID: 0}
+      baseTextureMask: {fileID: 0}
+      baseTextureSize: 0
+      baseTexture2: {fileID: 0}
+      normalMap: {fileID: 0}
+      pbrTexture: {fileID: 0}
+      pbrLaneStrength: 0
+      pbrCurveStrength: 0
+      noiseTexture: {fileID: 0}
+      noiseTexture2: {fileID: 0}
+      linesTexture: {fileID: 0}
+      linesTextureSize: 0
+      linesNormalMapBlend: 0
+      normalMapScale: 0
+      metallicScale: 0
+      smoothnessScale: 0
+      aoScale: 0
+      lineMaskQuality: 0
+      dynMapsUpdated: 0
+      roadEdgeMapping: 0
+      baseUVs: []
+      leftEdgeUVs: []
+      leftEdgeWidth: 0
+      rightEdgeUVs: []
+      rightEdgeWidth: 0
+      laneNoiseControl: 0
+      mirrorLaneNoiseOnShoulder: 0
+      noiseMaps: []
+      noiseMap: {fileID: 0}
+      noiseBaseMapTiling: 0
+      noiseMapTiling: 0
+      bakeLinePBR: 0
+      shoulderOffset: 0
     roadTypeTimestamp: 1541537165.16953
-  - centerPoint: {x: -9.974962, y: 0, z: -9.367123}
+    leftCorner: {x: 0, y: 0, z: 0}
+    rightCorner: {x: 0, y: 0, z: 0}
+    direction: {x: 0, y: 0, z: 0}
+    centerCornerDirectionLeft: {x: 0, y: 0, z: 0}
+    centerCornerDirectionRight: {x: 0, y: 0, z: 0}
+    leftAngle: 0
+    rightAngle: 0
+    triangulateLeft: 1
+    triangulateRight: 1
+    laneData:
+      points: []
+      connectors: []
+      laneType:
+        position: 0
+        direction: 0
+        turnDirection: 0
+        TurnOptions: 0
+        laneIndex: 0
+      laneIndex: 0
+      direction: 0
+  - connectionHandleObject: {fileID: 0}
+    isHandleActive: 1
+    connectionPosition: 0
+    centerPoint: {x: -9.974962, y: 0, z: -9.367123}
     tmpCenterPoint: {x: -9.974962, y: 0, z: -9.367123}
     stageCenterPoint: {x: 0, y: 0, z: 0}
     tmpStageCenterPoint: {x: 0, y: 0, z: 0}
     blendData: []
     controlPointV3: {x: -7.654167, y: 0, z: -7.187748}
     controlPoint: {x: 0, y: 0}
+    endSplinePoint: {x: 0, y: 0, z: 0}
+    endControlPoint: {x: 0, y: 0, z: 0}
     blendDistance: 0
     extendBounds: 0
     blendCornerPoints: []
@@ -2243,11 +4288,14 @@ MonoBehaviour:
     sidewalkRightConnectionVecInts: aa010000b6010000c2010000ce010000da010000
     doConnectionTri: 
     outerVecInts: 
+    outerVecs: []
     rotationPriority: 0
     centerPointAngle: 1000
     connectedRoad: {fileID: 0}
     connectedMarker: -1
     connectedRoadGO: {fileID: 0}
+    connectedRoadID: 0
+    connectedRoadControlPoint: {x: 0, y: 0, z: 0}
     includeLeftSidewalk: 1
     includeRightSidewalk: 1
     roadMaterial: {fileID: 2100000, guid: f182e2714eb8a714a99ed091081ce16c, type: 2}
@@ -2259,12 +4307,22 @@ MonoBehaviour:
     rightIndent: 17
     leftSurrounding: 52
     rightSurrounding: 51
+    leftRoadIndent: 0
+    rightRoadIndent: 0
+    leftRoadSurrounding: 0
+    rightRoadSurrounding: 0
     leftIndentV3: {x: -15.109068, y: 0, z: -3.8998585}
     leftSurroundingV3: {x: -19.982178, y: -0.74, z: -0.27496338}
     rightIndentV3: {x: -4.8408566, y: 0, z: -14.834385}
     rightSurroundingV3: {x: -1.5291138, y: -0.74, z: -19.925476}
     leftRoadpoint: {x: 0, y: 0, z: 0}
     rightRoadpoint: {x: 0, y: 0, z: 0}
+    leftRoundingPoints: []
+    rightRoundingPoints: []
+    leftRoundingPointsGlobal: []
+    rightRoundingPointsGlobal: []
+    leftInnerIndentPoints: []
+    rightInnerIndentPoints: []
     leftCornerInt: -1
     rightCornerInt: -1
     leftIndentInt: 0
@@ -2277,15 +4335,241 @@ MonoBehaviour:
     additionalIndentDistance: 0
     connectionAngle: 226.79997
     alignmentHandleVecRotationGizmo: {x: -7.654167, y: 0, z: -7.187748}
+    inwards: 0
     roadType: 1
+    rt:
+      roadTypeName: 
+      id: 0
+      timestamp: 0
+      roadWidth: 0
+      advancedWidthSettings: 0
+      faceDistance: 0
+      angleTreshold: 0
+      uvTiling: 0
+      uv4Type: 0
+      type: 0
+      detailDistance: 0
+      planarUVs: 0
+      outerIndent: 0
+      roadShapeDataActive: 0
+      roadShapeData:
+        nodes: []
+        hardEdge: 
+        priorityNodeIndexLeft: 0
+        priorityNodeIndexRight: 0
+        nodesV3: []
+        lanes: []
+        leftLanes: 0
+        rightLanes: 0
+        symmetrical: 0
+        leftSidewalkOffset: 0
+        rightSidewalkOffset: 0
+        outerLaneMarkingLeftIndex: 0
+        includeOuterlaneLeftInShape: 0
+        includeOuterlaneRightInShape: 0
+        outerLaneMarkingRightIndex: 0
+        outerOuterLaneMarkingLeftIndex: 0
+        outerOuterLaneMarkingRightIndex: 0
+        selectedNode: 0
+        selectedLaneNode: 0
+        isSymmetrical: 0
+        isset: 0
+      excludeFromTrafficAI: 0
+      minSpeed: 0
+      maxSpeed: 0
+      speedLimit: 0
+      speedLimitConnections: 0
+      roadShape: []
+      roadShapeExt: []
+      roadShapeExt2: []
+      doConnectionTri: 
+      doConnectionTriExt: 
+      roadShapeUVs: []
+      roadShapeExtUVs: []
+      roadShapeExtUVs2: []
+      roadShapeUVs2: []
+      preserveUVs: 0
+      hardEdge: 
+      roadShapeVecsString: 
+      defaultSidewalk: 0
+      sidewalks: 0
+      sidewalkHeight: 0
+      sidewalkWidth: 0
+      crosswalks: 0
+      crosswalkIntervals: 0
+      crosswalksIntersections: 0
+      crosswalkPrefab: {fileID: 0}
+      crosswalkHeightOffset: 0
+      crosswalkType: 0
+      crosswalkDecal: {fileID: 0}
+      roadMaterial: {fileID: 0}
+      roadMaterials: []
+      roadPhysicsMaterial: {fileID: 0}
+      roadPhysicsMaterials: []
+      connectionMaterial: {fileID: 0}
+      isSideObject: 0
+      isCustomRoad: 0
+      subSegments: 0
+      soData: []
+      soDataExt: []
+      soDataLog: []
+      layer: 0
+      isStatic: 0
+      tag: 
+      renderingLayerMask: 0
+      splatMapActive: 0
+      splatIndex: 0
+      expandLevel: 0
+      smoothLevel: 0
+      splatOpacity: 0
+      followTerrainContours: 0
+      terrainContoursOffset: 0
+      terrainDeformation: 0
+      defaultIndent: 0
+      defaultSurrounding: 0
+      maxRoadheight: 0
+      maxTerrainHeightOffset: 0
+      minTerrainHeightDistance: 0
+      maxTerrainHeightDistance: 0
+      castShadow: 0
+      randomnessFlag: 0
+      randomYPosition: 0
+      randomMinYPosition: 0
+      randomMaxYPosition: 0
+      minRandomYPositionDistance: 0
+      maxRandomYPositionDistance: 0
+      randomMinRotation: 0
+      randomMaxRotation: 0
+      minRandomRotationDistance: 0
+      maxRandomRotationDistance: 0
+      vegetationStudioMaskLineActive: 0
+      vegetationStudioGrassPerimeter: 0
+      vegetationStudioPlantPerimeter: 0
+      vegetationStudioTreePerimeter: 0
+      vegetationStudioObjectPerimeter: 0
+      vegetationStudioLargeObjectPerimeter: 0
+      vegetationStudioBiomeMaskActive: 0
+      vegetationStudioBiomeMaskDistance: 0
+      vegetationStudioBiomeMaskBlendDistance: 0
+      vegetationStudioBiomeMaskNoiseScale: 0
+      decalPresets: []
+      decalClassPresets: []
+      defaultRamp: 0
+      extrusionType: 0
+      extrusionDistance: 0
+      fixedDistance: 0
+      connectionAngle: 0
+      connectionRadius: 0
+      oneWay: 0
+      cornerRadiusMainRoad: 0
+      cornerSementsMainRoad: 0
+      cornerRadiusSecondaryRoad: 0
+      cornerRadiusSecondaryCurvature: 0
+      cornerSementsSecondaryRoad: 0
+      mainRoadsOnly: 0
+      isRoadShape: 0
+      controlType: 0
+      vertexColor: {r: 0, g: 0, b: 0, a: 0}
+      trafficPosts: []
+      activeTrafficPostIndex: 0
+      showTrafficPosts: 0
+      materialCreator: 0
+      synchRoadWidth: 0
+      totalLanes: 0
+      laneWidth: 0
+      shoulderWidthLeft: 0
+      shoulderWidthRight: 0
+      leftLineMarkingWidth: 0
+      rightLineMarkingWidth: 0
+      leftLineMarkingColor: {r: 0, g: 0, b: 0, a: 0}
+      rightLineMarkingColor: {r: 0, g: 0, b: 0, a: 0}
+      leftLineMarkingStyle: 0
+      rightLineMarkingStyle: 0
+      leftLineMarkingSize: 0
+      rightLineMarkingSize: 0
+      leftLineMarkingInterval: 0
+      rightLineMarkingInterval: 0
+      laneMarkingStyle: 0
+      LaneMarkingColor: {r: 0, g: 0, b: 0, a: 0}
+      laneMarkingWidth: 0
+      laneMarkingSize: 0
+      laneMarkingInterval: 0
+      medianIsland: 0
+      medianWidth: 0
+      medianLineMarkingStyle: 0
+      medianLineMarkingWidth: 0
+      medianLineMarkingSize: 0
+      medianLineMarkingInterval: 0
+      medianLineMarkingSpace: 0
+      medianLeftLineMarkingColor: {r: 0, g: 0, b: 0, a: 0}
+      medianRightLineMarkingColor: {r: 0, g: 0, b: 0, a: 0}
+      materialType: 0
+      baseTexture: {fileID: 0}
+      baseTextureMask: {fileID: 0}
+      baseTextureSize: 0
+      baseTexture2: {fileID: 0}
+      normalMap: {fileID: 0}
+      pbrTexture: {fileID: 0}
+      pbrLaneStrength: 0
+      pbrCurveStrength: 0
+      noiseTexture: {fileID: 0}
+      noiseTexture2: {fileID: 0}
+      linesTexture: {fileID: 0}
+      linesTextureSize: 0
+      linesNormalMapBlend: 0
+      normalMapScale: 0
+      metallicScale: 0
+      smoothnessScale: 0
+      aoScale: 0
+      lineMaskQuality: 0
+      dynMapsUpdated: 0
+      roadEdgeMapping: 0
+      baseUVs: []
+      leftEdgeUVs: []
+      leftEdgeWidth: 0
+      rightEdgeUVs: []
+      rightEdgeWidth: 0
+      laneNoiseControl: 0
+      mirrorLaneNoiseOnShoulder: 0
+      noiseMaps: []
+      noiseMap: {fileID: 0}
+      noiseBaseMapTiling: 0
+      noiseMapTiling: 0
+      bakeLinePBR: 0
+      shoulderOffset: 0
     roadTypeTimestamp: 1541537165.16953
-  - centerPoint: {x: -9.9749775, y: 0, z: 9.3671055}
+    leftCorner: {x: 0, y: 0, z: 0}
+    rightCorner: {x: 0, y: 0, z: 0}
+    direction: {x: 0, y: 0, z: 0}
+    centerCornerDirectionLeft: {x: 0, y: 0, z: 0}
+    centerCornerDirectionRight: {x: 0, y: 0, z: 0}
+    leftAngle: 0
+    rightAngle: 0
+    triangulateLeft: 1
+    triangulateRight: 1
+    laneData:
+      points: []
+      connectors: []
+      laneType:
+        position: 0
+        direction: 0
+        turnDirection: 0
+        TurnOptions: 0
+        laneIndex: 0
+      laneIndex: 0
+      direction: 0
+  - connectionHandleObject: {fileID: 0}
+    isHandleActive: 1
+    connectionPosition: 0
+    centerPoint: {x: -9.9749775, y: 0, z: 9.3671055}
     tmpCenterPoint: {x: -9.9749775, y: 0, z: 9.3671055}
     stageCenterPoint: {x: 0, y: 0, z: 0}
     tmpStageCenterPoint: {x: 0, y: 0, z: 0}
     blendData: []
     controlPointV3: {x: -7.654178, y: 0, z: 7.1877365}
     controlPoint: {x: 0, y: 0}
+    endSplinePoint: {x: 0, y: 0, z: 0}
+    endControlPoint: {x: 0, y: 0, z: 0}
     blendDistance: 0
     extendBounds: 0
     blendCornerPoints: []
@@ -2339,11 +4623,14 @@ MonoBehaviour:
     sidewalkRightConnectionVecInts: 1d02000028020000330200003e02000049020000
     doConnectionTri: 
     outerVecInts: 
+    outerVecs: []
     rotationPriority: 0
     centerPointAngle: 1000
     connectedRoad: {fileID: 0}
     connectedMarker: -1
     connectedRoadGO: {fileID: 0}
+    connectedRoadID: 0
+    connectedRoadControlPoint: {x: 0, y: 0, z: 0}
     includeLeftSidewalk: 1
     includeRightSidewalk: 1
     roadMaterial: {fileID: 2100000, guid: f182e2714eb8a714a99ed091081ce16c, type: 2}
@@ -2355,12 +4642,22 @@ MonoBehaviour:
     rightIndent: 25
     leftSurrounding: 60
     rightSurrounding: 59
+    leftRoadIndent: 0
+    rightRoadIndent: 0
+    leftRoadSurrounding: 0
+    rightRoadSurrounding: 0
     leftIndentV3: {x: -4.8408804, y: 0, z: 14.834375}
     leftSurroundingV3: {x: -1.5291443, y: -0.74, z: 19.925476}
     rightIndentV3: {x: -15.109076, y: 0, z: 3.8998353}
     rightSurroundingV3: {x: -19.982178, y: -0.74, z: 0.27496338}
     leftRoadpoint: {x: 0, y: 0, z: 0}
     rightRoadpoint: {x: 0, y: 0, z: 0}
+    leftRoundingPoints: []
+    rightRoundingPoints: []
+    leftRoundingPointsGlobal: []
+    rightRoundingPointsGlobal: []
+    leftInnerIndentPoints: []
+    rightInnerIndentPoints: []
     leftCornerInt: -1
     rightCornerInt: -1
     leftIndentInt: 0
@@ -2373,15 +4670,241 @@ MonoBehaviour:
     additionalIndentDistance: 0
     connectionAngle: 313.19995
     alignmentHandleVecRotationGizmo: {x: -7.654178, y: 0, z: 7.1877365}
+    inwards: 0
     roadType: 1
+    rt:
+      roadTypeName: 
+      id: 0
+      timestamp: 0
+      roadWidth: 0
+      advancedWidthSettings: 0
+      faceDistance: 0
+      angleTreshold: 0
+      uvTiling: 0
+      uv4Type: 0
+      type: 0
+      detailDistance: 0
+      planarUVs: 0
+      outerIndent: 0
+      roadShapeDataActive: 0
+      roadShapeData:
+        nodes: []
+        hardEdge: 
+        priorityNodeIndexLeft: 0
+        priorityNodeIndexRight: 0
+        nodesV3: []
+        lanes: []
+        leftLanes: 0
+        rightLanes: 0
+        symmetrical: 0
+        leftSidewalkOffset: 0
+        rightSidewalkOffset: 0
+        outerLaneMarkingLeftIndex: 0
+        includeOuterlaneLeftInShape: 0
+        includeOuterlaneRightInShape: 0
+        outerLaneMarkingRightIndex: 0
+        outerOuterLaneMarkingLeftIndex: 0
+        outerOuterLaneMarkingRightIndex: 0
+        selectedNode: 0
+        selectedLaneNode: 0
+        isSymmetrical: 0
+        isset: 0
+      excludeFromTrafficAI: 0
+      minSpeed: 0
+      maxSpeed: 0
+      speedLimit: 0
+      speedLimitConnections: 0
+      roadShape: []
+      roadShapeExt: []
+      roadShapeExt2: []
+      doConnectionTri: 
+      doConnectionTriExt: 
+      roadShapeUVs: []
+      roadShapeExtUVs: []
+      roadShapeExtUVs2: []
+      roadShapeUVs2: []
+      preserveUVs: 0
+      hardEdge: 
+      roadShapeVecsString: 
+      defaultSidewalk: 0
+      sidewalks: 0
+      sidewalkHeight: 0
+      sidewalkWidth: 0
+      crosswalks: 0
+      crosswalkIntervals: 0
+      crosswalksIntersections: 0
+      crosswalkPrefab: {fileID: 0}
+      crosswalkHeightOffset: 0
+      crosswalkType: 0
+      crosswalkDecal: {fileID: 0}
+      roadMaterial: {fileID: 0}
+      roadMaterials: []
+      roadPhysicsMaterial: {fileID: 0}
+      roadPhysicsMaterials: []
+      connectionMaterial: {fileID: 0}
+      isSideObject: 0
+      isCustomRoad: 0
+      subSegments: 0
+      soData: []
+      soDataExt: []
+      soDataLog: []
+      layer: 0
+      isStatic: 0
+      tag: 
+      renderingLayerMask: 0
+      splatMapActive: 0
+      splatIndex: 0
+      expandLevel: 0
+      smoothLevel: 0
+      splatOpacity: 0
+      followTerrainContours: 0
+      terrainContoursOffset: 0
+      terrainDeformation: 0
+      defaultIndent: 0
+      defaultSurrounding: 0
+      maxRoadheight: 0
+      maxTerrainHeightOffset: 0
+      minTerrainHeightDistance: 0
+      maxTerrainHeightDistance: 0
+      castShadow: 0
+      randomnessFlag: 0
+      randomYPosition: 0
+      randomMinYPosition: 0
+      randomMaxYPosition: 0
+      minRandomYPositionDistance: 0
+      maxRandomYPositionDistance: 0
+      randomMinRotation: 0
+      randomMaxRotation: 0
+      minRandomRotationDistance: 0
+      maxRandomRotationDistance: 0
+      vegetationStudioMaskLineActive: 0
+      vegetationStudioGrassPerimeter: 0
+      vegetationStudioPlantPerimeter: 0
+      vegetationStudioTreePerimeter: 0
+      vegetationStudioObjectPerimeter: 0
+      vegetationStudioLargeObjectPerimeter: 0
+      vegetationStudioBiomeMaskActive: 0
+      vegetationStudioBiomeMaskDistance: 0
+      vegetationStudioBiomeMaskBlendDistance: 0
+      vegetationStudioBiomeMaskNoiseScale: 0
+      decalPresets: []
+      decalClassPresets: []
+      defaultRamp: 0
+      extrusionType: 0
+      extrusionDistance: 0
+      fixedDistance: 0
+      connectionAngle: 0
+      connectionRadius: 0
+      oneWay: 0
+      cornerRadiusMainRoad: 0
+      cornerSementsMainRoad: 0
+      cornerRadiusSecondaryRoad: 0
+      cornerRadiusSecondaryCurvature: 0
+      cornerSementsSecondaryRoad: 0
+      mainRoadsOnly: 0
+      isRoadShape: 0
+      controlType: 0
+      vertexColor: {r: 0, g: 0, b: 0, a: 0}
+      trafficPosts: []
+      activeTrafficPostIndex: 0
+      showTrafficPosts: 0
+      materialCreator: 0
+      synchRoadWidth: 0
+      totalLanes: 0
+      laneWidth: 0
+      shoulderWidthLeft: 0
+      shoulderWidthRight: 0
+      leftLineMarkingWidth: 0
+      rightLineMarkingWidth: 0
+      leftLineMarkingColor: {r: 0, g: 0, b: 0, a: 0}
+      rightLineMarkingColor: {r: 0, g: 0, b: 0, a: 0}
+      leftLineMarkingStyle: 0
+      rightLineMarkingStyle: 0
+      leftLineMarkingSize: 0
+      rightLineMarkingSize: 0
+      leftLineMarkingInterval: 0
+      rightLineMarkingInterval: 0
+      laneMarkingStyle: 0
+      LaneMarkingColor: {r: 0, g: 0, b: 0, a: 0}
+      laneMarkingWidth: 0
+      laneMarkingSize: 0
+      laneMarkingInterval: 0
+      medianIsland: 0
+      medianWidth: 0
+      medianLineMarkingStyle: 0
+      medianLineMarkingWidth: 0
+      medianLineMarkingSize: 0
+      medianLineMarkingInterval: 0
+      medianLineMarkingSpace: 0
+      medianLeftLineMarkingColor: {r: 0, g: 0, b: 0, a: 0}
+      medianRightLineMarkingColor: {r: 0, g: 0, b: 0, a: 0}
+      materialType: 0
+      baseTexture: {fileID: 0}
+      baseTextureMask: {fileID: 0}
+      baseTextureSize: 0
+      baseTexture2: {fileID: 0}
+      normalMap: {fileID: 0}
+      pbrTexture: {fileID: 0}
+      pbrLaneStrength: 0
+      pbrCurveStrength: 0
+      noiseTexture: {fileID: 0}
+      noiseTexture2: {fileID: 0}
+      linesTexture: {fileID: 0}
+      linesTextureSize: 0
+      linesNormalMapBlend: 0
+      normalMapScale: 0
+      metallicScale: 0
+      smoothnessScale: 0
+      aoScale: 0
+      lineMaskQuality: 0
+      dynMapsUpdated: 0
+      roadEdgeMapping: 0
+      baseUVs: []
+      leftEdgeUVs: []
+      leftEdgeWidth: 0
+      rightEdgeUVs: []
+      rightEdgeWidth: 0
+      laneNoiseControl: 0
+      mirrorLaneNoiseOnShoulder: 0
+      noiseMaps: []
+      noiseMap: {fileID: 0}
+      noiseBaseMapTiling: 0
+      noiseMapTiling: 0
+      bakeLinePBR: 0
+      shoulderOffset: 0
     roadTypeTimestamp: 1541537165.16953
-  - centerPoint: {x: 9.97497, y: 0, z: 9.367115}
+    leftCorner: {x: 0, y: 0, z: 0}
+    rightCorner: {x: 0, y: 0, z: 0}
+    direction: {x: 0, y: 0, z: 0}
+    centerCornerDirectionLeft: {x: 0, y: 0, z: 0}
+    centerCornerDirectionRight: {x: 0, y: 0, z: 0}
+    leftAngle: 0
+    rightAngle: 0
+    triangulateLeft: 1
+    triangulateRight: 1
+    laneData:
+      points: []
+      connectors: []
+      laneType:
+        position: 0
+        direction: 0
+        turnDirection: 0
+        TurnOptions: 0
+        laneIndex: 0
+      laneIndex: 0
+      direction: 0
+  - connectionHandleObject: {fileID: 0}
+    isHandleActive: 1
+    connectionPosition: 0
+    centerPoint: {x: 9.97497, y: 0, z: 9.367115}
     tmpCenterPoint: {x: 9.97497, y: 0, z: 9.367115}
     stageCenterPoint: {x: 0, y: 0, z: 0}
     tmpStageCenterPoint: {x: 0, y: 0, z: 0}
     blendData: []
     controlPointV3: {x: 7.654173, y: 0, z: 7.1877418}
     controlPoint: {x: 0, y: 0}
+    endSplinePoint: {x: 0, y: 0, z: 0}
+    endControlPoint: {x: 0, y: 0, z: 0}
     blendDistance: 0
     extendBounds: 0
     blendCornerPoints: []
@@ -2435,11 +4958,14 @@ MonoBehaviour:
     sidewalkRightConnectionVecInts: 8b02000097020000a3020000af020000bb020000
     doConnectionTri: 
     outerVecInts: 
+    outerVecs: []
     rotationPriority: 0
     centerPointAngle: 1000
     connectedRoad: {fileID: 0}
     connectedMarker: -1
     connectedRoadGO: {fileID: 0}
+    connectedRoadID: 0
+    connectedRoadControlPoint: {x: 0, y: 0, z: 0}
     includeLeftSidewalk: 1
     includeRightSidewalk: 1
     roadMaterial: {fileID: 2100000, guid: f182e2714eb8a714a99ed091081ce16c, type: 2}
@@ -2451,12 +4977,22 @@ MonoBehaviour:
     rightIndent: 34
     leftSurrounding: 35
     rightSurrounding: 68
+    leftRoadIndent: 0
+    rightRoadIndent: 0
+    leftRoadSurrounding: 0
+    rightRoadSurrounding: 0
     leftIndentV3: {x: 15.109073, y: 0, z: 3.8998494}
     leftSurroundingV3: {x: 19.982178, y: -0.74, z: 0.27496338}
     rightIndentV3: {x: 4.840869, y: 0, z: 14.834381}
     rightSurroundingV3: {x: 1.5291138, y: -0.74, z: 19.925476}
     leftRoadpoint: {x: 0, y: 0, z: 0}
     rightRoadpoint: {x: 0, y: 0, z: 0}
+    leftRoundingPoints: []
+    rightRoundingPoints: []
+    leftRoundingPointsGlobal: []
+    rightRoundingPointsGlobal: []
+    leftInnerIndentPoints: []
+    rightInnerIndentPoints: []
     leftCornerInt: -1
     rightCornerInt: -1
     leftIndentInt: 0
@@ -2469,8 +5005,229 @@ MonoBehaviour:
     additionalIndentDistance: 0
     connectionAngle: 46.800022
     alignmentHandleVecRotationGizmo: {x: 7.654173, y: 0, z: 7.1877418}
+    inwards: 0
     roadType: 1
+    rt:
+      roadTypeName: 
+      id: 0
+      timestamp: 0
+      roadWidth: 0
+      advancedWidthSettings: 0
+      faceDistance: 0
+      angleTreshold: 0
+      uvTiling: 0
+      uv4Type: 0
+      type: 0
+      detailDistance: 0
+      planarUVs: 0
+      outerIndent: 0
+      roadShapeDataActive: 0
+      roadShapeData:
+        nodes: []
+        hardEdge: 
+        priorityNodeIndexLeft: 0
+        priorityNodeIndexRight: 0
+        nodesV3: []
+        lanes: []
+        leftLanes: 0
+        rightLanes: 0
+        symmetrical: 0
+        leftSidewalkOffset: 0
+        rightSidewalkOffset: 0
+        outerLaneMarkingLeftIndex: 0
+        includeOuterlaneLeftInShape: 0
+        includeOuterlaneRightInShape: 0
+        outerLaneMarkingRightIndex: 0
+        outerOuterLaneMarkingLeftIndex: 0
+        outerOuterLaneMarkingRightIndex: 0
+        selectedNode: 0
+        selectedLaneNode: 0
+        isSymmetrical: 0
+        isset: 0
+      excludeFromTrafficAI: 0
+      minSpeed: 0
+      maxSpeed: 0
+      speedLimit: 0
+      speedLimitConnections: 0
+      roadShape: []
+      roadShapeExt: []
+      roadShapeExt2: []
+      doConnectionTri: 
+      doConnectionTriExt: 
+      roadShapeUVs: []
+      roadShapeExtUVs: []
+      roadShapeExtUVs2: []
+      roadShapeUVs2: []
+      preserveUVs: 0
+      hardEdge: 
+      roadShapeVecsString: 
+      defaultSidewalk: 0
+      sidewalks: 0
+      sidewalkHeight: 0
+      sidewalkWidth: 0
+      crosswalks: 0
+      crosswalkIntervals: 0
+      crosswalksIntersections: 0
+      crosswalkPrefab: {fileID: 0}
+      crosswalkHeightOffset: 0
+      crosswalkType: 0
+      crosswalkDecal: {fileID: 0}
+      roadMaterial: {fileID: 0}
+      roadMaterials: []
+      roadPhysicsMaterial: {fileID: 0}
+      roadPhysicsMaterials: []
+      connectionMaterial: {fileID: 0}
+      isSideObject: 0
+      isCustomRoad: 0
+      subSegments: 0
+      soData: []
+      soDataExt: []
+      soDataLog: []
+      layer: 0
+      isStatic: 0
+      tag: 
+      renderingLayerMask: 0
+      splatMapActive: 0
+      splatIndex: 0
+      expandLevel: 0
+      smoothLevel: 0
+      splatOpacity: 0
+      followTerrainContours: 0
+      terrainContoursOffset: 0
+      terrainDeformation: 0
+      defaultIndent: 0
+      defaultSurrounding: 0
+      maxRoadheight: 0
+      maxTerrainHeightOffset: 0
+      minTerrainHeightDistance: 0
+      maxTerrainHeightDistance: 0
+      castShadow: 0
+      randomnessFlag: 0
+      randomYPosition: 0
+      randomMinYPosition: 0
+      randomMaxYPosition: 0
+      minRandomYPositionDistance: 0
+      maxRandomYPositionDistance: 0
+      randomMinRotation: 0
+      randomMaxRotation: 0
+      minRandomRotationDistance: 0
+      maxRandomRotationDistance: 0
+      vegetationStudioMaskLineActive: 0
+      vegetationStudioGrassPerimeter: 0
+      vegetationStudioPlantPerimeter: 0
+      vegetationStudioTreePerimeter: 0
+      vegetationStudioObjectPerimeter: 0
+      vegetationStudioLargeObjectPerimeter: 0
+      vegetationStudioBiomeMaskActive: 0
+      vegetationStudioBiomeMaskDistance: 0
+      vegetationStudioBiomeMaskBlendDistance: 0
+      vegetationStudioBiomeMaskNoiseScale: 0
+      decalPresets: []
+      decalClassPresets: []
+      defaultRamp: 0
+      extrusionType: 0
+      extrusionDistance: 0
+      fixedDistance: 0
+      connectionAngle: 0
+      connectionRadius: 0
+      oneWay: 0
+      cornerRadiusMainRoad: 0
+      cornerSementsMainRoad: 0
+      cornerRadiusSecondaryRoad: 0
+      cornerRadiusSecondaryCurvature: 0
+      cornerSementsSecondaryRoad: 0
+      mainRoadsOnly: 0
+      isRoadShape: 0
+      controlType: 0
+      vertexColor: {r: 0, g: 0, b: 0, a: 0}
+      trafficPosts: []
+      activeTrafficPostIndex: 0
+      showTrafficPosts: 0
+      materialCreator: 0
+      synchRoadWidth: 0
+      totalLanes: 0
+      laneWidth: 0
+      shoulderWidthLeft: 0
+      shoulderWidthRight: 0
+      leftLineMarkingWidth: 0
+      rightLineMarkingWidth: 0
+      leftLineMarkingColor: {r: 0, g: 0, b: 0, a: 0}
+      rightLineMarkingColor: {r: 0, g: 0, b: 0, a: 0}
+      leftLineMarkingStyle: 0
+      rightLineMarkingStyle: 0
+      leftLineMarkingSize: 0
+      rightLineMarkingSize: 0
+      leftLineMarkingInterval: 0
+      rightLineMarkingInterval: 0
+      laneMarkingStyle: 0
+      LaneMarkingColor: {r: 0, g: 0, b: 0, a: 0}
+      laneMarkingWidth: 0
+      laneMarkingSize: 0
+      laneMarkingInterval: 0
+      medianIsland: 0
+      medianWidth: 0
+      medianLineMarkingStyle: 0
+      medianLineMarkingWidth: 0
+      medianLineMarkingSize: 0
+      medianLineMarkingInterval: 0
+      medianLineMarkingSpace: 0
+      medianLeftLineMarkingColor: {r: 0, g: 0, b: 0, a: 0}
+      medianRightLineMarkingColor: {r: 0, g: 0, b: 0, a: 0}
+      materialType: 0
+      baseTexture: {fileID: 0}
+      baseTextureMask: {fileID: 0}
+      baseTextureSize: 0
+      baseTexture2: {fileID: 0}
+      normalMap: {fileID: 0}
+      pbrTexture: {fileID: 0}
+      pbrLaneStrength: 0
+      pbrCurveStrength: 0
+      noiseTexture: {fileID: 0}
+      noiseTexture2: {fileID: 0}
+      linesTexture: {fileID: 0}
+      linesTextureSize: 0
+      linesNormalMapBlend: 0
+      normalMapScale: 0
+      metallicScale: 0
+      smoothnessScale: 0
+      aoScale: 0
+      lineMaskQuality: 0
+      dynMapsUpdated: 0
+      roadEdgeMapping: 0
+      baseUVs: []
+      leftEdgeUVs: []
+      leftEdgeWidth: 0
+      rightEdgeUVs: []
+      rightEdgeWidth: 0
+      laneNoiseControl: 0
+      mirrorLaneNoiseOnShoulder: 0
+      noiseMaps: []
+      noiseMap: {fileID: 0}
+      noiseBaseMapTiling: 0
+      noiseMapTiling: 0
+      bakeLinePBR: 0
+      shoulderOffset: 0
     roadTypeTimestamp: 1541537165.16953
+    leftCorner: {x: 0, y: 0, z: 0}
+    rightCorner: {x: 0, y: 0, z: 0}
+    direction: {x: 0, y: 0, z: 0}
+    centerCornerDirectionLeft: {x: 0, y: 0, z: 0}
+    centerCornerDirectionRight: {x: 0, y: 0, z: 0}
+    leftAngle: 0
+    rightAngle: 0
+    triangulateLeft: 1
+    triangulateRight: 1
+    laneData:
+      points: []
+      connectors: []
+      laneType:
+        position: 0
+        direction: 0
+        turnDirection: 0
+        TurnOptions: 0
+        laneIndex: 0
+      laneIndex: 0
+      direction: 0
   sidewalkControlElements:
   - crossingElementLeftIndex: 3
     crossingElementRightIndex: 0
@@ -2601,6 +5358,9 @@ MonoBehaviour:
     innerSegmentDistance: 0.5
     startAngle: 0
   siblings: []
+  orderedSiblings: []
+  priorityRoads: []
+  turnSWAroundCornerThreshold: 5
   meshVecs:
   - {x: 10.5, y: 0, z: 0}
   - {x: 8, y: 0, z: 0}
@@ -5455,6 +8215,7 @@ MonoBehaviour:
   surfaceVecType: 
   surfaceConnectionInt: 
   tCrossingBlendData: []
+  childObjects: []
   indentVecs: []
   sourcePrefab: {fileID: 1095871287244456}
   prefabId: 52
@@ -5473,9 +8234,11 @@ MonoBehaviour:
   deformTerrain: 1
   isRoundabout: 1
   isERCrossing: 0
+  isERCrossingExt: 0
   isYConnector: 0
   isIConnector: 0
   isFlexConnector: 0
+  priorityRoadCount: 0
   isSnapConnector: 0
   isExitRoadConnector: 0
   prefabCenterDummy: {x: 0, y: 0, z: 0}
@@ -5483,6 +8246,7 @@ MonoBehaviour:
   roundaboutScript: {fileID: 114093988959581162}
   crossingsScript: {fileID: 0}
   iConnectorScript: {fileID: 0}
+  isTerrainEdgeConnector: 0
   isCustomPrefab: 0
   customPrefabVersion: 0
   recalculateNormals: 0
@@ -5654,6 +8418,7 @@ MonoBehaviour:
   topRightSidewalkWidth: 0
   topRightSidewalkOuterOffset: 0
   topRightSidewalkCurbDepth: 0
+  v32Sidewalks: 1
   testVec: {x: 0, y: 0, z: 0}
   surfaceSurroundingInts: 230000002400000025000000260000002700000028000000290000002a0000002b0000002c0000002d0000002e0000002f000000300000003100000032000000330000003400000035000000360000003700000038000000390000003a0000003b0000003c0000003d0000003e0000003f0000004000000041000000420000004300000044000000
   rotationPriorityElement: -1
@@ -5691,6 +8456,10 @@ MonoBehaviour:
   extraIndentMargin: 0
   indent: 0
   surrounding: 0
+  customTriangulation: 0
+  roundingPointsSet: 0
+  signPostsSet: 0
+  displayLaneData: 1
 --- !u!23 &23758723269172664
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5702,9 +8471,17 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -5718,6 +8495,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -5727,9 +8505,12 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!33 &33645710751335618
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -5746,11 +8527,19 @@ MeshCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1095871287244456}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 5
   m_Convex: 0
-  m_CookingOptions: 14
+  m_CookingOptions: 30
   m_Mesh: {fileID: 0}
 --- !u!1 &1202700207338538
 GameObject:
@@ -5779,12 +8568,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1202700207338538}
+  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4715120521428944}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &33086354829564396
 MeshFilter:
@@ -5805,9 +8595,17 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -5819,6 +8617,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -5828,9 +8627,12 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!64 &64025893730315574
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -5839,11 +8641,19 @@ MeshCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1202700207338538}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 0
-  serializedVersion: 3
+  serializedVersion: 5
   m_Convex: 0
-  m_CookingOptions: 14
+  m_CookingOptions: 30
   m_Mesh: {fileID: 0}
 --- !u!114 &114958421352689456
 MonoBehaviour:

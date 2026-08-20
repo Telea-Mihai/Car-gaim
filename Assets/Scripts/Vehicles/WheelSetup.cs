@@ -19,16 +19,23 @@ public class WheelSetup : MonoBehaviour
     public float TCMinTorque = 0.4f;        // never cut below this — keeps drift momentum alive
     public float TCReleaseSpeed = 12f;      // how fast it cuts
     public float TCReapplySpeed = 5f;       // how fast it gives torque back
-
     private float tcModulator = 1f;
+    
     [Header("Forward Friction")] public float ExtremumSlip = 0.4f;
-
     public float ExtremumValue = 1f;
-
     public float AsymptoteSlip = 0.85f;
     public float AsymptoteValue = 0.75f;
 
     public float Stiffness = 1f;
+    
+    [Header("Visual Effects")] public float SmokeThreshold=0.5f;
+    public AudioClip slipSound;
+    public float slipSoundVolumeFactor = 0.5f;
+    public float slipSoundMinPitch;
+    public float slipSoundMaxPitch;
+    public int maxEmissionRate = 200;
+
+    private Rigidbody rb;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -38,7 +45,10 @@ public class WheelSetup : MonoBehaviour
         friction.stiffness = Stiffness;
         friction.asymptoteValue = AsymptoteValue;
         friction.extremumValue = ExtremumValue;
+        
         vehicle = GetComponent<Vehicle>();
+        rb = GetComponent<Rigidbody>();
+        
         foreach (Wheel wheel in vehicle.Wheels)
         {
             wheel.ABSEnabled = ABSEnabled;
@@ -53,6 +63,14 @@ public class WheelSetup : MonoBehaviour
             wheel.TCReleaseSpeed = TCReleaseSpeed;
             wheel.TCReapplySpeed = TCReapplySpeed;
             
+            wheel.SmokeThreshold = SmokeThreshold;
+            wheel.slipSound = slipSound;
+            wheel.maxEmissionRate = maxEmissionRate;
+            wheel.slipSoundVolumeFactor = slipSoundVolumeFactor;
+            wheel.slipSoundMinPitch = slipSoundMinPitch;
+            wheel.slipSoundMaxPitch = slipSoundMaxPitch;
+            
+            wheel.carRB = rb;
             WheelCollider col = wheel.wheelCollider;
             col.forwardFriction = friction;
             

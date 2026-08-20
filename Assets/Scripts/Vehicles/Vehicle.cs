@@ -22,6 +22,14 @@ public class Vehicle : MonoBehaviour
     public int CurrentGear=1;
     public float ReverseGearRatio;
     public float TransmissionEfficency;
+    public float DecoupleSpeed = 10f;
+    
+    [Header("Automatic Gearbox")]
+    public bool AutomaticGearbox;
+    public float downshiftRPM = 4000f;
+    public float upshiftRPM = 6900f;
+    public float shiftDelay = 0.2f;
+    private float shiftTime;
     
     [Header("Braking")]
     public float BrakeTorque;
@@ -41,12 +49,15 @@ public class Vehicle : MonoBehaviour
     public float throttleInput;
     public float brakeInput;
     public float handbrakeInput;
+    public bool forcedBrake=false;
+    
     
     [Header("EngineData")]
     public float engineRPM;
     public float engineTorque;
     
     public Rigidbody rb;
+    private float speed;
     
     // ── Gizmo settings ──────────────────────────────────────────────────────
     [Header("Gizmos")]
@@ -74,15 +85,18 @@ public class Vehicle : MonoBehaviour
 
     private int drivenWheelCount;
     private bool ESCActive;
+    private bool NoDrivenContact = false;
 
     public void IncreaseGear()
     {
+        shiftTime = Time.time;
         if (CurrentGear < GearRatios.Length)
             CurrentGear++;
     }
     
     public void DecreaseGear()
     {
+        shiftTime = Time.time;
         if (CurrentGear > -1)
             CurrentGear--;
     }
@@ -108,13 +122,24 @@ public class Vehicle : MonoBehaviour
     
     void FixedUpdate()
     {
+        speed = rb.linearVelocity.magnitude*3.6f;
         SimulateEngine();
         SimulateDrivetrain();
         SimulateESC();
         ApplyWeightTransfer();
         ApplyDownforce();
+        
         brakeTorque = BrakeTorque * brakeInput;
+        if((NoDrivenContact || speed < DecoupleSpeed )  && throttleInput == 0f)
+            brakeTorque = BrakeTorque;
+            
         steeringAngle = BaseSteeringAngle * steeringInput * SteeringCurve.Evaluate(rb.linearVelocity.magnitude / 80f);
+        
+        if(AutomaticGearbox && Time.time - shiftTime > shiftDelay)
+            if(engineRPM < downshiftRPM && CurrentGear>1)
+                    DecreaseGear();
+            else if (engineRPM > upshiftRPM )
+                IncreaseGear();
     }
     
     void ApplyDownforce()
@@ -136,6 +161,13 @@ public class Vehicle : MonoBehaviour
         UpdateTCCountersteer();
         foreach (Wheel wheel in Wheels)
         {
+            if (forcedBrake)
+            {
+                wheel.BrakeTorque = BrakeTorque;
+                wheel.DrivenTorque = 0f;
+                wheel.HandbrakeTorque = 0f;
+                continue;
+            }
             wheel.SteeringAngle = steeringAngle;
             wheel.BrakeTorque = brakeTorque;
             wheel.DrivenTorque = finalTorque/drivenWheelCount;
@@ -145,23 +177,26 @@ public class Vehicle : MonoBehaviour
 
     void CalculateEngineSpeed()
     {
-        if (CurrentGear == 0)
-        {
-            engineRPM = Mathf.MoveTowards(engineRPM, IdleRPM + throttleInput * MaxRPM, Time.fixedDeltaTime * 3000f);
-            return;
-        }
         float avgWheelRPM = 0f;
         int count = 0;
         foreach (Wheel w in Wheels)
         {
-            if (!w.Driven) continue;
+            if (!w.Driven || !w.wheelCollider.isGrounded) continue;
             avgWheelRPM += Mathf.Abs(w.wheelCollider.rpm); // abs handles reverse
             count++;
+        }
+        
+        NoDrivenContact = count == 0;
+        
+        if (CurrentGear == 0 || NoDrivenContact)
+        {
+            engineRPM = Mathf.MoveTowards(engineRPM, IdleRPM + throttleInput * MaxRPM, Time.fixedDeltaTime * 3000f);
+            return;
         }
         if (count == 0) return;
         avgWheelRPM /= count;
 
-        float gearRatio = CurrentGear == -1 ? ReverseGearRatio : GearRatios[CurrentGear - 1];
+        float gearRatio = CurrentGear == -1 ? -ReverseGearRatio : GearRatios[CurrentGear - 1];
         float wheelDrivenRPM = avgWheelRPM * gearRatio * finalDrive;
         
         engineRPM = Mathf.Lerp(engineRPM, Mathf.Max(IdleRPM, wheelDrivenRPM), Time.fixedDeltaTime * 8f);
@@ -190,6 +225,8 @@ public class Vehicle : MonoBehaviour
             return;
         finalTorque = engineTorque * (CurrentGear == -1 ? ReverseGearRatio : GearRatios[CurrentGear-1]) * finalDrive;
         finalTorque*=TransmissionEfficency;
+        if((NoDrivenContact || speed < DecoupleSpeed ) && throttleInput == 0f) 
+            finalTorque = 0f;
     }
     
     // In Vehicle.cs — pass this into each driven Wheel before SimulateTCS runs
@@ -239,6 +276,20 @@ public class Vehicle : MonoBehaviour
     {
         if (!ShowGizmos) return;
         DrawVehicleGizmos();
+    }
+
+    public void forceHoldStop()
+    {
+        forcedBrake = true;
+        CurrentGear = 0;
+        AutomaticGearbox = false;
+    }
+
+    public void startCar()
+    {
+        forcedBrake = false;
+        CurrentGear = 1;
+        AutomaticGearbox = true;
     }
  
     void DrawVehicleGizmos()

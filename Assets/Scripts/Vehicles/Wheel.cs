@@ -1,4 +1,6 @@
+using System;
 using UnityEngine;
+using System.Collections.Generic;
 
 [RequireComponent(typeof(WheelCollider))]
 public class Wheel : MonoBehaviour
@@ -43,7 +45,21 @@ public class Wheel : MonoBehaviour
     public Quaternion Offset;
     public Vector3 PositionOffset;
 
+    [Header("Visual Effects")] 
+    public float SmokeThreshold=0.5f;
+    public GameObject effectsHolder;
+    public int maxEmissionRate = 200;
+    [Header("Sounds")] public float SlipSoundThreshold = 0.5f;
+    public AudioClip slipSound;
+    public AudioSource slipSoundSource;
+    public float slipSoundVolumeFactor = 0.5f;
+    public float slipSoundMinPitch;
+    public float slipSoundMaxPitch;
+
     public WheelCollider wheelCollider;
+    public Rigidbody carRB;
+    public float lowSpeedThreshold = 10f;
+    private float speed;
     
     // ── Gizmo settings ──────────────────────────────────────────────────────
     [Header("Gizmos")]
@@ -79,9 +95,27 @@ public class Wheel : MonoBehaviour
     // Whether ABS is currently actively intervening (useful to expose to dashboard/sound)
     public bool ABSActive { get; private set; }
 
+    private List<ParticleSystem> effectsWhenSlipping = new List<ParticleSystem>();
+
     void Awake()
     {
         wheelCollider = GetComponent<WheelCollider>();
+        if (effectsHolder)
+        {
+            foreach (ParticleSystem system in effectsHolder.GetComponentsInChildren<ParticleSystem>())
+            {
+                effectsWhenSlipping.Add(system);
+            }
+        }
+
+        slipSoundSource = GetComponent<AudioSource>();
+        if(!slipSoundSource)
+            slipSoundSource = gameObject.AddComponent<AudioSource>();
+        slipSoundSource.Stop();
+        slipSoundSource.loop = true;
+        slipSoundSource.spatialBlend = 1f;
+        if(slipSound)
+            slipSoundSource.clip = slipSound;
     }
 
     void Update()
@@ -90,7 +124,7 @@ public class Wheel : MonoBehaviour
             wheelCollider.motorTorque = (Reversed ? -DrivenTorque : DrivenTorque) * PowerFactor;
 
         if (Steerable)
-            wheelCollider.steerAngle = (InversedSteering ? -SteeringAngle : SteeringAngle) * SteeringFactor;
+            wheelCollider.steerAngle = Mathf.Lerp(wheelCollider.steerAngle,(InversedSteering ? -SteeringAngle : SteeringAngle) * SteeringFactor, 0.4f);
 
         if (Brakeable)
             wheelCollider.brakeTorque = (BrakeTorque * BrakeFactor * absModulator) 
@@ -101,11 +135,19 @@ public class Wheel : MonoBehaviour
             wheelCollider.GetWorldPose(out Vector3 pos, out Quaternion rot);
             WheelModel.transform.position = pos + PositionOffset;
             WheelModel.transform.rotation = rot;
+
+            foreach (ParticleSystem sys in effectsWhenSlipping )
+            {
+                sys.transform.position = pos + PositionOffset;
+            }
         }
+
+        slipSoundAndEffects();
     }
 
     void FixedUpdate()
     {
+        speed = carRB.linearVelocity.magnitude*3.6f;
         if (ABSEnabled && Brakeable)
             SimulateABS();
         if (TCEnabled && Driven)
@@ -177,6 +219,54 @@ public class Wheel : MonoBehaviour
             tcModulator = Mathf.MoveTowards(tcModulator, 1f, Time.fixedDeltaTime * TCReapplySpeed);
             TCActive = slip > TCSlipThreshold * 0.5f;
         }
+    }
+
+    void slipSoundAndEffects()
+    {
+        wheelCollider.GetGroundHit(out WheelHit hit);
+        
+        if (wheelCollider.rpm < 100 && Math.Abs(hit.forwardSlip)<=0.5f && speed < 10f)
+        {
+            if (slipSoundSource.isPlaying)
+                slipSoundSource.Stop();
+            foreach (ParticleSystem system in effectsWhenSlipping)
+                if(system.isPlaying)
+                    system.Stop();
+            return;
+        }
+        
+        float totalSlip =Math.Abs(hit.forwardSlip) + Math.Abs(hit.sidewaysSlip);
+        float t = Mathf.InverseLerp(SmokeThreshold, SmokeThreshold * 2f, totalSlip);
+        t = t * t;
+        foreach (ParticleSystem system in effectsWhenSlipping)
+        {
+            var emission = system.emission;
+
+            float emissionRate = Mathf.Lerp(0f, maxEmissionRate, t);
+            emission.rateOverTime = emissionRate;
+
+            if (!system.isPlaying && totalSlip > SmokeThreshold)
+                system.Play();
+            else if (totalSlip <= SmokeThreshold && system.isPlaying)
+                system.Stop();
+        }
+        t = Mathf.InverseLerp(SlipSoundThreshold, SlipSoundThreshold * 2f, totalSlip);
+        t = t * t;
+        slipSoundSource.volume = Mathf.Lerp(slipSoundSource.volume, slipSoundVolumeFactor * t, t);
+        slipSoundSource.pitch = Mathf.Lerp(slipSoundMinPitch, slipSoundMaxPitch, t);
+
+        if (totalSlip > SlipSoundThreshold)
+        {
+            if (!slipSoundSource.isPlaying)
+                slipSoundSource.Play();
+        }
+        else
+        {
+            if (slipSoundSource.isPlaying)
+                slipSoundSource.Stop();
+        }
+        
+        
     }
     
         // ── Gizmos ──────────────────────────────────────────────────────────────
