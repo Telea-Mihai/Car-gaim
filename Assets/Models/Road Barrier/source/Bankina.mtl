@@ -1,0 +1,45 @@
+# Blender 4.0.2 MTL File: 'Bankina.blend'
+# www.blender.org
+
+newmtl Bankina_Default
+Ka 0.840909 0.840909 0.840909
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 3
+map_Kd Bankina/Stub.tga
+map_Ns Bankina/Stub_RS.tga
+map_refl Bankina/Stub_ML.tga
+
+newmtl surface.Lim_Ograda
+Ns 356.664124
+Ka 0.840909 0.840909 0.840909
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 3
+map_Kd Bankina/Metal_Galvanized_CM.tga
+
+newmtl surface.OgradaLim_Pozadi
+Ns 99.474228
+Ka 0.181818 0.181818 0.181818
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 3
+map_Bump -bm 1.000000 Bankina/Paint_Thick_NM.tga
+
+newmtl surface.Srafovi
+Ns 200.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Bump -bm 6.400000 Bankina/Paint_Thick_NM.tga
