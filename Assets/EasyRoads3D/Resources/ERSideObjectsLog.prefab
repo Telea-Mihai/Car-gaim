@@ -1283,7 +1283,7 @@ MonoBehaviour:
   - version: 2.0.0
     name: RoadBarrier
     id: 1787477282.122668
-    timestamp: 1787477615.268715
+    timestamp: 1787582458.320608
     objectType: 0
     gameobjectGUID: 
     textureGUID: 
@@ -1334,7 +1334,7 @@ MonoBehaviour:
     xPosition: 0
     xPosition2: 0
     relativeTo: 1
-    yPosition: 0
+    yPosition: 0.35
     yRotation: 180
     oldSidwaysDistance: 0
     sidewaysDistanceUpdate: 0
