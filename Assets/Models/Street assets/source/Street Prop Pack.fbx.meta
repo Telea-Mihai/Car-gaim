@@ -3,7 +3,237 @@ guid: c011a35f3405791409f4e216ac7d8992
 ModelImporter:
   serializedVersion: 24501
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Barrel
+    second: {fileID: 2100000, guid: 223868f427822c04bae61685f39d0250, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Barrel_Base
+    second: {fileID: 2100000, guid: acac1efac69e29643bc249bca394d815, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Barrier
+    second: {fileID: 2100000, guid: 90a1410d7828d1a4daa3fe2d855d61b8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Barrier_Metal
+    second: {fileID: 2100000, guid: 5ce74f4474fbab642b4a5a18a41b55b4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Bin
+    second: {fileID: 2100000, guid: 6459125b836bbe241905ea5181454719, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Boards
+    second: {fileID: 2100000, guid: c89b992d67a7d5543bdcfdda8b1d60ac, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cardboard
+    second: {fileID: 2100000, guid: 52d5578a6df995145a02c6b1e86df37e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cardboard2
+    second: {fileID: 2100000, guid: c12829a1df8395840a2533bdc6a39691, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Concrete_Barrier
+    second: {fileID: 2100000, guid: 6560528e46c61a5438c538c92bdd675b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cone
+    second: {fileID: 2100000, guid: 6f198656ee1c7b04198f58cd5ecd6c02, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cone_Base
+    second: {fileID: 2100000, guid: e31a2d0263094f64fad502b24ce364aa, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Hinge
+    second: {fileID: 2100000, guid: d1fedd15faacac84fb4fda4832af1a29, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Hydrant
+    second: {fileID: 2100000, guid: 28d06055e23d1c440b1b6735007279d9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Lid
+    second: {fileID: 2100000, guid: fb8191cb94e47bf46b184edfa91406b4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Metal_Barrier1
+    second: {fileID: 2100000, guid: 5fbdfbe8a25204a46a8d09a17b18f827, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Metal_Barrier1_Damaged
+    second: {fileID: 2100000, guid: e13cd3a6ee56d324a94b05f98773197b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Metal_Barrier2
+    second: {fileID: 2100000, guid: e442bac5ccf880f4fa5dbb6ee67c41a3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Metal_Barrier2_Damaged
+    second: {fileID: 2100000, guid: 1ba3e452a840dfa4594d1b54240860ff, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Sign
+    second: {fileID: 2100000, guid: 404e0012b2a1f6c489ea9ada4729e4c5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Sign2
+    second: {fileID: 2100000, guid: 871bb905078f4204aa5b0a290f9cf89f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Sign_Circle
+    second: {fileID: 2100000, guid: 4d9a1ca6ae9b47342a176ea27ec74e9e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Sign_Pole
+    second: {fileID: 2100000, guid: acc903a7edfd5994ca1bf9fd048bfbb8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Sign_Pole2
+    second: {fileID: 2100000, guid: b40cb9fa5cc94e14788172e68a740ae4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Sign_Pole3
+    second: {fileID: 2100000, guid: a92bff0bada981b4cbd755e3606d2824, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Sign_Pole4
+    second: {fileID: 2100000, guid: 68711fde91df4e24294ffc46216c7575, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Sign_Support
+    second: {fileID: 2100000, guid: 535593bb1781c8549a0e272fea31ec5d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Sign_Support2
+    second: {fileID: 2100000, guid: c9adec5f906186f478f00d9d7e186983, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Sign_Support3
+    second: {fileID: 2100000, guid: 456b7656f7a8c1840bee8b30f30e56f2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Sign_Support4
+    second: {fileID: 2100000, guid: 4d174760e27fbc34084a42bfd7cdcd7b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Stop_Sign
+    second: {fileID: 2100000, guid: d0771f8715ce712408313ee41fb9fdca, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Support_Screws
+    second: {fileID: 2100000, guid: c846b57556f41214cbc4a1a39dcb7799, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Support_Screws2
+    second: {fileID: 2100000, guid: 6f8be757d51244043b857ca96247f29d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Support_Screws3
+    second: {fileID: 2100000, guid: 03dda70a0ec02f3448119bb343141b56, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Support_Screws4
+    second: {fileID: 2100000, guid: c507e026fba967b45b8d23cc89c70c3a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bottle1
+    second: {fileID: 2100000, guid: f47147658d0df7f4fa581f5af23851f1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bottle2
+    second: {fileID: 2100000, guid: 7510fae9973be6245ae93b77cb94d2fe, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cup1
+    second: {fileID: 2100000, guid: 860eece0df9451d4aaf09a5c01b73661, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cup2
+    second: {fileID: 2100000, guid: 81ec0bc8373c9f14dae1e7fefeefa4c2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pole1
+    second: {fileID: 2100000, guid: bf781b9f29955d54a96da2119dd0a92d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pole2
+    second: {fileID: 2100000, guid: 5c9ab90290e80ba4981a7085c3f355f0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: shard
+    second: {fileID: 2100000, guid: e9fdd02fffd58a4468f4544e716d9f5a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: shard2
+    second: {fileID: 2100000, guid: 6c3a81f18de9b114db6834b4a720dd32, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: shard3
+    second: {fileID: 2100000, guid: d8acd55b6316cad40a571677cf9f706f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: shard4
+    second: {fileID: 2100000, guid: cc75ad77c439e784aa01a40d9ad5f2d4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: trash1
+    second: {fileID: 2100000, guid: 10bc7b9dc1dba3c4abd8f6f73acfe2e1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: trash2
+    second: {fileID: 2100000, guid: 96c3eb1225e295846a0590076203a560, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
