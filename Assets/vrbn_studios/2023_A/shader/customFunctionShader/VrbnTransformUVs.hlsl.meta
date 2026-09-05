@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 4f4c9869a21b58e45b2906be0be05d5f
+ShaderIncludeImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 264012
+  packageName: vrbn Studios Free Buildings HDRP Bundle 001
+  packageVersion: 1.0
+  assetPath: Assets/vrbn_studios/2023_A/shader/customFunctionShader/VrbnTransformUVs.hlsl
+  uploadId: 617984

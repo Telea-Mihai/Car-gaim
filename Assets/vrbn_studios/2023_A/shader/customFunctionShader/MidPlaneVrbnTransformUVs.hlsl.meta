@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 0872a827b0d8cb344a6d7b250d5c69d3
+ShaderIncludeImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 264012
+  packageName: vrbn Studios Free Buildings HDRP Bundle 001
+  packageVersion: 1.0
+  assetPath: Assets/vrbn_studios/2023_A/shader/customFunctionShader/MidPlaneVrbnTransformUVs.hlsl
+  uploadId: 617984

@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 7774cf5588c262b4e88ac0d5b881a8df
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 264012
+  packageName: vrbn Studios Free Buildings HDRP Bundle 001
+  packageVersion: 1.0
+  assetPath: Assets/vrbn_studios/2023_A/scripts/EmissionControllerInspector.cs
+  uploadId: 617984

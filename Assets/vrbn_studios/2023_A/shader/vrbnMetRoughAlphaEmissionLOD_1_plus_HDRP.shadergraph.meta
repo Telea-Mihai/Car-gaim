@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: cfe9dc33df075a9469be3cb9c203a6c6
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 625f186215c104763be7675aa2d941aa, type: 3}
+AssetOrigin:
+  serializedVersion: 1
+  productId: 264012
+  packageName: vrbn Studios Free Buildings HDRP Bundle 001
+  packageVersion: 1.0
+  assetPath: Assets/vrbn_studios/2023_A/shader/vrbnMetRoughAlphaEmissionLOD_1_plus_HDRP.shadergraph
+  uploadId: 617984

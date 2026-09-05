@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 9144cec8dd5530c40ad1c9a13da20700
+ShaderIncludeImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 264012
+  packageName: vrbn Studios Free Buildings HDRP Bundle 001
+  packageVersion: 1.0
+  assetPath: Assets/vrbn_studios/2023_A/shader/customFunctionShader/raycastingTangent.hlsl
+  uploadId: 617984
