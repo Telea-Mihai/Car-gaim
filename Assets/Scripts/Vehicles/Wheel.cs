@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.Audio;
 using System.Collections.Generic;
 
 [RequireComponent(typeof(WheelCollider))]
@@ -52,6 +53,7 @@ public class Wheel : MonoBehaviour
     [Header("Sounds")] public float SlipSoundThreshold = 0.5f;
     public AudioClip slipSound;
     public AudioSource slipSoundSource;
+    public AudioMixerGroup audioMixerGroup;
     public float slipSoundVolumeFactor = 0.5f;
     public float slipSoundMinPitch;
     public float slipSoundMaxPitch;
@@ -96,8 +98,9 @@ public class Wheel : MonoBehaviour
     public bool ABSActive { get; private set; }
 
     private List<ParticleSystem> effectsWhenSlipping = new List<ParticleSystem>();
+    [HideInInspector] public bool initialized = false;
 
-    void Awake()
+    public void initWheel()
     {
         wheelCollider = GetComponent<WheelCollider>();
         if (effectsHolder)
@@ -111,15 +114,21 @@ public class Wheel : MonoBehaviour
         slipSoundSource = GetComponent<AudioSource>();
         if(!slipSoundSource)
             slipSoundSource = gameObject.AddComponent<AudioSource>();
+        slipSoundSource.outputAudioMixerGroup =  audioMixerGroup;
         slipSoundSource.Stop();
         slipSoundSource.loop = true;
         slipSoundSource.spatialBlend = 1f;
         if(slipSound)
             slipSoundSource.clip = slipSound;
+
+        initialized = true;
     }
 
     void Update()
     {
+        if(!initialized)
+            return;
+        
         if (Driven)
             wheelCollider.motorTorque = (Reversed ? -DrivenTorque : DrivenTorque) * PowerFactor;
 
@@ -147,6 +156,8 @@ public class Wheel : MonoBehaviour
 
     void FixedUpdate()
     {
+        if(!initialized)
+            return;
         speed = carRB.linearVelocity.magnitude*3.6f;
         if (ABSEnabled && Brakeable)
             SimulateABS();

@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class WheelSetup : MonoBehaviour
 {
@@ -30,6 +31,7 @@ public class WheelSetup : MonoBehaviour
     
     [Header("Visual Effects")] public float SmokeThreshold=0.5f;
     public AudioClip slipSound;
+    public AudioMixerGroup mixerGroup;
     public float slipSoundVolumeFactor = 0.5f;
     public float slipSoundMinPitch;
     public float slipSoundMaxPitch;
@@ -69,11 +71,13 @@ public class WheelSetup : MonoBehaviour
             wheel.slipSoundVolumeFactor = slipSoundVolumeFactor;
             wheel.slipSoundMinPitch = slipSoundMinPitch;
             wheel.slipSoundMaxPitch = slipSoundMaxPitch;
+            wheel.audioMixerGroup = mixerGroup;
             
             wheel.carRB = rb;
             WheelCollider col = wheel.wheelCollider;
             col.forwardFriction = friction;
             
+            wheel.initWheel();
         }
     }
 

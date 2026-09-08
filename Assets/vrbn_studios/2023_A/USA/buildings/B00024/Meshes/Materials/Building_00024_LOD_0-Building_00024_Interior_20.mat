@@ -11,7 +11,8 @@ Material:
   m_Shader: {fileID: 4800000, guid: 2b8de9fa6d4ec51428390a0c003f5e07, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
-  m_ValidKeywords: []
+  m_ValidKeywords:
+  - _ENABLEINTERIOR_ON
   m_InvalidKeywords:
   - _DISABLE_SSR_TRANSPARENT
   - _MIDPLANEENABLED_ON

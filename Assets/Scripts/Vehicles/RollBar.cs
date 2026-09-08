@@ -18,7 +18,8 @@ public class RollBar : MonoBehaviour
 
     void FixedUpdate()
     {
-        if(!leftWheel || !rightWheel || !rb) return;
+        
+        if(!leftWheel || !rightWheel || !rb || !leftWheel.initialized || !rightWheel.initialized) return;
         WheelHit hit;
         float travelL = 1f, travelR = 1f;
 
