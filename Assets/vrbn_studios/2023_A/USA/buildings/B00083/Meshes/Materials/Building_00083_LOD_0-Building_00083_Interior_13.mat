@@ -303,7 +303,7 @@ Material:
     - _ZTestGBuffer: 4
     - _ZTestTransparent: 4
     - _ZWrite: 1
-    - _emissionMultiplier: 20.59
+    - _emissionMultiplier: 46.7
     m_Colors:
     - _BaseColor: {r: 0.75686276, g: 0.75686276, b: 0.75686276, a: 1}
     - _BaseColorMap_MipInfo: {r: 0, g: 0, b: 0, a: 0}

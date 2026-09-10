@@ -1283,7 +1283,7 @@ MonoBehaviour:
   - version: 2.0.0
     name: RoadBarrier
     id: 1787477282.122668
-    timestamp: 1787582458.320608
+    timestamp: 1788967138.5541604
     objectType: 0
     gameobjectGUID: 
     textureGUID: 
@@ -1455,7 +1455,7 @@ MonoBehaviour:
     subMesh: 0
     acceptBarriers: 1
     activeOnBridges: 1
-    dualSided: 0
+    dualSided: 1
     mirrorType: 0
     snapVertexColors: 0
     minSnapRange: 0
@@ -1531,7 +1531,7 @@ MonoBehaviour:
   roadPresets:
   - roadTypeName: Default Road
     id: 1
-    timestamp: 1787411122.1371071
+    timestamp: 1788966697.5202124
     roadWidth: 15
     advancedWidthSettings: 0
     faceDistance: 2
@@ -1616,12 +1616,14 @@ MonoBehaviour:
     soData: []
     soDataExt: []
     soDataLog:
-    - id: 1787159838.7108114
-      active: 0
     - id: 1776695483.7046912
+      active: 0
+    - id: 1787159838.7108114
       active: 0
     - id: 1787410695.3059971
       active: 1
+    - id: 1787477282.122668
+      active: 0
     layer: 0
     isStatic: 0
     tag: Untagged
@@ -1634,8 +1636,8 @@ MonoBehaviour:
     followTerrainContours: 0
     terrainContoursOffset: 5
     terrainDeformation: 1
-    defaultIndent: 2
-    defaultSurrounding: 5
+    defaultIndent: 5.32
+    defaultSurrounding: 13.36
     maxRoadheight: 0
     maxTerrainHeightOffset: 0
     minTerrainHeightDistance: 0

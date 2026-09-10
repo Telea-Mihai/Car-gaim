@@ -100,9 +100,14 @@ public class Wheel : MonoBehaviour
     private List<ParticleSystem> effectsWhenSlipping = new List<ParticleSystem>();
     [HideInInspector] public bool initialized = false;
 
-    public void initWheel()
+    private void Awake()
     {
         wheelCollider = GetComponent<WheelCollider>();
+    }
+
+    public void initWheel()
+    {
+       
         if (effectsHolder)
         {
             foreach (ParticleSystem system in effectsHolder.GetComponentsInChildren<ParticleSystem>())
@@ -115,6 +120,7 @@ public class Wheel : MonoBehaviour
         if(!slipSoundSource)
             slipSoundSource = gameObject.AddComponent<AudioSource>();
         slipSoundSource.outputAudioMixerGroup =  audioMixerGroup;
+        slipSoundSource.spatialBlend = 1f;
         slipSoundSource.Stop();
         slipSoundSource.loop = true;
         slipSoundSource.spatialBlend = 1f;

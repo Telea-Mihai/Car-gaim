@@ -4,6 +4,7 @@ using UnityEngine.InputSystem;
 public class PlayerInputHandler : MonoBehaviour
 {
     public Vehicle activeVehicle;
+    public UIManager uiManager;
     
     private InputAction throttleAction;
     private InputAction steeringAction;
@@ -11,6 +12,8 @@ public class PlayerInputHandler : MonoBehaviour
     private InputAction gearUpAction;
     private InputAction gearDownAction;
     private InputAction handbrakeAction;
+
+    private InputAction pauseAction;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -20,6 +23,7 @@ public class PlayerInputHandler : MonoBehaviour
         gearUpAction = InputSystem.actions.FindAction("ShiftUp");
         gearDownAction = InputSystem.actions.FindAction("ShiftDown");
         handbrakeAction = InputSystem.actions.FindAction("Handbrake");
+        pauseAction = InputSystem.actions.FindAction("Pause");
     }
 
     // Update is called once per frame
@@ -36,6 +40,12 @@ public class PlayerInputHandler : MonoBehaviour
             else if(gearDownAction.WasPressedThisFrame())
                 activeVehicle.DecreaseGear();
             
+        }
+
+        if (uiManager)
+        {
+            if(pauseAction.WasPressedThisFrame())
+                uiManager.TogglePauseMenu();
         }
     }
 }

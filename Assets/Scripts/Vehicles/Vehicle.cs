@@ -181,7 +181,7 @@ public class Vehicle : MonoBehaviour
         int count = 0;
         foreach (Wheel w in Wheels)
         {
-            if (!w.initialized || !w.Driven || !w.wheelCollider.isGrounded) continue;
+            if (!w.Driven || !w.wheelCollider.isGrounded) continue;
             avgWheelRPM += Mathf.Abs(w.wheelCollider.rpm); // abs handles reverse
             count++;
         }

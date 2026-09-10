@@ -95,7 +95,6 @@ public class EngineSound : MonoBehaviour
         bool sharpLift = throttleDelta > ThrottleDropThreshold;
         bool highRPM = rpm > blowoffRPMThreshold;
         bool offCooldown = Time.time - lastBlowoffTime > blowoffCooldown;
-        Debug.Log(highRPM + " " + sharpLift + " " + offCooldown);
         if (highRPM && sharpLift && offCooldown)
         {
             specialEffectsSource.pitch = Random.Range(blowoffPitchRange.x, blowoffPitchRange.y);

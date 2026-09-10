@@ -47,6 +47,11 @@ public class RaceManager : MonoBehaviour
     
     public event System.Action<Racer> OnLapCompleted;
 
+    public float RaceStartTime { get; private set; }
+    public bool RaceStarted { get; private set; }
+
+    readonly List<Racer> finishOrder = new List<Racer>();
+
     void Start()
     {
         RaceStart();
@@ -62,19 +67,28 @@ public class RaceManager : MonoBehaviour
     {
         if (Checkpoints == null || Checkpoints.Count == 0)
             return;
-        
+
         for (int i = 1; i < Checkpoints.Count - 1; i++)
         {
             Checkpoints[i].nextCheckpoint = Checkpoints[i + 1];
             Checkpoints[i].previousCheckpoint = Checkpoints[i - 1];
         }
-        Checkpoints[0].previousCheckpoint = Checkpoints[Checkpoints.Count - 1];
-        Checkpoints[0].nextCheckpoint = Checkpoints[1];
-        Checkpoints[Checkpoints.Count - 1].nextCheckpoint = Checkpoints[0];
 
-        OnLapCompleted += OnLapCompletedBy;
-        Checkpoints[0].isFinish = true;
-        Checkpoints[0].OnCheckpointReached = OnLapCompleted;
+        Checkpoints[0].previousCheckpoint = loops ? Checkpoints[Checkpoints.Count - 1] : null;
+        Checkpoints[0].nextCheckpoint = Checkpoints[1];
+        Checkpoints[Checkpoints.Count - 1].nextCheckpoint = loops ? Checkpoints[0] : null;
+        Checkpoints[Checkpoints.Count - 1].previousCheckpoint = Checkpoints[Checkpoints.Count - 2];
+
+        if (loops)
+        {
+            Checkpoints[0].isFinish = true;
+            Checkpoints[0].OnCheckpointReached = NotifyLapCompleted;
+        }
+        else
+        {
+            Checkpoints[Checkpoints.Count - 1].isFinish = true;
+            Checkpoints[Checkpoints.Count - 1].OnCheckpointReached = NotifyLapCompleted;
+        }
 
         bool baked = useBakedPath && bakedRacePath != null && bakedRacePath.IsValid;
 
@@ -121,16 +135,12 @@ public class RaceManager : MonoBehaviour
             
             racer.GetComponent<Vehicle>().forceHoldStop();
             
-            //Add to evidence
-            racePartTakers.Add(
+            racePartTakers[racer] = new RacePartTaker(
                 racer,
-                new RacePartTaker(
-                        racer,
-                        new List<float>(),
-                        0f,
-                        laps
-                    )
-                );
+                new List<float>(),
+                0f,
+                0
+            );
 
             var follower = racer.GetComponent<RacePathFollower>();
             if (baked)
@@ -141,7 +151,7 @@ public class RaceManager : MonoBehaviour
                 follower.SetPath(bakedRacePath);
                 // Snap to start progress (cars sit slightly behind startS along -forward).
                 float carS = BakedPathMath.AdvanceS(bakedRacePath, startS, -back);
-                follower.SnapToS(carS, alignFacing: true);
+                // follower.SnapToS(carS, alignFacing: true);
                 follower.enabled = true;
                 racer.SetLivePathingEnabled(false);
             }
@@ -167,20 +177,64 @@ public class RaceManager : MonoBehaviour
     private IEnumerator RaceCountdown()
     {
         yield return new WaitForSeconds(secondsCountDown);
-        foreach (var racePartTaker in  racePartTakers)
+        RaceStartTime = Time.time;
+        RaceStarted = true;
+
+        List<Racer> keys = new List<Racer>(racePartTakers.Keys);
+        foreach (Racer key in keys)
         {
-            racePartTaker.Value.racer.GetComponent<Vehicle>().startCar();
+            RacePartTaker taker = racePartTakers[key];
+            taker.timeAtLastLap = RaceStartTime;
+            racePartTakers[key] = taker;
+
+            Vehicle vehicle = taker.racer != null ? taker.racer.GetComponent<Vehicle>() : null;
+            if (vehicle != null)
+                vehicle.startCar();
         }
+    }
+
+    void NotifyLapCompleted(Racer racer)
+    {
+        OnLapCompletedBy(racer);
+        OnLapCompleted?.Invoke(racer);
     }
 
     private void OnLapCompletedBy(Racer racer)
     {
+        if (racer == null || finishOrder.Contains(racer))
+            return;
+
+        finishOrder.Add(racer);
         Debug.Log("Lap completed by " + racer.name);
-        RacePartTaker racePartTaker = racePartTakers[racer];
-        racePartTaker.lapTimes.Add(Time.time - racePartTaker.timeAtLastLap);
-        racePartTaker.timeAtLastLap = Time.time;
+
+        if (!racePartTakers.TryGetValue(racer, out RacePartTaker racePartTaker))
+            return;
+
+        float now = Time.time;
+        float lapTime = RaceStarted ? now - racePartTaker.timeAtLastLap : now;
+        racePartTaker.lapTimes.Add(lapTime);
+        racePartTaker.timeAtLastLap = now;
         racePartTaker.lapsCompleted++;
-        
+        racePartTakers[racer] = racePartTaker;
+    }
+
+    public int GetFinishPosition(Racer racer)
+    {
+        int index = finishOrder.IndexOf(racer);
+        return index < 0 ? 0 : index + 1;
+    }
+
+    public float GetFinishTime(Racer racer)
+    {
+        if (!racePartTakers.TryGetValue(racer, out RacePartTaker taker) || taker.lapTimes == null || taker.lapTimes.Count == 0)
+            return RaceStarted ? Time.time - RaceStartTime : 0f;
+
+        return taker.lapTimes[taker.lapTimes.Count - 1];
+    }
+
+    public int GetRacerCount()
+    {
+        return Racers != null ? Racers.Count : 0;
     }
     
     void OnDrawGizmos()
