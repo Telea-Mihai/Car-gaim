@@ -2,7 +2,8 @@
 
 # Car game - Demo
 
-A unity hdrp project with the scope of imitating the feel of NFS most wanted.
+A unity project with the scope of creating a fun and exciting driving experience.
+
 It currently features:
 
  - a comprehensive sim-cade car controller based on unity wheel colliders
@@ -17,3 +18,6 @@ Get the demo on itch.io here: https://player11132.itch.io/car-game-demo
 directly from the drive: https://drive.google.com/file/d/1AhkLtnEbu19rY7CSPhx2OqsTCNlciNQd/view?usp=sharing
 
 ... or from the releases 
+
+## To run, just extract the .rar and run it. 
+(WINDOWS BUILD ONLY)
