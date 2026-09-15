@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 72849d941f58a634e8cf3c41095c9963
+timeCreated: 1498148122
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 121175
+  packageName: 'Book Of The Dead: Environment'
+  packageVersion: 1.1
+  assetPath: Assets/Art/Environment/_ExternalContent/Quixel/Forest-quixel/BushTwig_01/Bush_Twig_01_Var4_Prefab.prefab
+  uploadId: 569154

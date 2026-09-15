@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: fdf6a7f02d5232b4ab0f84134735f370
+timeCreated: 1494428671
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 121175
+  packageName: 'Book Of The Dead: Environment'
+  packageVersion: 1.1
+  assetPath: Assets/Art/Environment/Vegetation/Trees/Pines/Pine_002_new/Materials/branches_NoMirrorBackface_BakedWind_8m.mat
+  uploadId: 569154

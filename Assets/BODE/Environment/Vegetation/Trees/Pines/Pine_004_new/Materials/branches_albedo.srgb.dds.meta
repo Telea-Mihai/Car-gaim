@@ -1,0 +1,24 @@
+fileFormatVersion: 2
+guid: 023c6f92dd4573448b94705c590b436c
+timeCreated: 1498130961
+licenseType: Store
+IHVImageFormatImporter:
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+  isReadable: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 121175
+  packageName: 'Book Of The Dead: Environment'
+  packageVersion: 1.1
+  assetPath: Assets/Art/Environment/Vegetation/Trees/Pines/Pine_004_new/Materials/branches_albedo.srgb.dds
+  uploadId: 569154

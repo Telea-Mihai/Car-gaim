@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 758d875b2ae6f144c83113a4448e752a
+timeCreated: 1512483547
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 121175
+  packageName: 'Book Of The Dead: Environment'
+  packageVersion: 1.1
+  assetPath: Assets/Art/Environment/_ExternalContent/Quixel/Megascans/Plants/Bush_b/Bush_b1_4x4x4_PF_baked_single.asset
+  uploadId: 569154

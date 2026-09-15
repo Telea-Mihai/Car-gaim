@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: c6009c518b3fa764d960a012396d76fb
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 121175
+  packageName: 'Book Of The Dead: Environment'
+  packageVersion: 1.1
+  assetPath: Assets/Art/UnityHDRI/KirbyCove/KirbyCoveWhiteBalanced.mat
+  uploadId: 569154

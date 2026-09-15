@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 6a09904ec7a635c44913afe68df1fa21
+timeCreated: 1496328040
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 121175
+  packageName: 'Book Of The Dead: Environment'
+  packageVersion: 1.1
+  assetPath: Assets/Art/Environment/_ExternalContent/Quixel/Forest-quixel/MeadowGrass_01/Materials/Meadow_Grass_01_Low_BakedWind.mat
+  uploadId: 569154

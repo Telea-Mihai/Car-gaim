@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 8ff64253f62dd1346a5038293d44fa39
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 121175
+  packageName: 'Book Of The Dead: Environment'
+  packageVersion: 1.1
+  assetPath: Assets/Art/DiffusionProfileFoliage.asset
+  uploadId: 569154

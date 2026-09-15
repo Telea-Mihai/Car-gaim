@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: f7929b3a3952d9c41b729e4263e435e3
+timeCreated: 1498389848
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 121175
+  packageName: 'Book Of The Dead: Environment'
+  packageVersion: 1.1
+  assetPath: Assets/Art/Environment/Vegetation/Trees/Pines/Pine_002_new/Pine_002_L.prefab
+  uploadId: 569154

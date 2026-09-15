@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 1766fc721a9b68843be725a55c896f3c
+timeCreated: 1506532445
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 121175
+  packageName: 'Book Of The Dead: Environment'
+  packageVersion: 1.1
+  assetPath: Assets/Art/Environment/Ground/Sticks_debris/sticks_debris_00_prefab.prefab
+  uploadId: 569154

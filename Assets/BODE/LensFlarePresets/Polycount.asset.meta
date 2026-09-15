@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 632ff411dbbf5d54593d6e684940a2bf
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 121175
+  packageName: 'Book Of The Dead: Environment'
+  packageVersion: 1.1
+  assetPath: Assets/Art/LensFlarePresets/Polycount.asset
+  uploadId: 569154

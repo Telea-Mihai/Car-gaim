@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 5480f0b43f59ea54fa3575f54f2c533e
+timeCreated: 1508322827
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 121175
+  packageName: 'Book Of The Dead: Environment'
+  packageVersion: 1.1
+  assetPath: Assets/Art/Environment/_ExternalContent/Quixel/Forest-quixel/Dead_Grass_02/Dead_Grass_02_Var4_Prefab_baked_single.prefab
+  uploadId: 569154

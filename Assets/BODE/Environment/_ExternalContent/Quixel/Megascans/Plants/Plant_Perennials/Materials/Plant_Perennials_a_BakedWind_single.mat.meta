@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: c349eb52426f58743976166b303df1a4
+timeCreated: 1478715709
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 121175
+  packageName: 'Book Of The Dead: Environment'
+  packageVersion: 1.1
+  assetPath: Assets/Art/Environment/_ExternalContent/Quixel/Megascans/Plants/Plant_Perennials/Materials/Plant_Perennials_a_BakedWind_single.mat
+  uploadId: 569154

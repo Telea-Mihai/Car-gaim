@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 9dbaa103ecd6cb24ab1f329dbdbe422f
+timeCreated: 1473944973
+licenseType: Store
+TextScriptImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 121175
+  packageName: 'Book Of The Dead: Environment'
+  packageVersion: 1.1
+  assetPath: Assets/Art/UnityHDRI/Gareoult/Info.txt
+  uploadId: 569154

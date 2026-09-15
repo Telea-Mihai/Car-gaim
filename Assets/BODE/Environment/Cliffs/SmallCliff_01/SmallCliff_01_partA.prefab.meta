@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 365a012bcc778b04bb963cc80ddd78c2
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 121175
+  packageName: 'Book Of The Dead: Environment'
+  packageVersion: 1.1
+  assetPath: Assets/Art/Environment/Cliffs/SmallCliff_01/SmallCliff_01_partA.prefab
+  uploadId: 569154

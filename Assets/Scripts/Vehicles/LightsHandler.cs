@@ -1,4 +1,6 @@
 using UnityEngine;
+using UnityEngine.Rendering;
+using UnityEngine.Rendering.HighDefinition;
 
 
 public class LightsHandler : MonoBehaviour
@@ -12,6 +14,8 @@ public class LightsHandler : MonoBehaviour
     public Light[] brakeLights;
     public float defaultIntensity;
     public float underBrakingIntensity;
+    public LensFlareComponentSRP[] lensFlares;
+    public float activeFlareIntensity;
     [Header("Removable Brake Light")]
     public MeshRenderer removableBrakeLight;
     public int removableBrakeLightMaterialIndex;
@@ -41,6 +45,11 @@ public class LightsHandler : MonoBehaviour
             
             foreach (Light brakeLight in brakeLights)
                 brakeLight.intensity = defaultIntensity;
+            
+            foreach (LensFlareComponentSRP flare in lensFlares)
+            {
+                flare.intensity = 0;
+            }
         }
         else
         {
@@ -51,6 +60,11 @@ public class LightsHandler : MonoBehaviour
             foreach (Light brakeLight in brakeLights)
             {
                 brakeLight.intensity = underBrakingIntensity;
+            }
+            
+            foreach (LensFlareComponentSRP flare in lensFlares)
+            {
+                flare.intensity = activeFlareIntensity;
             }
         }
 

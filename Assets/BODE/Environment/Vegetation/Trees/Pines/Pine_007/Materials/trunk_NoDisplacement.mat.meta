@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 4d762c7074ae7854c9a8b2f1f0815512
+timeCreated: 1491472035
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 121175
+  packageName: 'Book Of The Dead: Environment'
+  packageVersion: 1.1
+  assetPath: Assets/Art/Environment/Vegetation/Trees/Pines/Pine_007/Materials/trunk_NoDisplacement.mat
+  uploadId: 569154

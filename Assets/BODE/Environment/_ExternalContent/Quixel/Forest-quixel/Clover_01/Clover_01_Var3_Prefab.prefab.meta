@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: c2cf0ab48ed74a448a17217b33f6ba87
+timeCreated: 1498176438
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 121175
+  packageName: 'Book Of The Dead: Environment'
+  packageVersion: 1.1
+  assetPath: Assets/Art/Environment/_ExternalContent/Quixel/Forest-quixel/Clover_01/Clover_01_Var3_Prefab.prefab
+  uploadId: 569154

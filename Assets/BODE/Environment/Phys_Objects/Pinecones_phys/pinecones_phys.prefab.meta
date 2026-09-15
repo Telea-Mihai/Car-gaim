@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 71fdbf2898aa17548a3c1181ca58612e
+timeCreated: 1506523368
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 121175
+  packageName: 'Book Of The Dead: Environment'
+  packageVersion: 1.1
+  assetPath: Assets/Art/Environment/Phys_Objects/Pinecones_phys/pinecones_phys.prefab
+  uploadId: 569154

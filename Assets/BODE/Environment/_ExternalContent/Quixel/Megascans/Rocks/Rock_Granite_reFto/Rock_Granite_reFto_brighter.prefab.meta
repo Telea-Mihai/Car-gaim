@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 4081bb83479ab3e419b496b879cc45d1
+timeCreated: 1511210958
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 121175
+  packageName: 'Book Of The Dead: Environment'
+  packageVersion: 1.1
+  assetPath: Assets/Art/Environment/_ExternalContent/Quixel/Megascans/Rocks/Rock_Granite_reFto/Rock_Granite_reFto_brighter.prefab
+  uploadId: 569154

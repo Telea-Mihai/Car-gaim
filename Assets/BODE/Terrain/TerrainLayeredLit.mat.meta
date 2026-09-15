@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 0b7066f470a682e418d32271d99c1d00
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: '{"GUIDArray":["","","",""]}'
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 121175
+  packageName: 'Book Of The Dead: Environment'
+  packageVersion: 1.1
+  assetPath: Assets/Art/Terrain/TerrainLayeredLit.mat
+  uploadId: 569154

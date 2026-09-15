@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: db5b3a7275d73f04ab61fb9fe3fab8b9
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 121175
+  packageName: 'Book Of The Dead: Environment'
+  packageVersion: 1.1
+  assetPath: Assets/Art/LensFlarePresets/Shimmer.asset
+  uploadId: 569154

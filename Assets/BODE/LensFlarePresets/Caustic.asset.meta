@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: b586a74942fa7fb4585fc03acb473887
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 121175
+  packageName: 'Book Of The Dead: Environment'
+  packageVersion: 1.1
+  assetPath: Assets/Art/LensFlarePresets/Caustic.asset
+  uploadId: 569154

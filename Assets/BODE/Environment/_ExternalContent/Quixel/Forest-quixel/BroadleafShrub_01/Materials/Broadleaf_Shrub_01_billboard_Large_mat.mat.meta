@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: d66fbd493f6f6494a95b95266abb9ed9
+timeCreated: 1498146393
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 121175
+  packageName: 'Book Of The Dead: Environment'
+  packageVersion: 1.1
+  assetPath: Assets/Art/Environment/_ExternalContent/Quixel/Forest-quixel/BroadleafShrub_01/Materials/Broadleaf_Shrub_01_billboard_Large_mat.mat
+  uploadId: 569154

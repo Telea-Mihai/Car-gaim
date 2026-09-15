@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: c7fd2a0fea53d764eba1d46ddb9c9289
+timeCreated: 1479126209
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 121175
+  packageName: 'Book Of The Dead: Environment'
+  packageVersion: 1.1
+  assetPath: Assets/Art/Environment/_ExternalContent/Quixel/Megascans/Plants/GrassGreen_qheqG2/Materials/GrassGreen_qheqG2_BakedWind_lessAO.mat
+  uploadId: 569154

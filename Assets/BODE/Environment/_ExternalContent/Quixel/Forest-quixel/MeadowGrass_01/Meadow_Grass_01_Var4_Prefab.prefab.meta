@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 10828e5ac37bd8d4da40f0e24eedc4e6
+timeCreated: 1506181878
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 121175
+  packageName: 'Book Of The Dead: Environment'
+  packageVersion: 1.1
+  assetPath: Assets/Art/Environment/_ExternalContent/Quixel/Forest-quixel/MeadowGrass_01/Meadow_Grass_01_Var4_Prefab.prefab
+  uploadId: 569154

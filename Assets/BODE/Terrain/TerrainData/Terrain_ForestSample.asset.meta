@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 54fdcdd4077fa594d8b6d888388f694d
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 15600000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 121175
+  packageName: 'Book Of The Dead: Environment'
+  packageVersion: 1.1
+  assetPath: Assets/Art/Terrain/TerrainData/Terrain_ForestSample.asset
+  uploadId: 569154

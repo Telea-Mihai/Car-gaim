@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: d383d293ea82f0f45a5382a621dc8668
+timeCreated: 1505137138
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 121175
+  packageName: 'Book Of The Dead: Environment'
+  packageVersion: 1.1
+  assetPath: Assets/Art/Environment/_ExternalContent/Quixel/Megascans/Rocks/Rock_Granite_rcCwC/Materials/Rock_Granite_rcCwC_mat.mat
+  uploadId: 569154

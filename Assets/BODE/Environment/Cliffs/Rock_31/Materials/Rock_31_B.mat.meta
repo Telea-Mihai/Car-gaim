@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: f2762c8ec2f7bae429bbb92e8c341ddc
+timeCreated: 1506009606
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 121175
+  packageName: 'Book Of The Dead: Environment'
+  packageVersion: 1.1
+  assetPath: Assets/Art/Environment/Cliffs/Rock_31/Materials/Rock_31_B.mat
+  uploadId: 569154

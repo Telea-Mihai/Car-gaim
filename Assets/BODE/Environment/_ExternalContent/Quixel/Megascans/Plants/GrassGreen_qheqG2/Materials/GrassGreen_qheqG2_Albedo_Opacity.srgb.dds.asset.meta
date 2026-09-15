@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: bfa2372ede2219641bbc1ce4cd33cafc
+timeCreated: 1498165213
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 2800000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 121175
+  packageName: 'Book Of The Dead: Environment'
+  packageVersion: 1.1
+  assetPath: Assets/Art/Environment/_ExternalContent/Quixel/Megascans/Plants/GrassGreen_qheqG2/Materials/GrassGreen_qheqG2_Albedo_Opacity.srgb.dds.asset
+  uploadId: 569154

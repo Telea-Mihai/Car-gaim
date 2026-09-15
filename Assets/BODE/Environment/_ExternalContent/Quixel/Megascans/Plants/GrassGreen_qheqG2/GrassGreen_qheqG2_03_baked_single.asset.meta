@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 66797b6c6c3ecb44ca8e10f4a37e23f5
+timeCreated: 1511189995
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 121175
+  packageName: 'Book Of The Dead: Environment'
+  packageVersion: 1.1
+  assetPath: Assets/Art/Environment/_ExternalContent/Quixel/Megascans/Plants/GrassGreen_qheqG2/GrassGreen_qheqG2_03_baked_single.asset
+  uploadId: 569154

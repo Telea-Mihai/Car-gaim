@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 2974dbfbef1a529408e4ae405f17a0e9
+timeCreated: 1510355342
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 121175
+  packageName: 'Book Of The Dead: Environment'
+  packageVersion: 1.1
+  assetPath: Assets/Art/Environment/Vegetation/Trees/Pines/Pine_004_new/pine_004_4_baked_hierarchy.prefab
+  uploadId: 569154

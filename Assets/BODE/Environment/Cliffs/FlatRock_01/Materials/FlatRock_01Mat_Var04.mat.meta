@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 794387eed0d55864a85461b6dac5df06
+timeCreated: 1495363343
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 121175
+  packageName: 'Book Of The Dead: Environment'
+  packageVersion: 1.1
+  assetPath: Assets/Art/Environment/Cliffs/FlatRock_01/Materials/FlatRock_01Mat_Var04.mat
+  uploadId: 569154

@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: abff4394a0b52c94d9f3b18eb65e3241
+timeCreated: 1506614961
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 121175
+  packageName: 'Book Of The Dead: Environment'
+  packageVersion: 1.1
+  assetPath: Assets/Art/Environment/_ExternalContent/Quixel/Megascans/Rocks/Rock_Granite_rgAsy/Aset_rock_granite_M_rgAsy.prefab
+  uploadId: 569154

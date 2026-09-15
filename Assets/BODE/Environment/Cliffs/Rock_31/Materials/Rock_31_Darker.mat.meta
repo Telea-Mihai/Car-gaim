@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 496c1cce26d331c409fc7e605d08e66c
+timeCreated: 1506009606
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 121175
+  packageName: 'Book Of The Dead: Environment'
+  packageVersion: 1.1
+  assetPath: Assets/Art/Environment/Cliffs/Rock_31/Materials/Rock_31_Darker.mat
+  uploadId: 569154

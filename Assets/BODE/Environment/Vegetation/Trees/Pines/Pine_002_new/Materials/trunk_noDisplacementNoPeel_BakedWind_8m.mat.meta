@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 1aceb83fcf4b9e74aac3b8e81547c8b5
+timeCreated: 1494274271
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 121175
+  packageName: 'Book Of The Dead: Environment'
+  packageVersion: 1.1
+  assetPath: Assets/Art/Environment/Vegetation/Trees/Pines/Pine_002_new/Materials/trunk_noDisplacementNoPeel_BakedWind_8m.mat
+  uploadId: 569154

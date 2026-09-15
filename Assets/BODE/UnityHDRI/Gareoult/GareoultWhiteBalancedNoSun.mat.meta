@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: fa3c128d352652b499f6d2a282d8ed36
+timeCreated: 1473946037
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 121175
+  packageName: 'Book Of The Dead: Environment'
+  packageVersion: 1.1
+  assetPath: Assets/Art/UnityHDRI/Gareoult/GareoultWhiteBalancedNoSun.mat
+  uploadId: 569154

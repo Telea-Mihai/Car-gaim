@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 6c9d9dfc3d7204d4792a39e8a9f7904d
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 121175
+  packageName: 'Book Of The Dead: Environment'
+  packageVersion: 1.1
+  assetPath: Assets/Art/LensFlarePresets/Anamorphic_Sci-Fi.asset
+  uploadId: 569154

@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 0ff3aa404774c1d468b30c63b76f7f66
+timeCreated: 1510314373
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 121175
+  packageName: 'Book Of The Dead: Environment'
+  packageVersion: 1.1
+  assetPath: Assets/Art/Environment/_ExternalContent/Quixel/Forest-quixel/Ferns/Fern_var03_Prefab_baked_single.asset
+  uploadId: 569154

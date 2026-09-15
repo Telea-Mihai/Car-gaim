@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: e3a947b0666b0f04c832e48ce97222c5
+timeCreated: 1498165212
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 2800000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 121175
+  packageName: 'Book Of The Dead: Environment'
+  packageVersion: 1.1
+  assetPath: Assets/Art/Environment/_ExternalContent/Quixel/Forest-quixel/Dead_Grass_02/Materials/Dead_Grass_02_Albedo_Opacity.srgb.dds.asset
+  uploadId: 569154

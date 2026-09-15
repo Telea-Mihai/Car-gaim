@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: c21a501a84a11bd4090d3a7cd4eb7571
+timeCreated: 1491472034
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 121175
+  packageName: 'Book Of The Dead: Environment'
+  packageVersion: 1.1
+  assetPath: Assets/Art/Environment/Vegetation/Trees/Pines/Pine_004_new/Materials/stump.mat
+  uploadId: 569154

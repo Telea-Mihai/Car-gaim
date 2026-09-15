@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 8271e576dae390b40b54cc8480e889aa
+timeCreated: 1495998543
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 121175
+  packageName: 'Book Of The Dead: Environment'
+  packageVersion: 1.1
+  assetPath: Assets/Art/Environment/Vegetation/Trees/Pines/Pine_004_new/Materials/branches.mat
+  uploadId: 569154

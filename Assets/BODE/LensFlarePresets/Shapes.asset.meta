@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: ec2918894e5ff724c92c30b87ec78180
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 121175
+  packageName: 'Book Of The Dead: Environment'
+  packageVersion: 1.1
+  assetPath: Assets/Art/LensFlarePresets/Shapes.asset
+  uploadId: 569154

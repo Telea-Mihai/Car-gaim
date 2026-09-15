@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: b08c703012f60f1429bee8078c6a799d
+timeCreated: 1475312523
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 121175
+  packageName: 'Book Of The Dead: Environment'
+  packageVersion: 1.1
+  assetPath: Assets/Art/Environment/Cliffs/Yosemite_01/Materials/Cliff_01_grass.mat
+  uploadId: 569154

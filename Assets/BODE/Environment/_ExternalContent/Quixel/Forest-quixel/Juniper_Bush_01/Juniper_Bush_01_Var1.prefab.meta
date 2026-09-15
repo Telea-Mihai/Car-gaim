@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 75d50216f831e2c46aa858aaaa31ea93
+timeCreated: 1506189623
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 121175
+  packageName: 'Book Of The Dead: Environment'
+  packageVersion: 1.1
+  assetPath: Assets/Art/Environment/_ExternalContent/Quixel/Forest-quixel/Juniper_Bush_01/Juniper_Bush_01_Var1.prefab
+  uploadId: 569154

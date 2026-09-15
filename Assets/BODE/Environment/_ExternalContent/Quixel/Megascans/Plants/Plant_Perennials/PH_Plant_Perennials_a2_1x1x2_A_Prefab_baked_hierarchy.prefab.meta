@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 8981a29355647094ba58732df7f3e8db
+timeCreated: 1511171183
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 121175
+  packageName: 'Book Of The Dead: Environment'
+  packageVersion: 1.1
+  assetPath: Assets/Art/Environment/_ExternalContent/Quixel/Megascans/Plants/Plant_Perennials/PH_Plant_Perennials_a2_1x1x2_A_Prefab_baked_hierarchy.prefab
+  uploadId: 569154

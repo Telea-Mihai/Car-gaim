@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: ca1f8b3e4ce2eb44abc775147cfffe7a
+timeCreated: 1510314404
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 121175
+  packageName: 'Book Of The Dead: Environment'
+  packageVersion: 1.1
+  assetPath: Assets/Art/Environment/_ExternalContent/Quixel/Forest-quixel/Clover_01/Clover_01_Var2_Prefab_baked_single.asset
+  uploadId: 569154

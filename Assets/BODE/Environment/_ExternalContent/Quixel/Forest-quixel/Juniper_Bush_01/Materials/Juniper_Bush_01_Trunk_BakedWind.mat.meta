@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 517bbfbbd2436fe4a92c8b565d7ae477
+timeCreated: 1496692958
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 121175
+  packageName: 'Book Of The Dead: Environment'
+  packageVersion: 1.1
+  assetPath: Assets/Art/Environment/_ExternalContent/Quixel/Forest-quixel/Juniper_Bush_01/Materials/Juniper_Bush_01_Trunk_BakedWind.mat
+  uploadId: 569154
