@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 4c36e5667e42eb94d8662659dcc8f897
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 213198
+  packageName: Unity HDRP Terrain | Terrain Sample Project
+  packageVersion: 1.1.0
+  assetPath: Assets/TerrainDemoScene_HDRP/VFXGraphs/Art/MagicLamp/MagicLamp.mat
+  uploadId: 993772

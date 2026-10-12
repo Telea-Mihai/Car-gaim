@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: a296996a29f0c684eb0cf3bbfaabb5dd
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 213198
+  packageName: Unity HDRP Terrain | Terrain Sample Project
+  packageVersion: 1.1.0
+  assetPath: Assets/TerrainDemoScene_HDRP/Volumes/BakingSkyVolume.asset
+  uploadId: 993772

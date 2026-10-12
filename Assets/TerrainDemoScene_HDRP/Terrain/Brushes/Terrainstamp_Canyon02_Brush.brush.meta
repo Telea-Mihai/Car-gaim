@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 7ddc1e59f6e82cc4693b55b0badb4aa3
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 213198
+  packageName: Unity HDRP Terrain | Terrain Sample Project
+  packageVersion: 1.1.0
+  assetPath: Assets/TerrainDemoScene_HDRP/Terrain/Brushes/Terrainstamp_Canyon02_Brush.brush
+  uploadId: 993772

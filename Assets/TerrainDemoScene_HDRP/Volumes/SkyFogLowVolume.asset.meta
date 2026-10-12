@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: f13c3ea32f3694eabb3136cc156cd8a7
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 213198
+  packageName: Unity HDRP Terrain | Terrain Sample Project
+  packageVersion: 1.1.0
+  assetPath: Assets/TerrainDemoScene_HDRP/Volumes/SkyFogLowVolume.asset
+  uploadId: 993772

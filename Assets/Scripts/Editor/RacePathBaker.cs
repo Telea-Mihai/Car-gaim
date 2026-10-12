@@ -954,6 +954,11 @@ public class RaceManagerEditor : Editor
         EditorGUILayout.Space(8);
         EditorGUILayout.LabelField("Baked Race Path", EditorStyles.boldLabel);
 
+        if (GUILayout.Button("Load Checkpoints from children"))
+        {
+            manager.LoadCheckpoints();
+        }
+
         using (new EditorGUI.DisabledScope(manager.bakedRacePath == null))
         {
             if (GUILayout.Button("Bake Race Path"))

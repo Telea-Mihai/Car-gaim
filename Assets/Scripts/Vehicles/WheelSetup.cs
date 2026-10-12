@@ -29,6 +29,9 @@ public class WheelSetup : MonoBehaviour
 
     public float Stiffness = 1f;
     
+    [Header("Surfaces")]
+    public Surface[] surfaces;
+    
     [Header("Visual Effects")] public float SmokeThreshold=0.5f;
     public AudioClip slipSound;
     public AudioMixerGroup mixerGroup;
@@ -76,6 +79,7 @@ public class WheelSetup : MonoBehaviour
             wheel.carRB = rb;
             WheelCollider col = wheel.wheelCollider;
             col.forwardFriction = friction;
+            wheel.surfaces = surfaces;
             
             wheel.initWheel();
         }

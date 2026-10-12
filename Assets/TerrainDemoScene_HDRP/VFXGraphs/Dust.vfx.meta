@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 434e9f925d3966e40ab1e2eddeb31bf8
+VisualEffectImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 213198
+  packageName: Unity HDRP Terrain | Terrain Sample Project
+  packageVersion: 1.1.0
+  assetPath: Assets/TerrainDemoScene_HDRP/VFXGraphs/Dust.vfx
+  uploadId: 993772

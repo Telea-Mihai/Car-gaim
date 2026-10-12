@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6564951183863761595}
   - component: {fileID: 1693595086646127738}
   - component: {fileID: 2079108711310345321}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Stubovi
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -100,7 +100,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5551443748618130603}
   - component: {fileID: 7045510806516120656}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Bankina
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -157,7 +157,7 @@ GameObject:
   - component: {fileID: 1249192099645251583}
   - component: {fileID: 7335098925222191497}
   - component: {fileID: 2876777696048613047}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Srafovi
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -247,7 +247,7 @@ GameObject:
   - component: {fileID: 7826965025916994233}
   - component: {fileID: 9203405771462034438}
   - component: {fileID: 646906951343208541}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Ograda
   m_TagString: Untagged
   m_Icon: {fileID: 0}

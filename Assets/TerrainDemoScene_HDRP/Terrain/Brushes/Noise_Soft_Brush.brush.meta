@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: cee96a2661edd1040b6f86ac79ab5fc8
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 213198
+  packageName: Unity HDRP Terrain | Terrain Sample Project
+  packageVersion: 1.1.0
+  assetPath: Assets/TerrainDemoScene_HDRP/Terrain/Brushes/Noise_Soft_Brush.brush
+  uploadId: 993772

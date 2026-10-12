@@ -294,7 +294,7 @@ Material:
     - _ZTestGBuffer: 3
     - _ZTestTransparent: 4
     - _ZWrite: 1
-    - _dirtMultiplier: 0.25
+    - _dirtMultiplier: 0.51
     - _emissionMultiplier: 0
     m_Colors:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}

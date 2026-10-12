@@ -126,7 +126,7 @@ Material:
     - _Glossiness2: 0.5
     - _GlossyReflections: 1
     - _MainMetallicPower: 0.082
-    - _MainSmoothnessPower: 1.795
+    - _MainSmoothnessPower: 1.25
     - _Metallic: 0
     - _Metallic2: 0
     - _Mode: 0

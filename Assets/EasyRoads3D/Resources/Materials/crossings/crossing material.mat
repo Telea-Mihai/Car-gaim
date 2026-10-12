@@ -115,8 +115,8 @@ Material:
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
-    - _MainMetallicPower: 0.41
-    - _MainSmoothnessPower: 2
+    - _MainMetallicPower: 0.78
+    - _MainSmoothnessPower: 1.09
     - _Metallic: 0
     - _Mode: 0
     - _OcclusionStrength: 1

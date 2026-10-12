@@ -79,7 +79,7 @@ public class Vehicle : MonoBehaviour
     private float _cachedESCCorrection;
     private float _cachedLateralVel;
     
-    private float steeringAngle;
+    public float steeringAngle;
     private float finalTorque;
     private float brakeTorque;
 

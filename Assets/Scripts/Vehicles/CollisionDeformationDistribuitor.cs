@@ -4,12 +4,17 @@ using UnityEngine;
 
 public class CollisionDeformationDistribuitor : MonoBehaviour
 {
-    [Header("Major impact detection")] public float lethalSpeed = 120f;
+    [Header("Major impact detection")] public float lethalSpeed = 12000f;
+    public float damageHitSpeed = 9000f;
+    public float reactionHitSpeed = 2000f;
     public float slowMotionTime = 0.5f;
     public float slowMotionDuration = 2f;
     public float slowMotionLerpStep = 0.2f;
+    public int lifes = 3;
     public bool lethalImpactCount = false;
     public bool impactStarted = false;
+    public bool isLethal = false;
+    public bool reaction = false;
     
     private void OnCollisionEnter(Collision other)
     {
@@ -19,12 +24,23 @@ public class CollisionDeformationDistribuitor : MonoBehaviour
                 contact.thisCollider.GetComponent<SoftMeshLight>().HandleCollision(other);
         }
         
-        if (!impactStarted && lethalImpactCount && other.impulse.magnitude > lethalSpeed)
+        Debug.Log(other.impulse.magnitude);
+        if (!impactStarted && lethalImpactCount && other.impulse.magnitude > damageHitSpeed)
         {
-            Debug.Log("Lethal impact");
+            
             impactStarted = true;
+            
+            if(other.impulse.magnitude > lethalSpeed)
+                isLethal = true;
+            lifes--;
+            if (lifes == 0)
+                isLethal = true;
+            
             StartCoroutine(lethalImpact());
         }
+
+        if (other.impulse.magnitude > reactionHitSpeed && !reaction)
+            reaction = true;
     }
 
     IEnumerator lethalImpact()

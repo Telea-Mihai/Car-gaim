@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: bd6a2261933f92f4288dcf34a34030b4
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 213198
+  packageName: Unity HDRP Terrain | Terrain Sample Project
+  packageVersion: 1.1.0
+  assetPath: Assets/TerrainDemoScene_HDRP/Volumes/Screenshots/ScreenshotSatelliteVolume.asset
+  uploadId: 993772

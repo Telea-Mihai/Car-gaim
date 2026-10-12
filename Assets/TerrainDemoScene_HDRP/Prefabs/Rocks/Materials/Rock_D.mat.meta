@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 447133ca092bafd438b39493ffd71f0c
+timeCreated: 1461056674
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 213198
+  packageName: Unity HDRP Terrain | Terrain Sample Project
+  packageVersion: 1.1.0
+  assetPath: Assets/TerrainDemoScene_HDRP/Prefabs/Rocks/Materials/Rock_D.mat
+  uploadId: 993772

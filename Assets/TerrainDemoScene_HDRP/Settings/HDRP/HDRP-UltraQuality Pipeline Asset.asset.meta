@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 6bd802e822a5e4ac5992ffdc1d4eb296
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 213198
+  packageName: Unity HDRP Terrain | Terrain Sample Project
+  packageVersion: 1.1.0
+  assetPath: Assets/TerrainDemoScene_HDRP/Settings/HDRP/HDRP-UltraQuality Pipeline
+    Asset.asset
+  uploadId: 993772

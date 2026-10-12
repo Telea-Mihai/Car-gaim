@@ -106,8 +106,8 @@ TextureImporter:
   assetBundleVariant: 
 AssetOrigin:
   serializedVersion: 1
-  productId: 121175
-  packageName: 'Book Of The Dead: Environment'
-  packageVersion: 1.1
-  assetPath: Assets/Art/Environment/Cliffs/Rock_06/Materials/Rock_06_MaskMap.tif
-  uploadId: 569154
+  productId: 213198
+  packageName: Unity HDRP Terrain | Terrain Sample Project
+  packageVersion: 1.1.0
+  assetPath: Assets/BODE/Environment/Cliffs/Rock_06/Materials/Rock_06_MaskMap.tif
+  uploadId: 993772

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: a84a003f62212dd48b832a72ba178a49
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 213198
+  packageName: Unity HDRP Terrain | Terrain Sample Project
+  packageVersion: 1.1.0
+  assetPath: Assets/TerrainDemoScene_HDRP/Terrain/Brushes/Terrainstamp_Mountain10_Brush.brush
+  uploadId: 993772

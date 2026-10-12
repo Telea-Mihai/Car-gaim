@@ -69,7 +69,8 @@ public class EngineSound : MonoBehaviour
                                      rpm);
 
         // t=0 → full base, t=1 → full upper
-        targetVolume = Mathf.Max(minVolume, vehicle.throttleInput);
+        float carVol = GameAudioSettings.CarVolume;
+        targetVolume = Mathf.Max(minVolume, vehicle.throttleInput) * carVol;
         baseAudio.volume  = Mathf.Lerp(baseAudio.volume,  (1f - t) * targetVolume, Time.deltaTime * volumeLerpSpeed);
         upperAudio.volume = Mathf.Lerp(upperAudio.volume,        t * targetVolume,  Time.deltaTime * volumeLerpSpeed);
 
@@ -98,7 +99,7 @@ public class EngineSound : MonoBehaviour
         if (highRPM && sharpLift && offCooldown)
         {
             specialEffectsSource.pitch = Random.Range(blowoffPitchRange.x, blowoffPitchRange.y);
-            specialEffectsSource.volume = Random.Range(0.8f, 1f);
+            specialEffectsSource.volume = Random.Range(0.8f, 1f) * GameAudioSettings.CarVolume;
             specialEffectsSource.PlayOneShot(TurboBlowoutSound);
             lastBlowoffTime = Time.time;
         }
@@ -117,7 +118,7 @@ public class EngineSound : MonoBehaviour
         {
             var clip = ExhaustPops[Random.Range(0, ExhaustPops.Length)];
             specialEffectsSource.pitch = Random.Range(popPitchRange.x, popPitchRange.y);
-            specialEffectsSource.PlayOneShot(clip, Random.Range(popVolumeRange.x, popVolumeRange.y));
+            specialEffectsSource.PlayOneShot(clip, Random.Range(popVolumeRange.x, popVolumeRange.y) * GameAudioSettings.CarVolume);
            
             float rpmFactor = Mathf.InverseLerp(popMinRPM, vehicle.MaxRPM, vehicle.engineRPM);
             float interval = Mathf.Lerp(popIntervalMax, popIntervalMin, rpmFactor);

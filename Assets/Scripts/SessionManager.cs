@@ -1,5 +1,5 @@
 using UnityEngine;
-using UnityEngine.SceneManagement;
+
 public class SessionManager : MonoBehaviour
 {
     public UIManager uiManager;
@@ -11,25 +11,71 @@ public class SessionManager : MonoBehaviour
 
     void OnEnable()
     {
-        if (currentRaceManager != null)
-            currentRaceManager.OnLapCompleted += HandleLapCompleted;
+        SubscribeRaceFinished();
     }
 
     void OnDisable()
     {
+        UnsubscribeRaceFinished();
+    }
+
+    public void SetCurrentRaceManager(RaceManager raceManager)
+    {
+        UnsubscribeRaceFinished();
+        currentRaceManager = raceManager;
+        SubscribeRaceFinished();
+    }
+
+    void SubscribeRaceFinished()
+    {
         if (currentRaceManager != null)
-            currentRaceManager.OnLapCompleted -= HandleLapCompleted;
+            currentRaceManager.OnRaceFinished += HandleRaceFinished;
+    }
+
+    void UnsubscribeRaceFinished()
+    {
+        if (currentRaceManager != null)
+            currentRaceManager.OnRaceFinished -= HandleRaceFinished;
     }
 
     void Start()
     {
         if (activeVehicle != null)
             cdd = activeVehicle.GetComponent<CollisionDeformationDistribuitor>();
+
+        WireMenuButtons();
+    }
+
+    void WireMenuButtons()
+    {
+        var buttons = GetComponentsInChildren<UnityEngine.UI.Button>(true);
+        for (int i = 0; i < buttons.Length; i++)
+        {
+            var button = buttons[i];
+            if (button == null)
+                continue;
+
+            var label = button.GetComponentInChildren<TMPro.TextMeshProUGUI>(true);
+            if (label == null)
+                continue;
+
+            string text = label.text != null ? label.text.Trim() : string.Empty;
+            if (text.Equals("Restart", System.StringComparison.OrdinalIgnoreCase))
+            {
+                button.onClick.RemoveAllListeners();
+                button.onClick.AddListener(RestartSession);
+            }
+            else if (text.Equals("Main Menu", System.StringComparison.OrdinalIgnoreCase))
+            {
+                button.onClick.RemoveAllListeners();
+                button.onClick.AddListener(LoadMainMenu);
+            }
+        }
     }
 
     void Update()
     {
-        if (sessionOver || crashUiShown || cdd == null || !cdd.impactStarted)
+        if (sessionOver || crashUiShown || cdd == null || !cdd.isLethal)
             return;
 
         TriggerCrashUI();
@@ -56,10 +102,14 @@ public class SessionManager : MonoBehaviour
     public void LoadMainMenu()
     {
         Time.timeScale = 1f;
-        Application.LoadLevel(0);
+        Time.fixedDeltaTime = 0.02f;
+        if (uiManager != null)
+            uiManager.HideSessionMenus();
+        RaceSession.SelectFreeDrive();
+        SceneLoader.LoadMainMenu();
     }
 
-void HandleLapCompleted(Racer racer)
+    void HandleRaceFinished(Racer racer)
     {
         if (sessionOver || racer == null || !IsPlayer(racer))
             return;
@@ -74,7 +124,7 @@ void HandleLapCompleted(Racer racer)
             activeVehicle.forceHoldStop();
 
         if (uiManager != null)
-            uiManager.ShowFinishMenu($"Position: {position}/{total}", $"Time: {FormatRaceTime(time)}");
+            uiManager.ShowFinishMenu($"Position: {position}/{total}", $"Time: {UIManager.FormatRaceTime(time)}");
     }
 
     bool IsPlayer(Racer racer)
@@ -91,19 +141,12 @@ void HandleLapCompleted(Racer racer)
         return vehicle == activeVehicle;
     }
 
-    static string FormatRaceTime(float seconds)
-    {
-        seconds = Mathf.Max(0f, seconds);
-        int minutes = (int)(seconds / 60f);
-        int secs = (int)(seconds % 60f);
-        int ms = Mathf.Clamp(Mathf.RoundToInt((seconds - Mathf.Floor(seconds)) * 1000f), 0, 999);
-        return $"{minutes}.{secs:00}.{ms:000}";
-    }
-
     public void RestartSession()
     {
         Time.timeScale = 1f;
         Time.fixedDeltaTime = 0.02f;
-        Application.LoadLevel(Application.loadedLevel);
+        if (uiManager != null)
+            uiManager.HideSessionMenus();
+        SceneLoader.ReloadActiveScene();
     }
 }

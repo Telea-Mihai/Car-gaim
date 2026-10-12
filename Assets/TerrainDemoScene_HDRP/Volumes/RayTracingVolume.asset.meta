@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 5c08be7e5271f9d48842ed9659828585
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 213198
+  packageName: Unity HDRP Terrain | Terrain Sample Project
+  packageVersion: 1.1.0
+  assetPath: Assets/TerrainDemoScene_HDRP/Volumes/RayTracingVolume.asset
+  uploadId: 993772

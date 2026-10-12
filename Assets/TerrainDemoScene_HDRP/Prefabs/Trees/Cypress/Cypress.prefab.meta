@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: e730e362773695e408e48f59e6dff87a
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 213198
+  packageName: Unity HDRP Terrain | Terrain Sample Project
+  packageVersion: 1.1.0
+  assetPath: Assets/TerrainDemoScene_HDRP/Prefabs/Trees/Cypress/Cypress.prefab
+  uploadId: 993772

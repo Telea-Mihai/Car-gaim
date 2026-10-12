@@ -101,6 +101,7 @@ GameObject:
   - component: {fileID: 8109228405525661837}
   - component: {fileID: 8372593043965417745}
   - component: {fileID: 4963619858997633223}
+  - component: {fileID: -8074986526780552006}
   m_Layer: 0
   m_Name: Tarp
   m_TagString: Untagged
@@ -184,6 +185,28 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &-8074986526780552006
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 448233781696725670}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1022408410611596727, guid: 478227dddbe6b224cbf3eec67f827604, type: 3}
 --- !u!1 &3907659652518670038
 GameObject:
   m_ObjectHideFlags: 0

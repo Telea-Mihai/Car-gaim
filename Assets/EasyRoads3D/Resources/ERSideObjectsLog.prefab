@@ -1283,7 +1283,7 @@ MonoBehaviour:
   - version: 2.0.0
     name: RoadBarrier
     id: 1787477282.122668
-    timestamp: 1788967138.5541604
+    timestamp: 1789567812.8868573
     objectType: 0
     gameobjectGUID: 
     textureGUID: 
@@ -1309,7 +1309,7 @@ MonoBehaviour:
     colorList: []
     gameobjectStartGUID: 
     gameobjectEndGUID: 
-    align: 3
+    align: 1
     alignPoint: 0
     weld: 1
     combine: 0
@@ -1334,7 +1334,7 @@ MonoBehaviour:
     xPosition: 0
     xPosition2: 0
     relativeTo: 1
-    yPosition: 0.35
+    yPosition: 0.14
     yRotation: 180
     oldSidwaysDistance: 0
     sidewaysDistanceUpdate: 0
@@ -1527,11 +1527,258 @@ MonoBehaviour:
     triangulateDualSided: 0
     dualSidedMaterial: {fileID: 0}
     dualSidedMaterialTiling: 1
+  - version: 2.0.0
+    name: Side Object 7
+    id: 1789810115.5053403
+    timestamp: 1789810115.5053403
+    objectType: 0
+    gameobjectGUID: 
+    textureGUID: 
+    m_distance: 10
+    uvx: 0.1
+    uvy: 1
+    position: 0
+    splinePosition: 0
+    selectedRotation: 0
+    randomYAxisMinRotation: 0
+    randomYAxisMaxRotation: 0
+    nodeList: []
+    uvs: []
+    uvDistances: []
+    clampUVs: 1
+    clampUVY: 1
+    clampUVYValue: 1
+    terrainUVs: 0
+    reverseUVs: 0
+    totalDistance: 0
+    snapList: 
+    snapWeightList: []
+    colorList: []
+    gameobjectStartGUID: 
+    gameobjectEndGUID: 
+    align: 0
+    alignPoint: 0
+    weld: 1
+    combine: 0
+    combineInstantiated: 1
+    markerActive: 1
+    uvType: 0
+    uv: 1
+    randomObjects: 0
+    forwardStartOffset: 0
+    sidewaysOffset: 0
+    density: 0
+    goPath: 
+    startPath: 
+    endPath: 
+    texturePath: 
+    terrainTree: 0
+    minScale: 1
+    maxScale: 1
+    childOrderActive: 0
+    childOrder: 0
+    meshBoundsAlignment: 0
+    xPosition: 0
+    xPosition2: 0
+    relativeTo: 0
+    yPosition: 0
+    yRotation: 0
+    oldSidwaysDistance: 0
+    sidewaysDistanceUpdate: 0
+    uvYRound: 0
+    adjustUV: 1
+    collider: 0
+    boxcollider: 0
+    tangents: 0
+    sourceObject: {fileID: 0}
+    flipMesh: 0
+    startObject: {fileID: 0}
+    endObject: {fileID: 0}
+    connectionObject: {fileID: 0}
+    material: {fileID: 0}
+    physicMaterial: {fileID: 0}
+    meshObjects: []
+    boxSize: {x: 0, y: 0}
+    boxOffset: {x: 0, y: 0}
+    includeStartSegment: 0
+    startSegmentOffset: 0
+    includeStartEdgeTris: 0
+    includeEndSegment: 0
+    endSegmentOffset: 0
+    includeEndEdgeTris: 0
+    adjustToRoadWidth: 0
+    xOffset: 0
+    startOffset: 0
+    endOffset: 0
+    defaultStartOffset: 0
+    defaultEndOffset: 0
+    segmentOffset: 0
+    totalZDistance: 0
+    middleZDistance: 0
+    startZDistance: 0
+    endZDistance: 0
+    minStartZ: 10000
+    maxStartZ: -10000
+    minMiddleZ: 10000
+    maxMiddleZ: -10000
+    minEndZ: 10000
+    maxEndZ: -10000
+    smoothStart: 0
+    smoothMiddle: 0
+    smoothEnd: 0
+    targetObject: {fileID: 0}
+    bridgeObject: 0
+    tunnelObject: 0
+    snapToTerrain: 0
+    layer: 0
+    deformationObject: 0
+    isStatic: 1
+    castShadows: 1
+    scaleToRoad: 0
+    splitInBatches: 0
+    randomRotation: {x: 0, y: 0, z: 0}
+    randomMinRotation: 0
+    randomMaxRotation: 0
+    minRandomRotationDistance: 0
+    maxRandomRotationDistance: 0
+    randomXPosition: 0
+    randomMinXPosition: 0
+    randomMaxXPosition: 0
+    minRandomXPositionDistance: 0
+    maxRandomXPositionDistance: 0
+    boxColliderScale: {x: 1, y: 1, z: 1}
+    randomYPosition: 0
+    randomMinYPosition: 0
+    randomMaxYPosition: 0
+    minRandomYPositionDistance: 0
+    maxRandomYPositionDistance: 0
+    bridgeHeight: 5
+    markerSplineController: 2
+    bridgeLength: 20
+    deformationOffset: 0
+    markerIndent: 0
+    markerSurrounding: 0
+    indentController: 0
+    excludeTerrainSplats: 0
+    scale: {x: 1, y: 1, z: 1}
+    indentExt: 0
+    category: 5
+    densityMap: {fileID: 0}
+    densitySize: 50
+    densitySize2: 50
+    densityStrength: 0.5
+    densityStrength2: 0.5
+    terrainNormal: 0
+    terrainNormal2: 1
+    childObjects: []
+    autoGenerate: 0
+    heightThreshold: 10
+    autogenerateStartOffset: 0
+    autogenerateEndOffset: 0
+    snapIndents: 0
+    snapIndentWidth: 1
+    cutHoles: 1
+    innerStartOffset: 0
+    innerEndOffset: 0
+    ignoredForRetainingWalls: 0
+    heightMaxThreshold: 100
+    heightMaxStartThreshold: 1
+    heightMaxEndThreshold: 1
+    xThresholdDistance: 5
+    angleThreshold: 10
+    connectionRatio: 1
+    retainingWall: 0
+    surroundingControl: 0
+    indentControl: 0
+    nodeListMirrored: []
+    uvsMirrored: []
+    snapWeightListMirrored: []
+    colorListMirrored: []
+    uv4walls: 0
+    hasVertexColors: 0
+    deformationOffsetForward: 0
+    deformationOffsetSideways: 0
+    connectionObjectRotation: 0
+    subMesh: 0
+    acceptBarriers: 1
+    activeOnBridges: 1
+    dualSided: 0
+    mirrorType: 0
+    snapVertexColors: 0
+    minSnapRange: 0
+    maxSnapRange: 0
+    clampUV4: 0
+    geoStartOffset: 0
+    geoEndOffset: 0
+    strictRules: 0
+    startOverlapOffset: 0
+    endOverlapOffset: 0
+    lodLevels: 0
+    hardEdge: 
+    hardEdgeMirrored: 
+    hardEdgePadding: 0
+    startEndCaps: 0
+    endCapUVs: []
+    startCapUVs: []
+    startCapTris: 
+    startCapTrisMirrored: 
+    startCapUVOffset: {x: 0.5, y: 0.5}
+    endCapUVOffset: {x: 0.5, y: 0.5}
+    startCapUVScale: 1
+    endCapUVScale: 1
+    startCapUVRotation: 0
+    endCapUVRotation: 0
+    namedChilds: 0
+    startSection: 0
+    endSection: 0
+    stepDown: 0
+    stepUp: 0
+    stepDistance: 0
+    startDirZOffset: 0
+    endDirZOffset: 0
+    buildOtherSideObject1: 0
+    defaultOtherSoId1: 0
+    buildOtherSideObject2: 0
+    defaultOtherSoId2: 0
+    buildOtherSideObjects: []
+    averageDistance: 1
+    randomUVx: 0
+    isUsedAsChild: 0
+    relativeToCenter: 0
+    shapeWeightsRelativeX: 0
+    easeInOutDistanceTerrainSnap: 0
+    startBoundsZ: 0
+    endBoundsZ: 0
+    buildOtherSideObjectChilds: []
+    minSectionLength: 50
+    maxSlope: 45
+    tag: Untagged
+    selectedTag: 0
+    doubleSidedBendFlag: 0
+    recalculateNormals: 0
+    x1: 0
+    x2: 0
+    xf1: 0
+    xf2: 0
+    xf1Total: 0
+    xf2Total: 0
+    y1: 0
+    baseControllerFlag: 0
+    connectorEndOffset: {x: 0, y: 0, z: 0}
+    minBaseRotation: 0
+    maxBaseRotation: 0
+    baseChildIndex: -1
+    baseConnectorIndex: -1
+    continueOnConnections: 0
+    ignoreOffsetsOnConnections: 0
+    triangulateDualSided: 0
+    dualSidedMaterial: {fileID: 0}
+    dualSidedMaterialTiling: 1
   ints: 
   roadPresets:
   - roadTypeName: Default Road
     id: 1
-    timestamp: 1789480429.2063863
+    timestamp: 1790956984.227721
     roadWidth: 15
     advancedWidthSettings: 0
     faceDistance: 2
@@ -1579,7 +1826,7 @@ MonoBehaviour:
     roadShapeExt2:
     - {x: -7.5, y: 0}
     - {x: 7.5, y: 0}
-    doConnectionTri: 0101
+    doConnectionTri: 0101y
     doConnectionTriExt: 
     roadShapeUVs:
     - 0
@@ -1592,7 +1839,7 @@ MonoBehaviour:
     - 0
     - 1
     preserveUVs: 0
-    hardEdge: 0000
+    hardEdge: 0000y
     roadShapeVecsString: 
     defaultSidewalk: 0
     sidewalks: 0
@@ -1621,15 +1868,17 @@ MonoBehaviour:
     - id: 1787159838.7108114
       active: 0
     - id: 1787410695.3059971
-      active: 1
+      active: 0
     - id: 1787428261.6312988
       active: 0
     - id: 1787476488.1801486
       active: 0
     - id: 1787477282.122668
-      active: 1
-    layer: 0
-    isStatic: 0
+      active: 0
+    - id: 1789810115.5053403
+      active: 0
+    layer: 8
+    isStatic: 1
     tag: Untagged
     renderingLayerMask: 0
     splatMapActive: 0
@@ -1646,7 +1895,7 @@ MonoBehaviour:
     maxTerrainHeightOffset: 0
     minTerrainHeightDistance: 0
     maxTerrainHeightDistance: 0
-    castShadow: 0
+    castShadow: 1
     randomnessFlag: 0
     randomYPosition: 0
     randomMinYPosition: -0.018518519
@@ -1754,8 +2003,8 @@ MonoBehaviour:
     shoulderOffset: 0
   - roadTypeName: Road Type 2
     id: 1777648438.7272744
-    timestamp: 1777648458.7650547
-    roadWidth: 12
+    timestamp: 1789567656.1813602
+    roadWidth: 15
     advancedWidthSettings: 0
     faceDistance: 2
     angleTreshold: 45
@@ -1768,9 +2017,9 @@ MonoBehaviour:
     roadShapeDataActive: 0
     roadShapeData:
       nodes:
-      - {x: -6, y: 0}
-      - {x: 6, y: 0}
-      hardEdge: 0000
+      - {x: -7.5, y: 0}
+      - {x: 7.5, y: 0}
+      hardEdge: 0000y
       priorityNodeIndexLeft: -1
       priorityNodeIndexRight: -1
       nodesV3: []
@@ -1806,13 +2055,13 @@ MonoBehaviour:
     speedLimit: 50
     speedLimitConnections: 50
     roadShape:
-    - {x: -6, y: 0}
-    - {x: 6, y: 0}
+    - {x: -7.5, y: 0}
+    - {x: 7.5, y: 0}
     roadShapeExt: []
     roadShapeExt2:
-    - {x: -6, y: 0}
-    - {x: 6, y: 0}
-    doConnectionTri: 0101
+    - {x: -7.5, y: 0}
+    - {x: 7.5, y: 0}
+    doConnectionTri: 0101y
     doConnectionTriExt: 
     roadShapeUVs:
     - 0
@@ -1825,7 +2074,7 @@ MonoBehaviour:
     - 0
     - 1
     preserveUVs: 0
-    hardEdge: 0000
+    hardEdge: 0000y
     roadShapeVecsString: 
     defaultSidewalk: 0
     sidewalks: 0
@@ -1851,6 +2100,16 @@ MonoBehaviour:
     soDataLog:
     - id: 1776695483.7046912
       active: 0
+    - id: 1787159838.7108114
+      active: 0
+    - id: 1787410695.3059971
+      active: 1
+    - id: 1787428261.6312988
+      active: 0
+    - id: 1787476488.1801486
+      active: 0
+    - id: 1787477282.122668
+      active: 1
     layer: 0
     isStatic: 1
     tag: Untagged
@@ -1999,7 +2258,7 @@ MonoBehaviour:
       nodes:
       - {x: -5, y: 0}
       - {x: 5, y: 0}
-      hardEdge: 0000
+      hardEdge: 0000y
       priorityNodeIndexLeft: -1
       priorityNodeIndexRight: -1
       nodesV3: []
@@ -2041,7 +2300,7 @@ MonoBehaviour:
     roadShapeExt2:
     - {x: -5, y: 0}
     - {x: 5, y: 0}
-    doConnectionTri: 0101
+    doConnectionTri: 0101y
     doConnectionTriExt: 
     roadShapeUVs:
     - 0
@@ -2054,7 +2313,7 @@ MonoBehaviour:
     - 0
     - 1
     preserveUVs: 0
-    hardEdge: 0000
+    hardEdge: 0000y
     roadShapeVecsString: 
     defaultSidewalk: 0
     sidewalks: 0
@@ -2262,7 +2521,7 @@ MonoBehaviour:
     roadShapeExt2:
     - {x: -20, y: 0}
     - {x: 20, y: 0}
-    doConnectionTri: 0101
+    doConnectionTri: 0101y
     doConnectionTriExt: 
     roadShapeUVs:
     - 0
@@ -2275,7 +2534,7 @@ MonoBehaviour:
     - 0
     - 1
     preserveUVs: 0
-    hardEdge: 0000
+    hardEdge: 0000y
     roadShapeVecsString: 
     defaultSidewalk: 0
     sidewalks: 0

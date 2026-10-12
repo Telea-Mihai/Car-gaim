@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: f16496cae10264a26a76646fd4d9d155
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 213198
+  packageName: Unity HDRP Terrain | Terrain Sample Project
+  packageVersion: 1.1.0
+  assetPath: Assets/TerrainDemoScene_HDRP/Prefabs/Shots/ValleyShot.prefab
+  uploadId: 993772

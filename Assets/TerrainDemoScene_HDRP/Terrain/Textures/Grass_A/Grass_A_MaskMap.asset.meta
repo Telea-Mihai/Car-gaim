@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: be9ac3d91f0a5314d911f9936923092d
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 213198
+  packageName: Unity HDRP Terrain | Terrain Sample Project
+  packageVersion: 1.1.0
+  assetPath: Assets/TerrainDemoScene_HDRP/Terrain/Textures/Grass_A/Grass_A_MaskMap.asset
+  uploadId: 993772

@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: cce04f533c148314abf74aff71206ec7
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 213198
+  packageName: Unity HDRP Terrain | Terrain Sample Project
+  packageVersion: 1.1.0
+  assetPath: Assets/TerrainDemoScene_HDRP/Prefabs/Details/Heather_A.prefab
+  uploadId: 993772

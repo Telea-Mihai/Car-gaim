@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: aa3d81bdf3d219c4c855c9398ca8065a
+TextScriptImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 213198
+  packageName: Unity HDRP Terrain | Terrain Sample Project
+  packageVersion: 1.1.0
+  assetPath: Assets/TerrainDemoScene_HDRP/Notes/ProxyTerrain.txt
+  uploadId: 993772

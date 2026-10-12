@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_DiffusionProfileReferences:
-  - {fileID: 11400000, guid: 8ff64253f62dd1346a5038293d44fa39, type: 2}
+  - {fileID: 11400000, guid: 14035658b052d6c438430a23dbd7abf6, type: 2}
   m_MaterialReferences: []
 --- !u!21 &2100000
 Material:
@@ -23,20 +23,23 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Ferns
-  m_Shader: {fileID: -6465566751694194690, guid: b3e259512f9b34b428b085e7e7b89ada,
-    type: 3}
+  m_Shader: {fileID: 4800000, guid: 6e4ae4064600d784cac1e41a9e6f2e59, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords:
   - _ALPHATEST_ON
-  - _ANIM_OFF
-  - _DETAILMODE_OFF
   - _DISABLE_SSR_TRANSPARENT
   - _DOUBLESIDED_ON
   - _MASKMAP
+  - _MATERIAL_FEATURE_TRANSMISSION
+  - _NORMALMAP
+  - _NORMALMAP_TANGENT_SPACE
+  - _THICKNESSMAP
+  m_InvalidKeywords:
+  - _ANIM_OFF
+  - _DETAILMODE_OFF
   - _NORMALMAPSPACE_TANGENT_SPACE
   - _USETREEOCCLUSION
-  m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 1
   m_DoubleSidedGI: 1
@@ -316,6 +319,10 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _TransmissionMaskMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _TransmissionThicknessMap:
         m_Texture: {fileID: 2800000, guid: afc4ca3aafd576f43bdb62d4e5ecf8ec, type: 3}
         m_Scale: {x: 1, y: 1}
@@ -354,6 +361,8 @@ Material:
     - _AlphaCutoffPrepass: 0.5
     - _AlphaCutoffShadow: 0.5
     - _AlphaDstBlend: 0
+    - _AlphaRemapMax: 1
+    - _AlphaRemapMin: 0
     - _AlphaSrcBlend: 1
     - _AlphaToMask: 0
     - _AlphaToMaskInspectorValue: 0
@@ -383,7 +392,7 @@ Material:
     - _DetailNormalScale: 1
     - _DetailSmoothnessScale: 1
     - _DiffusionProfile: 3.28339
-    - _DiffusionProfileHash: 0
+    - _DiffusionProfileHash: 3.7327027
     - _DisplacementLockObjectScale: 1
     - _DisplacementLockTilingScale: 1
     - _DisplacementMode: 0
@@ -408,6 +417,7 @@ Material:
     - _DoubleSidedNormalMode: 1
     - _Drag: 1
     - _DstBlend: 0
+    - _DstBlend2: 0
     - _EmissiveColorMode: 1
     - _EmissiveExposureWeight: 1
     - _EmissiveIntensity: 1
@@ -429,7 +439,7 @@ Material:
     - _Glossiness: 0.573
     - _GlossyReflections: 1
     - _HdrpVersion: 1
-    - _HeightAmplitude: 0.01
+    - _HeightAmplitude: 0.02
     - _HeightCenter: 0.5
     - _HeightMapParametrization: 0
     - _HeightMax: 1
@@ -458,6 +468,8 @@ Material:
     - _NORMALMAPSPACE: 0
     - _NormalMapSpace: 0
     - _NormalScale: 1
+    - _ObjectSpaceUVMapping: 0
+    - _ObjectSpaceUVMappingEmissive: 0
     - _OcclusionStrength: 0
     - _OpaqueCullMode: 2
     - _PPDLodThreshold: 5
@@ -466,6 +478,7 @@ Material:
     - _PPDPrimitiveLength: 1
     - _PPDPrimitiveWidth: 1
     - _Parallax: 0.02
+    - _PerPixelSorting: 0
     - _PreRefractionPass: 0
     - _RayTracing: 0
     - _ReceivesSSR: 1
@@ -512,6 +525,7 @@ Material:
     - _ThicknessMapEncoding: 1
     - _ThicknessMultiplier: 1
     - _TransmissionEnable: 1
+    - _TransmissionMask: 1
     - _TransmissionSelfOcclusion: 1
     - _TransmissionThicknessScale: 1
     - _TransparentBackfaceEnable: 0
@@ -572,9 +586,8 @@ Material:
     - _BaseColorMap_MipInfo: {r: 0, g: 0, b: 0, a: 0}
     - _BaseColorRandomize: {r: 0, g: 0, b: 0, a: 0.05}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _DiffusionProfileAsset: {r: 0, g: 0, b: 0, a: 0}
-    - _DiffusionProfile_Asset: {r: 8.373602e+11, g: 0.00000038962725, b: 4.0925955e-14,
-        a: 0.00047734557}
+    - _DiffusionProfileAsset: {r: 9.4123484e+14, g: -1714.584, b: 7.495229e-18, a: -1.742697e+33}
+    - _DiffusionProfile_Asset: {r: 8.373602e+11, g: 0.00000038962725, b: 4.0925955e-14, a: 0.00047734557}
     - _DoubleSidedConstants: {r: 1, g: 1, b: -1, a: 0}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
     - _EmissiveColor: {r: 0, g: 0, b: 0, a: 1}
@@ -593,6 +606,7 @@ Material:
     - _UVMappingMask: {r: 1, g: 0, b: 0, a: 0}
     - _UVMappingMaskEmissive: {r: 1, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
+  m_AllowLocking: 1
 --- !u!114 &8908073648602186125
 MonoBehaviour:
   m_ObjectHideFlags: 11

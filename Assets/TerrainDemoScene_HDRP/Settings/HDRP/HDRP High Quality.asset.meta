@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 49eaeb3bb3f0248eaae06b4503fea433
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 213198
+  packageName: Unity HDRP Terrain | Terrain Sample Project
+  packageVersion: 1.1.0
+  assetPath: Assets/TerrainDemoScene_HDRP/Settings/HDRP/HDRP High Quality.asset
+  uploadId: 993772

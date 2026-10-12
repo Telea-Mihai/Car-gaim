@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: f4e4d8517c45a1a4390ceaa4221bd34e
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 213198
+  packageName: Unity HDRP Terrain | Terrain Sample Project
+  packageVersion: 1.1.0
+  assetPath: Assets/TerrainDemoScene_HDRP/Prefabs/Lighting/MainLightProbes.prefab
+  uploadId: 993772
